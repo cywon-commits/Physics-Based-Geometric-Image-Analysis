@@ -1,0 +1,20 @@
+{
+  "selection_sha256": "eb4ee591f365d06a1c83b3f40f30d466a4575fe058fd50deb102861083439098",
+  "by_dimension": {
+    "2": {
+      "validation_recommended": true,
+      "test_clean_ok": true,
+      "test_noisy_ok": true,
+      "test_degree_ok": true,
+      "production_accepted": true
+    },
+    "3": {
+      "validation_recommended": false,
+      "test_clean_ok": false,
+      "test_noisy_ok": true,
+      "test_degree_ok": true,
+      "production_accepted": false
+    }
+  },
+  "policy": "held-out rejection allowed, no retuning"
+}

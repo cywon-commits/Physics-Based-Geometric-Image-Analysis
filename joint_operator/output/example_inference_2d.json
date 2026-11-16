@@ -1,0 +1,47 @@
+{
+  "mode": "joint_candidate",
+  "N": 10,
+  "dimension": 2,
+  "geometry": 64.96574097255278,
+  "unit": "pixels",
+  "axis": [
+    -0.8138520704225791,
+    -0.5810721189911636
+  ],
+  "eigengap": 1.4142135623730951,
+  "orientation_defined": true,
+  "input_dice": 1.0,
+  "initialization_seconds": 0.0009560429971315898,
+  "field_seconds": 0.007027085001027444,
+  "measurement_seconds": 0.001049713999236701,
+  "total_seconds": 0.009032841997395735,
+  "warnings": [
+    "Tensor axis is a director (sign arbitrary); spheres, rings, tori and separated spheres have no prescribed global axis here.",
+    "Input-mask fidelity is not a certificate of clean ground-truth shape preservation."
+  ],
+  "generator": {
+    "family": "axial",
+    "gp": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ep": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "normalized": true,
+    "init": "edt",
+    "J": 1.0,
+    "h": 2.0,
+    "D": 1.0
+  },
+  "measurement_kernel": [
+    0.029762595125575705,
+    0.17171189924105815,
+    0.025105189808077542
+  ],
+  "observer": "gradient",
+  "which": "min"
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "stage": "tests",
+    "seconds": 2.1926791179976135
+  },
+  {
+    "stage": "smoke",
+    "seconds": 4.501060405000317
+  },
+  {
+    "stage": "design",
+    "seconds": 0.5998782360002224
+  },
+  {
+    "stage": "stage_zero",
+    "seconds": 2.045056098999339
+  },
+  {
+    "stage": "training",
+    "seconds": 727.0393560970006
+  },
+  {
+    "stage": "validation",
+    "seconds": 373.41995283199867
+  },
+  {
+    "stage": "test",
+    "seconds": 107.87740512199889
+  },
+  {
+    "stage": "diagnostics",
+    "seconds": 27.355964766997204
+  },
+  {
+    "stage": "report",
+    "seconds": 4.957948168001167
+  }
+]

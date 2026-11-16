@@ -1,0 +1,23 @@
+{
+  "git_commit": "f74a25b0da0407dfef86384b20c648e99ee39901",
+  "commit_scope": "local implementation snapshot; publication commit is in the pull request",
+  "source_sha256": {
+    "code/baseline_utils.py": "8b8095a1ef9496aeecb688203d15fe985c45b633d94d470707b6e0e983405a88",
+    "code/check_joint_artifacts.py": "f759788020b0d83624781aac144ad25fcec6b6e9d66418f383ff9bc71cf29c3d",
+    "code/design.py": "bdf81cd263867e27c1b3a21762740f6cddcc8951ceae01c8945ca39db5f3081d",
+    "code/diagnostics_joint.py": "77d794092d1a6772e6764350327fb52b7d9f1bcbab808ff22b36e0cf1af63891",
+    "code/evaluate_joint.py": "17e702d3a2e9358e10d7fdd69aebd6737b60d684640eaec2fbf70bbfd4e64edc",
+    "code/fixed_iteration_checkpoints.py": "e2e3f022394237ff99f24c6b4f0805cab38136d50973f967d1efa30b5ca074de",
+    "code/infer_joint.py": "794b3fe603bfbbdbb9b3367463d1908b2d4164223d65ad1491500d6bc18f6f89",
+    "code/joint_core.py": "f108615ae456edc00d22b8f9e023f433375e23cd6fc94026e333660d90f7d08f",
+    "code/joint_study_core.py": "edac7c06303491442a60bd57679d0c8b923033814586b7c79a8a8cf9f7ea6d2d",
+    "code/pbgia_s3_integer_degree.py": "a49d3e9394566f77aabadaee1bdc05e2958c20c1b32cc73d56ad5d140f01bf89",
+    "code/refined_topology_diagnostic.py": "a6bd2585d99e585edf360f257aea6b03e351e21ab61f8184cfaa1fda31c92225",
+    "code/report_joint.py": "b14acd2861e52fbe4b573d8761ff9d0979558ca3de327ca5a19f67c5dc85965e",
+    "code/run_smoke.py": "24ed497d56014d6437582bf73c020ce92eb2206ea207cca20342aa55d9223c5d",
+    "code/stage_zero.py": "c52be82c4976c424aa692ace0bb972a7d43e14fc7f2db8b860f3f7b35a0104dc",
+    "code/train_joint.py": "247cd56662cfb3c9053b27bff09d36f745cdb9888f0c9465dba7037446d2d9a3",
+    "reference/lengthorientationapplication (1).py": "69d82cd1dcb82f00ff3f9e3da4907809daeeef8e77193e3af8ecef9031c8d6cc",
+    "reference/texturefiltertrain5 (1).py": "5e5a001a99761224888d34766499e443ab692e495f9a70bbd5d34d586b6f1103"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "seed": 261116,
+  "main": {
+    "J": 1.0,
+    "h": 2.0,
+    "D": 1.0
+  },
+  "N": [
+    5,
+    10,
+    20,
+    30,
+    40
+  ],
+  "dimensions": [
+    2,
+    3
+  ],
+  "families": [
+    "axial",
+    "tied_normalized",
+    "free_normalized"
+  ],
+  "G_bounds": [
+    [
+      -0.12,
+      0.03
+    ],
+    [
+      0,
+      0.23
+    ],
+    [
+      0,
+      0.06
+    ]
+  ],
+  "free_bounds": [
+    [
+      0,
+      0.65
+    ],
+    [
+      0,
+      0.15
+    ],
+    [
+      0,
+      0.15
+    ]
+  ],
+  "Kobs_bounds": [
+    [
+      -0.14,
+      0.03
+    ],
+    [
+      0,
+      0.3
+    ],
+    [
+      0,
+      0.08
+    ]
+  ],
+  "generator_candidates_per_family": 24,
+  "multistarts": 2,
+  "rounds": 2,
+  "candidates_per_start_per_round": 6,
+  "measurement_budget_per_N": 180,
+  "orientation_weights": "simplex grid with normalization of each traceless tensor",
+  "constraint": "minimum clean Dice >= .995, chi/components same clean; noisy failure count no worse than PBGIA-30",
+  "topology": "representative sphere/capsule/torus; negative collar cap, three targets and open-hemisphere certificate",
+  "validation_rule": "feasible first; Pareto accuracy/orientation/time; within .1 geometry pp and .1 degree of best feasible choose fastest; per-dimension N allowed",
+  "no_feasible_rule": "diagnostic best candidate only; no production upgrade; keep PBGIA-30 fallback and report unmet target",
+  "no_test_tuning": true,
+  "proxy_design": "one clean geometry per training family + second elongated rotation + one noisy elongated fixture + separate reference; full train/validation recheck",
+  "heldout_families": [
+    "ring",
+    "ellipsoid"
+  ],
+  "test_acceptance": "A validation-feasible candidate is still blocked from production if independent clean Dice/Euler/components or representative degree safeguards fail; do not retune, retain baseline fallback"
+}

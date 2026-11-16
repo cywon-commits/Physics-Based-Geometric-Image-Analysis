@@ -1,0 +1,49 @@
+{
+  "mode": "joint_candidate",
+  "N": 10,
+  "dimension": 3,
+  "geometry": 1028.1871596851236,
+  "unit": "voxel^2",
+  "axis": [
+    -0.9458826759443207,
+    -0.14826965954088017,
+    -0.28865562770894093
+  ],
+  "eigengap": 1.2233515986399075,
+  "orientation_defined": true,
+  "input_dice": 1.0,
+  "initialization_seconds": 0.01751551599954837,
+  "field_seconds": 0.06842828600201756,
+  "measurement_seconds": 0.010099472998263082,
+  "total_seconds": 0.09604327499982901,
+  "warnings": [
+    "Tensor axis is a director (sign arbitrary); spheres, rings, tori and separated spheres have no prescribed global axis here.",
+    "Input-mask fidelity is not a certificate of clean ground-truth shape preservation.",
+    "The strict clean-Dice/topology validation target was not met by the learned candidate; no production upgrade is recommended."
+  ],
+  "generator": {
+    "family": "axial",
+    "gp": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ep": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "normalized": true,
+    "init": "edt",
+    "J": 1.0,
+    "h": 2.0,
+    "D": 1.0
+  },
+  "measurement_kernel": [
+    -0.10076777651344011,
+    0.0004884541918451779,
+    0.03216487912118991
+  ],
+  "observer": "ensemble",
+  "which": "min"
+}
