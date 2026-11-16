@@ -1,0 +1,39 @@
+{
+  "seed": 291116,
+  "model": "dynamic grad(s), periodic, synchronous normalized H, no div(v)",
+  "physics": {
+    "J": 1,
+    "h": 2,
+    "D": 1
+  },
+  "Ns": [
+    5,
+    10,
+    20,
+    30,
+    40
+  ],
+  "primary": "generator changes under B frozen observer; independently retuned observer secondary",
+  "generator_budget": {
+    "shared_evaluations_per_family_per_dim": 12,
+    "N_specific_axial_evaluations_each": 6,
+    "N_specific": [
+      5,
+      10,
+      30
+    ],
+    "fixedG_free_evaluations": 6,
+    "starts": 2
+  },
+  "proxy": "4 units x 2 rotations x clean/1% + train reference per dimension",
+  "loss": "unit mean relative absolute geometry + .05*unit mean angle/90; also record weights0,.2",
+  "observer": "separate geometry MARE and orientation angle only, DE120 each head/N, train reference coefficient",
+  "selection": "validation Pareto geometry/angle/single-pass component latency in warmed process; fastest within .25 percentage points best geometry and .25deg best angle; else geometry and orientation priority separately",
+  "test_policy": "fresh grouped prototypes, freeze before single test, no test retuning",
+  "exclusions": "No reconstruction/topology/residual/width loss, candidate rejection, selection or fallback",
+  "extension": "G3 only if validation fixed-observer G2 improvement; not automatically expanded",
+  "cost_sensitivity": "equal eval primary; common measured-walltime prefix, not separate equal-time optimizer",
+  "spacing": "generated gradient divided by physical a; observer physical derivatives and quadrature equivalent factor a^(d-2) with train reference calibration",
+  "limitations": "finite-budget local/random search, no global optimum certificate",
+  "comparisons": "fixed B observer comparisons at B-selected N, coefficient frozen and separately train-only recalibrated; per-arm retuned N reported separately"
+}
