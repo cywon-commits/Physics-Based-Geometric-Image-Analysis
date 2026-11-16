@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "selection_sha256": "dcd09497b92c477da3a1cd8cd671a92fc7755565d012ca6a5838b6afc9d6ff16",
+  "test_images_independent": 192,
+  "test_geometry_units": 16,
+  "scored_preset_groups": 36,
+  "generator_evaluations": 120,
+  "observer_DE_evaluations": 24000,
+  "no_test_recalibration": true,
+  "no_case_filtering": true,
+  "source_sha256": {
+    "code/classical.py": "ee458e24d19803a027fa45351253aa8bbd970ccf1975d7e1ab53280bd4b7665e",
+    "code/engine.py": "edfafa97618561e17d61a175077ee91e1bbd35dec18cf774ddc56fec14d11ad9",
+    "code/evaluate.py": "47b427f992caae36e6222216886d3957753f99822ebb797361ee99702e87ef43",
+    "code/data.py": "357013397f143b5f706a3fa1c19eb2d19cd382ac2c0b713e96c664456ebcca88",
+    "code/check_reproduction.py": "531035bc36fd825f85ba8d5acf2d8a4ec2e7d4288c79575505c701de48db2d5a",
+    "code/observer.py": "a5441af66c2a991c9ee366d2ac9ce0aced39e6195128789f3823f1a890e45c20",
+    "code/diagnostics.py": "31184834965af2585067c7e53c1e05f10510e6b508c1614e7aacfc451843735c",
+    "code/monitor_training.py": "96d5a9b9ec820f6c8f621513464ec1c9ec89f4f35f51b7432b46d242314b2ba1",
+    "code/report.py": "0da3081dedbc3e5c978696b79decc9b394ae1a2e4352c1a818ed9d3b914ed284",
+    "code/operators.py": "3c1a915d2cdfb4a7c63cf0b92ca34afaedd401744aed5a0f723f372aeee1b55b",
+    "code/audit_artifacts.py": "6f7def6d037e8d4ae6281ab9c43a63303cfa7bf361d9c35481a3f0db557386f5",
+    "code/study.py": "12f73f2ddf3f7ff7810b704d8ca77561f60005459fbeef5c9a4fdf3bddd9d36c",
+    "code/infer.py": "ac23807fd6d80dcf692b31c0b2f5fbfe116c887382cd9c32784227f045256f9e"
+  },
+  "note": "stage_timings child_peak_rss_kb is cumulative maximum among children as of that stage; first_call timings are in-process, not OS-cold startup"
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "path": "/workspace/joint_operator_study/PBGIA_Codex_joint_operator_2D3D_20261116/code/joint_study_core.py",
+    "sha256": "edac7c06303491442a60bd57679d0c8b923033814586b7c79a8a8cf9f7ea6d2d",
+    "definitions": [
+      "parameter_config",
+      "exchange_kernel",
+      "generated_gradient",
+      "exchange",
+      "step",
+      "normalized_tensor",
+      "source_legacy_function",
+      "old_kernel",
+      "historical"
+    ]
+  },
+  {
+    "path": "/workspace/joint_operator_study/PBGIA_Codex_joint_operator_2D3D_20261116/code/joint_core.py",
+    "sha256": "f108615ae456edc00d22b8f9e023f433375e23cd6fc94026e333660d90f7d08f",
+    "definitions": [
+      "derivative_filters"
+    ]
+  },
+  {
+    "path": "/workspace/fixed_iteration_study/PBGIA_Codex_fixed_iteration_20261116/code/fixed_iteration_checkpoints.py",
+    "sha256": "e2e3f022394237ff99f24c6b4f0805cab38136d50973f967d1efa30b5ca074de",
+    "definitions": [
+      "initialize",
+      "gradient",
+      "one_step"
+    ]
+  },
+  {
+    "path": "/workspace/fixed_iteration_study/PBGIA_Codex_fixed_iteration_20261116/code/study_core.py",
+    "sha256": "8b8095a1ef9496aeecb688203d15fe985c45b633d94d470707b6e0e983405a88",
+    "definitions": [
+      "derivative",
+      "tensor",
+      "features",
+      "weights",
+      "feature_tensor"
+    ]
+  }
+]

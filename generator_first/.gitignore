@@ -1,0 +1,6 @@
+__pycache__/
+.pytest_cache/
+.venv/
+*.npz
+*.npy
+!output/run_logs/*.log

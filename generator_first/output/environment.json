@@ -1,0 +1,18 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "cpu": 3,
+  "numpy": "2.3.5",
+  "dtype": "float32 state,float64 reductions",
+  "gpu_used": false,
+  "threads": "1",
+  "source_hashes": {
+    "classical.py": "ee458e24d19803a027fa45351253aa8bbd970ccf1975d7e1ab53280bd4b7665e",
+    "engine.py": "c8e8d978588eb70364f309c567bb7aee1b15ae13432a65b905184316f08141e3",
+    "data.py": "357013397f143b5f706a3fa1c19eb2d19cd382ac2c0b713e96c664456ebcca88",
+    "observer.py": "31f1e55168281c86b5a65081fbf5e8d1ad5fe0b777a7c17887e8ed0ad07894a9",
+    "operators.py": "3c1a915d2cdfb4a7c63cf0b92ca34afaedd401744aed5a0f723f372aeee1b55b",
+    "selection.py": "d39e18d2060ef1a93a65fbf99f1aba75c660b373c7a411f526e3c428d23cf1e5",
+    "study.py": "f183e923f4a80ae17738f74cf2938b6759c36ad7cb5fa6a7a79521144e957aa7"
+  }
+}

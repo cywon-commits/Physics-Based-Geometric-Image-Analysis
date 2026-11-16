@@ -1,0 +1,29 @@
+{
+  "train_only": true,
+  "results": [
+    {
+      "dim": 2,
+      "matched_N": [
+        5,
+        10,
+        20,
+        30,
+        40
+      ],
+      "exact_coefficients": true
+    },
+    {
+      "dim": 3,
+      "matched_N": [
+        5,
+        10,
+        20,
+        30,
+        40
+      ],
+      "exact_coefficients": true
+    }
+  ],
+  "wall_seconds": 25.178358879995358,
+  "process_CPU_seconds": 25.148727174
+}

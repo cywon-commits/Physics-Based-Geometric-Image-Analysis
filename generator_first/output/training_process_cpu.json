@@ -1,0 +1,7 @@
+{
+  "pid": 15050,
+  "process_CPU_seconds": 1012.71,
+  "sampling_interval_seconds": 0.1,
+  "scope": "whole training process user+system CPU; last sample before exit, undercount at most one sample interval plus scheduling",
+  "sample_utc": 1794842109.0453978
+}

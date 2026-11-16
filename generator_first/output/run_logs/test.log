@@ -1,0 +1,11 @@
+TEST 2 ['B', 'orientation_priority', 'A', 'A_train_c']
+TEST 2 ['D', 'D_fixed_B_frozen_c', 'D_fixed_B_train_c']
+TEST 2 ['E', 'E_fixed_B_frozen_c', 'E_fixed_B_train_c']
+TEST 2 ['F', 'geometry_priority', 'F_fixed_B_frozen_c', 'F_fixed_B_train_c']
+TEST 2 ['G', 'default', 'G_fixed_B_frozen_c', 'G_fixed_B_train_c']
+TEST 3 ['B', 'A', 'A_train_c']
+TEST 3 ['D', 'D_fixed_B_frozen_c', 'D_fixed_B_train_c']
+TEST 3 ['E', 'E_fixed_B_frozen_c', 'E_fixed_B_train_c']
+TEST 3 ['F', 'F_fixed_B_frozen_c', 'F_fixed_B_train_c']
+TEST 3 ['G', 'geometry_priority', 'orientation_priority', 'default', 'G_fixed_B_frozen_c', 'G_fixed_B_train_c']
+TEST COMPLETE 3456

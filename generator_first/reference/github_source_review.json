@@ -1,0 +1,27 @@
+[
+  {
+    "path": "fixed_iteration/code/fixed_iteration_checkpoints.py",
+    "sha": "56332d3b860f255953ab0f897d632411e881928b",
+    "url": "https://github.com/cywon-commits/Physics-Based-Geometric-Image-Analysis/blob/codex/joint-operator-2d3d-20261116/fixed_iteration/code/fixed_iteration_checkpoints.py"
+  },
+  {
+    "path": "joint_operator/code/joint_study_core.py",
+    "sha": "ee1d4ebb136900d72e1810c69924baff0857b169",
+    "url": "https://github.com/cywon-commits/Physics-Based-Geometric-Image-Analysis/blob/codex/joint-operator-2d3d-20261116/joint_operator/code/joint_study_core.py"
+  },
+  {
+    "path": "joint_operator/code/train_joint.py",
+    "sha": "2915b038b37bafbb3ab5f950276ae175fbc4eea2",
+    "url": "https://github.com/cywon-commits/Physics-Based-Geometric-Image-Analysis/blob/codex/joint-operator-2d3d-20261116/joint_operator/code/train_joint.py"
+  },
+  {
+    "path": "joint_operator/code/design.py",
+    "sha": "8e02658868c77a50262c1f3f1ac87996b0a9b002",
+    "url": "https://github.com/cywon-commits/Physics-Based-Geometric-Image-Analysis/blob/codex/joint-operator-2d3d-20261116/joint_operator/code/design.py"
+  },
+  {
+    "path": "joint_operator/output/RESEARCH_REPORT_KO.md",
+    "sha": "eae1c3fd4baa58b19562458c0c877a8e8699140a",
+    "url": "https://github.com/cywon-commits/Physics-Based-Geometric-Image-Analysis/blob/codex/joint-operator-2d3d-20261116/joint_operator/output/RESEARCH_REPORT_KO.md"
+  }
+]
