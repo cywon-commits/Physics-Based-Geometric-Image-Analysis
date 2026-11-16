@@ -1,0 +1,7 @@
+{
+  "issue": "The restarted run training wall-clock total was preserved by run_all.py, but its 160 fine-grained training ledger rows were overwritten when validation imported the pre-fix ledger initializer. Numerical results, budgets, kernels, and field states are unaffected.",
+  "preserved": "stage_timings.json contains the actual restarted training total; training_expense.csv preserves validation/test calls; no old-run timing was substituted",
+  "fix": "train_joint.py now loads and appends the existing ledger when serial stages import it",
+  "missing_training_detail_rows": 160,
+  "recovered": false
+}

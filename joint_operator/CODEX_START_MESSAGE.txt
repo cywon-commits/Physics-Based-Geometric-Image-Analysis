@@ -1,0 +1,7 @@
+Extract the attached ZIP and read CODEX_TASK_KO.md in full before modifying code.
+
+This project must optimize the METHOD used by the user's historical Python scripts (coupled derivative/exchange generation and nematic direction inference), not copy the old kernel coefficient values. Extend the learnable architecture to 3D with a proper symmetric traceless bond nematic tensor. Keep the current PBGIA fixed-f, dynamic-grad(s), synchronous normalized update, unless running a clearly labeled historical ablation.
+
+Run the included tests and 2D/3D smoke first; then perform controlled observer-only, generator-only, and constrained joint-optimization studies with predeclared geometry-prototype train/validation/test splits and hard shape/topology constraints. Choose fixed iteration N independently for 2D and 3D. Reproduce/compare the GitHub PBGIA-30 baseline, report all failures and baselines, freeze the selected configuration before test, and produce complete source, CSVs, figures, reproducibility instructions, and a Korean research report. Do not claim improvements until independently tested.
+
+If connected to the GitHub repo, submit changes as a separate branch/PR, not direct overwrites of main.

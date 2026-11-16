@@ -1,0 +1,16 @@
+stage,family,case,N,hemisphere_min_dot,uncertified_tetrahedra,interpolation_norm_lower_bound,refined_nonvanishing
+postfreeze_validation_only,sphere,j024_r0_n0,5,0.272813081741333,0,0.09430636465549469,True
+postfreeze_validation_only,sphere,j024_r0_n0,10,-0.057828426361083984,10,0.002293533645570278,True
+postfreeze_validation_only,sphere,j024_r0_n0,20,-0.14027464389801025,42,0.0004891222924925387,True
+postfreeze_validation_only,sphere,j024_r0_n0,30,-0.1442704200744629,44,0.0006699354853481054,True
+postfreeze_validation_only,sphere,j024_r0_n0,40,-0.1444699764251709,44,0.0005994019447825849,True
+postfreeze_validation_only,capsule,j027_r0_n0,5,0.2971905469894409,0,0.10224899649620056,True
+postfreeze_validation_only,capsule,j027_r0_n0,10,-0.02612769603729248,9,5.1815648475894704e-05,True
+postfreeze_validation_only,capsule,j027_r0_n0,20,-0.10558581352233887,24,0.003120063105598092,True
+postfreeze_validation_only,capsule,j027_r0_n0,30,-0.10912656784057617,24,0.0018791999900713563,True
+postfreeze_validation_only,capsule,j027_r0_n0,40,-0.10929000377655029,24,0.0018214656738564372,True
+postfreeze_validation_only,torus,j035_r0_n0,5,0.24024009704589844,0,0.08328508585691452,True
+postfreeze_validation_only,torus,j035_r0_n0,10,-0.1067960262298584,76,0.0008865317213349044,True
+postfreeze_validation_only,torus,j035_r0_n0,20,-0.19200074672698975,226,2.9840859497198835e-05,True
+postfreeze_validation_only,torus,j035_r0_n0,30,-0.195878267288208,234,0.00013402343029156327,True
+postfreeze_validation_only,torus,j035_r0_n0,40,-0.19606328010559082,234,9.202335786540061e-05,True

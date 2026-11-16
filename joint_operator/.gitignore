@@ -1,0 +1,7 @@
+__pycache__/
+.pytest_cache/
+.venv/
+archived_runs/
+output/
+*.npz
+*.zip

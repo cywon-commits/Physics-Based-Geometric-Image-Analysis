@@ -1,0 +1,35 @@
+{
+  "selected_N": 30,
+  "kernel_by_dimension": {
+    "2": [
+      0.02974750344841605,
+      0.21809091790113377,
+      0.007287870619847869
+    ],
+    "3": [
+      -0.1395315714085597,
+      0.043532890872421834,
+      0.001586826052268793
+    ]
+  },
+  "parameters": {
+    "J": 1.0,
+    "h": 2.0,
+    "D": 1.0
+  },
+  "generation_kernel": "central",
+  "dtype": "float32",
+  "alpha": 1,
+  "boundary": "periodic with seven-voxel clean input margin",
+  "calibration_by_dimension": {
+    "2": 0.6112935393919159,
+    "3": 0.35025112942652725
+  },
+  "normalization": "direct H/|H|; retain n if |H|<=1e-12",
+  "decision_rule": "smallest N passing <=.1 pp geometry and <=.1 degree orientation increases in every validation dim/noise stratum; no additional mask/degree failures; measured speed improvement",
+  "validation_only": true,
+  "test_evaluated": false,
+  "freeze_time_utc": "2026-11-16T09:28:25.482515+00:00",
+  "split_manifest_sha256": "6c6f6511475fbad24ef216703152ac9a66ab794bd85bff4c657a2e46ef1f0525",
+  "kernel_file_sha256": "82a0b257b7f8e86a60333f7c05ff0a9a61ba011176b38970e7915e4ecc56db1d"
+}

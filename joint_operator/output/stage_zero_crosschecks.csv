@@ -1,0 +1,15 @@
+check,dim,max_delta,passed,case,N,D,h,exchange_sum,boundary,init,observer,orientation_min_error,orientation_max_error
+pinned_PBGIA30_map,2,0.0,True,,,,,,,,,,
+pinned_PBGIA30_map,3,0.0,True,,,,,,,,,,
+AST_original_texture,2,3.3306690738754696e-16,True,j007_r0_n0,5.0,1.0,1.0,5.222832507042706,wrap,binary,historical stale HJ(t-1) and v(t),0.18354174563573758,89.81645825436426
+AST_original_length,2,2.220446049250313e-16,True,j007_r0_n0,10.0,0.1,1.0,5.222832507042706,symm,binary,historical stale HJ(t-1) and v(t),0.09129734839062362,89.90870265160493
+AST_original_texture,2,3.3306690738754696e-16,True,j007_r1_n0,5.0,1.0,1.0,5.222832507042706,wrap,binary,historical stale HJ(t-1) and v(t),0.25093274849344765,89.74906725150751
+AST_original_length,2,3.3306690738754696e-16,True,j007_r1_n0,10.0,0.1,1.0,5.222832507042706,symm,binary,historical stale HJ(t-1) and v(t),0.41338906517201646,89.58661093482675
+AST_original_texture,2,3.3306690738754696e-16,True,j008_r0_n0,5.0,1.0,1.0,5.222832507042706,wrap,binary,historical stale HJ(t-1) and v(t),0.3466817590848206,89.65331824091564
+AST_original_length,2,2.220446049250313e-16,True,j008_r0_n0,10.0,0.1,1.0,5.222832507042706,symm,binary,historical stale HJ(t-1) and v(t),0.2892000906523523,89.71079990934791
+AST_original_texture,2,3.3306690738754696e-16,True,j008_r1_n0,5.0,1.0,1.0,5.222832507042706,wrap,binary,historical stale HJ(t-1) and v(t),0.197657707210668,89.80234229279114
+AST_original_length,2,2.220446049250313e-16,True,j008_r1_n0,10.0,0.1,1.0,5.222832507042706,symm,binary,historical stale HJ(t-1) and v(t),0.14624904801741384,89.85375095198444
+AST_original_texture,2,3.3306690738754696e-16,True,j013_r0_n0,5.0,1.0,1.0,5.222832507042706,wrap,binary,historical stale HJ(t-1) and v(t),0.1390396734759243,89.86096032652742
+AST_original_length,2,3.3306690738754696e-16,True,j013_r0_n0,10.0,0.1,1.0,5.222832507042706,symm,binary,historical stale HJ(t-1) and v(t),0.057871975083679375,89.94212802492237
+AST_original_texture,2,3.3306690738754696e-16,True,j013_r1_n0,5.0,1.0,1.0,5.222832507042706,wrap,binary,historical stale HJ(t-1) and v(t),0.21280286137022944,89.78719713863111
+AST_original_length,2,2.220446049250313e-16,True,j013_r1_n0,10.0,0.1,1.0,5.222832507042706,symm,binary,historical stale HJ(t-1) and v(t),0.1385653706184487,89.86143462938325

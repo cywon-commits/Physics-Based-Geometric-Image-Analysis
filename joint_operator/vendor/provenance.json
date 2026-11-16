@@ -1,0 +1,36 @@
+{
+  "repository": "cywon-commits/Physics-Based-Geometric-Image-Analysis",
+  "commit": "0ec340537c956bf4fe333e7268ce9495eebb9527",
+  "files": [
+    {
+      "path": "fixed_iteration/code/study_core.py",
+      "local": "vendor/pbgia30/study_core.py",
+      "blob_sha": "0c1505bef943b4084868aeb8a751dcc7548e1f4b"
+    },
+    {
+      "path": "fixed_iteration/code/fixed_iteration_checkpoints.py",
+      "local": "code/fixed_iteration_checkpoints.py",
+      "blob_sha": "56332d3b860f255953ab0f897d632411e881928b"
+    },
+    {
+      "path": "fixed_iteration/output/selected_configuration.json",
+      "local": "vendor/pbgia30/selected_configuration.json",
+      "blob_sha": "c7cc3b7d891a52dcd1f4108debb8aba7f293565c"
+    },
+    {
+      "path": "fixed_iteration/output/split_manifest.csv",
+      "local": "vendor/pbgia30/split_manifest.csv",
+      "blob_sha": "e2faca02e74e7be53c054d1d5a2d6c75debe56ce"
+    },
+    {
+      "path": "fixed_iteration/output/REPORT_KO.md",
+      "local": "vendor/pbgia30/REPORT_KO.md",
+      "blob_sha": "af74ab4c747bc31be5548b1259ca27083615cd99"
+    },
+    {
+      "path": "code/pbgia_s3_integer_degree.py",
+      "local": "code/pbgia_s3_integer_degree.py",
+      "blob_sha": "560566df433175890263b3a699e50ab20b11545a"
+    }
+  ]
+}
