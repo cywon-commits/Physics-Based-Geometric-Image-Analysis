@@ -1,0 +1,18 @@
+{
+  "authority": "CODEX_TASK_KO.md",
+  "date": "2026-11-16",
+  "seed": 61116,
+  "P0_runs": 29,
+  "supplied_runs": 16,
+  "long_runs": 9,
+  "tilted_fixtures": 3,
+  "benchmark_fields": 87,
+  "benchmark_measurements": 957,
+  "generator_runs": 32,
+  "learning_family": "separable antisymmetric 5x5",
+  "mixing_default": 1,
+  "spacing": 1,
+  "initialization": "mask EDT only",
+  "no_divergence": true,
+  "dynamic_scalar_gradient": true
+}

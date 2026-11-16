@@ -1,0 +1,43 @@
+{
+  "parameters": {
+    "central": [
+      0,
+      0,
+      0
+    ],
+    "Scharr": [
+      0,
+      0.1875,
+      0
+    ],
+    "fourth": [
+      -0.08333333333333333,
+      0,
+      0
+    ],
+    "learned": [
+      -0.044430528985157536,
+      0.11723440324007278,
+      0.0
+    ]
+  },
+  "objective": "geometry_relative_mse + weight*(angle_deg/10)^2 + rotation_CV_squared",
+  "selected_weight": 0.05,
+  "train_ids": [
+    "b004",
+    "b005",
+    "b006",
+    "b007",
+    "b008",
+    "b009",
+    "b010",
+    "b011",
+    "b012"
+  ],
+  "calibration_ids": [
+    "b000",
+    "b001",
+    "b002",
+    "b003"
+  ]
+}
