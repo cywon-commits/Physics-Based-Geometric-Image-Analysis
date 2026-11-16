@@ -1,0 +1,4 @@
+{'stage': 'validate', 'wall_seconds': 1506.1356085529987, 'child_CPU_seconds': 1505.721708, 'child_peak_rss_kb': 1088760, 'returncode': 0}
+{'stage': 'test', 'wall_seconds': 269.699915879999, 'child_CPU_seconds': 269.60569499999997, 'child_peak_rss_kb': 1088760, 'returncode': 0}
+{'stage': 'diagnostics', 'wall_seconds': 88.832957953, 'child_CPU_seconds': 88.74878900000009, 'child_peak_rss_kb': 1088760, 'returncode': 0}
+{'stage': 'report', 'wall_seconds': 3.451866939001775, 'child_CPU_seconds': 3.4322379999998773, 'child_peak_rss_kb': 1088760, 'returncode': 0}
