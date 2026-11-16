@@ -1,0 +1,54 @@
+{
+  "seed": 61116,
+  "checkpoints": [
+    5,
+    10,
+    20,
+    30,
+    40
+  ],
+  "main": {
+    "J": 1.0,
+    "h": 2.0,
+    "D": 1.0
+  },
+  "transfer": [
+    {
+      "J": 1.0,
+      "h": 4.0,
+      "D": 1.0
+    },
+    {
+      "J": 1.0,
+      "h": 2.0,
+      "D": 0.5
+    }
+  ],
+  "generation": "central fixed",
+  "kernel_dimension": 3,
+  "bounds": [
+    [
+      -0.14,
+      0.03
+    ],
+    [
+      0,
+      0.3
+    ],
+    [
+      0,
+      0.08
+    ]
+  ],
+  "optimizer": "differential_evolution",
+  "optimizer_popsize": 6,
+  "optimizer_maxiter": 14,
+  "optimizer_evaluations": 270,
+  "optimizer_polish": false,
+  "validation_tolerance_geometry_pp": 0.1,
+  "validation_tolerance_orientation_deg": 0.1,
+  "selection": "smallest N passes every dimension/noise stratum, no more clean-mask/representative-degree failures, faster deployment estimate; h fixed a priori at 2",
+  "orientation": "minimum eigenvalue only for connected elongated fixtures; multi/circle/sphere/ring/torus undefined",
+  "mask_failure": "clean Dice < .95 OR Euler mismatch OR component mismatch",
+  "bootstrap": "resample independent geometry units; all derived variants kept together"
+}

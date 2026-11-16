@@ -1,0 +1,26 @@
+{
+  "N": 30,
+  "dimension": 2,
+  "geometry": 56.86702990513605,
+  "units": "pixels",
+  "tensor": [
+    [
+      46.51368470350964,
+      -0.7018865606376941
+    ],
+    [
+      -0.7018865606376941,
+      46.51368470350963
+    ]
+  ],
+  "tensor_axis": [
+    -0.7071067811865457,
+    -0.7071067811865493
+  ],
+  "eigengap": 0.029731147663595896,
+  "axis_warning": "Interpret minimum-eigenvalue axis only for connected elongated shapes; eigenvector sign is arbitrary.",
+  "initialization_seconds": 0.0012045280000165803,
+  "field_seconds": 0.011862603999816201,
+  "measurement_seconds": 0.00033578700003999984,
+  "total_seconds": 0.013402918999872782
+}

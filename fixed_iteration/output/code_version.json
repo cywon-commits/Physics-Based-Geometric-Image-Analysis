@@ -1,0 +1,13 @@
+{
+  "git_commit": "b8b0b1959bc9d1ea3d8c755628c13210deb3e09d",
+  "source_sha256": {
+    "code/additional_checks.py": "8ac82ff4d8c88a58238d24b0ae9056daa124b4a35d09cd63e2037896ba92441f",
+    "code/check_artifacts.py": "574c5fac3c9171aa19c6581f07d518dfbc14053fde42d44e85a1036793537023",
+    "code/fixed_iteration_checkpoints.py": "e2e3f022394237ff99f24c6b4f0805cab38136d50973f967d1efa30b5ca074de",
+    "code/predict_fixed.py": "5b4e4f07096854d53e30b1d7dfec4963f6090281acd7345f69e268e4671ee3ca",
+    "code/report_fixed.py": "b65a9150cddf94d9a8e53c49a5c61ad1a3391eb420a10f40805f6d72f221a2ba",
+    "code/run_fixed_study.py": "86bbcdceeadc1084c854df7d0d0db7dd7f4c34741a3cc100d3573852346bc273",
+    "code/study_core.py": "8b8095a1ef9496aeecb688203d15fe985c45b633d94d470707b6e0e983405a88",
+    "reference/pbgia_s3_integer_degree.py": "a49d3e9394566f77aabadaee1bdc05e2958c20c1b32cc73d56ad5d140f01bf89"
+  }
+}

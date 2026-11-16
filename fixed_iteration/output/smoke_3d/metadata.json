@@ -1,0 +1,15 @@
+{
+  "dim": 3,
+  "size": 24,
+  "J": 1.0,
+  "h": 2.0,
+  "D": 1.0,
+  "checkpoints": [
+    5,
+    10,
+    20,
+    30,
+    40
+  ],
+  "note": "smoke test only; no learned kernels or independent benchmarking"
+}
