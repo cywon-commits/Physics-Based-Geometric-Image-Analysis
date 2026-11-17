@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "cases": 562,
+  "method_rows": 6182,
+  "methods": 11,
+  "dimensions": [
+    2,
+    3
+  ],
+  "actual_fixed_generator": true,
+  "all_cases_retained": true,
+  "no_model_selection": true,
+  "reference_cases": 12,
+  "raw_sha256": "f10fc02213eaa31ab20cc430936e79cc01d2d813cfcedbebf9411c86335396c4",
+  "manifest_sha256": "212467a93dfd2dc0d5e3e72434f40da8fb63a9d142307745d95275ba464bff71",
+  "source_sha256": {
+    "code/paired_comparisons.py": "ba29ff0af15908eb5e8511f87a0435765bef90eef77f5e55a40cc26ae39e1090",
+    "code/readouts.py": "9f6ea7311ca5190b2f66bb01d5edce2bfcc1f69bc801777605696c926c130b5d",
+    "code/analysis_report.py": "b2daf120c754661c5f229e9406ecf68b3f148ad79694d2650ddbc3c532d133cb",
+    "code/engine.py": "dd089c966aaf571632132d84656324bdbe1b108d9719f31c60deb958ea38415d",
+    "code/data.py": "a4e0b5d85c02cd151da8b0392a0227e7e0f60cc40ecce61c2f7d68f10a397d50",
+    "code/operators.py": "3c1a915d2cdfb4a7c63cf0b92ca34afaedd401744aed5a0f723f372aeee1b55b",
+    "code/audit.py": "d913b4dfb3bf4558c0eca9b8c2b904b3b8ea3583e9f341a3e4a88a108c99a04f",
+    "code/diagnostics_extra.py": "022745550a951150ede4b8868a0de81552c9b4e041f3dfdb78f2b0915c4bafe2",
+    "code/run_study.py": "40c0cc5ee2cade6fb3a15f8f293a5e49cadea57df2424fd276a6a1dd96b3cd1d",
+    "tests/test_readouts.py": "2ee27fb03eaf1f15c8cce829d1fd7bc130994e4305d1610b46be579b99605497",
+    "tests/test_geometry.py": "9aa45a70d25e485772bc0581c4e1c1e9882e7eed35d424fa8add11a4112ca568",
+    "reference/source_provenance.json": "6ee6f922adb69a0a6b241d1f35b59256f9e4922000c355972ca5b93b0c27f158"
+  }
+}

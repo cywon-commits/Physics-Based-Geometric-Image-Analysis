@@ -1,0 +1,8 @@
+{
+  "wall_seconds": 180.29570439400413,
+  "CPU_seconds": 179.90149494599999,
+  "peak_rss_kb": 608316,
+  "cases": 562,
+  "rows": 6182,
+  "manifest_sha256": "212467a93dfd2dc0d5e3e72434f40da8fb63a9d142307745d95275ba464bff71"
+}

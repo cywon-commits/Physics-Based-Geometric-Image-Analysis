@@ -1,0 +1,7 @@
+{
+  "github_base_commit": "54287cdc0b1e4ce3fefecb2df42467c190985355",
+  "baseline_source": "generator_first/code/operators.py",
+  "source_sha256": "3c1a915d2cdfb4a7c63cf0b92ca34afaedd401744aed5a0f723f372aeee1b55b",
+  "new_generator": "code/engine.py implements samefixedG4equationsinfloat64; regressiontests comparefloat32baseline",
+  "new_study": "readout-only, no previouslearnednumericalcoefficients imported"
+}
