@@ -1,0 +1,5 @@
+{'stage': 'validate2d', 'wall_seconds': 314.8647297620046, 'CPU_seconds': 314.498466, 'cumulative_child_peak_rss_kb': 511084, 'returncode': 0}
+{'stage': 'freeze2d', 'wall_seconds': 1.733966800995404, 'CPU_seconds': 1.6757639999999476, 'cumulative_child_peak_rss_kb': 511084, 'returncode': 0}
+{'stage': 'test2d', 'wall_seconds': 15.249453540003742, 'CPU_seconds': 15.237038000000025, 'cumulative_child_peak_rss_kb': 511084, 'returncode': 0}
+{'stage': 'diagnostics', 'wall_seconds': 2.7018481400009478, 'CPU_seconds': 2.6913530000000008, 'cumulative_child_peak_rss_kb': 511084, 'returncode': 0}
+{'stage': 'report2d', 'wall_seconds': 4.228225860002567, 'CPU_seconds': 4.212486999999976, 'cumulative_child_peak_rss_kb': 511084, 'returncode': 0}

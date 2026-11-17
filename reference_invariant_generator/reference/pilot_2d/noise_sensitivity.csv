@@ -1,0 +1,9 @@
+noise_rate,model,geometry_MARE_pct,orientation_MAE_deg
+0,fourth,1.207,1.188
+0,learned,0.573,0.537
+0.002,fourth,1.1924935579,1.17460362
+0.002,learned,0.6475219727,0.56876894
+0.005,fourth,1.1770381927,1.170614695
+0.005,learned,0.8078448176,0.60280984
+0.01,fourth,1.228,1.167
+0.01,learned,1.883,0.687

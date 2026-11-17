@@ -1,0 +1,27 @@
+{
+  "created_on": "2026-11-17",
+  "github": {
+    "repository": "cywon-commits/Physics-Based-Geometric-Image-Analysis",
+    "generator_first_branch": "codex/generator-first-20261116",
+    "generator_report": "https://github.com/cywon-commits/Physics-Based-Geometric-Image-Analysis/blob/codex/generator-first-20261116/generator_first/output/RESEARCH_REPORT_KO.md",
+    "source_paths": [
+      "generator_first/code/operators.py",
+      "generator_first/code/engine.py",
+      "generator_first/code/study.py",
+      "joint_operator/reference/texturefiltertrain5 (1).py",
+      "joint_operator/reference/lengthorientationapplication (1).py"
+    ]
+  },
+  "files_sha256": {
+    "reference/RADIUS_SENSITIVITY_HISTORICAL.csv": "18a48639aa4ff70064bbdcc0a371684ff213b4896b0182433e03de6cd0863ec9",
+    "reference/legacy/TextureFilterTrain5.ipynb": "f4d67afb84a43afed60bb3dd4573466b6cdc0106ec67bd227c69f996771c9e36",
+    "reference/pilot_2d/RESULTS_KO.md": "68d6b33ad1257ca5e6690f06ae192216b012404eef48775c995c60396ea204ec",
+    "reference/pilot_2d/comparison.csv": "19b1d1449d22f51c7bbcb40660a63485d8854a2a4c95e673b9653d0c15869307",
+    "reference/pilot_2d/noise_sensitivity.csv": "0f4852759a10a3cd87ed86a45b9884fa1d29bd5990b951b237b08a54635835ff",
+    "reference/pilot_2d/optimizers.json": "a9755d213c126dcaa29a77dfe0350204707c204a93d9130487fdd7f9ecc1b9ce",
+    "reference/pilot_2d/selection.json": "9dd7df8d62a768de060976c4046b9dfdf09ac5e355e6a62c4d93e69c999ff541",
+    "reference/pilot_2d/pbgia_new_experiment.py": "7d4656e46a63bbc808de612666480938774afe9a128b640cbc4940305da22f32",
+    "reference/pilot_2d/pbgia_evaluate_results.py": "fa9d951ca5fc000bb30a88cb1fe0da2c6c16952f1c8d486c69b03122e210cafb"
+  },
+  "warning": "Previous test/result files are history only; do not train/validate/optimize or claim an independent new test using these samples."
+}

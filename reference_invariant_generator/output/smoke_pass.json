@@ -1,0 +1,6 @@
+{
+  "tests": 5,
+  "expensive_training_not_started": true,
+  "gradient": "exact forward Jacobian equals torch reverse and finite differences",
+  "baseline": "previous G4 equal within2e-6"
+}

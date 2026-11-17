@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "freeze_sha256": "57065f5612e134781cd7b70dfc868b6f11fed06bd19d94844c16097caadc15e2",
+  "independent_test_prototypes": 17,
+  "test_images": 408,
+  "optimizer_runs": 14,
+  "evaluations": 686,
+  "all_cases_retained": true,
+  "I_equals_scalar_plus_vector": true,
+  "reference_only_train": true,
+  "original_uploaded_material_unchanged": true,
+  "threeD_status": "verified_partial_only"
+}

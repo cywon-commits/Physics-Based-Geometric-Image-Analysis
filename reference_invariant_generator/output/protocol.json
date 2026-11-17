@@ -1,0 +1,57 @@
+{
+  "seed": 17112647,
+  "primary_N": 10,
+  "N_validation": [
+    5,
+    10,
+    20,
+    30
+  ],
+  "exchange": "fixed NN sum4",
+  "observer": "fixed exact G4 tensor, min eigenaxis",
+  "init": "binary EDT tanh width2.3 lattice",
+  "physics": {
+    "J": 1,
+    "D": 1,
+    "h": 2
+  },
+  "normalization": "H only, NEVER normalize derivative coefficients",
+  "family": "nonseparable odd/even symmetric5x5 six unconstrained-gain coefficients",
+  "starts": [
+    "G4",
+    "legacy",
+    "pilot",
+    "perturbation"
+  ],
+  "bounds": [
+    -1.5,
+    1.5
+  ],
+  "noise_weights": [
+    0,
+    1,
+    4
+  ],
+  "lambda_rotation": 1,
+  "lambda_angle": 0.0001,
+  "theta_scale_degrees": 1,
+  "loss": "prototype variance log mean(I/P), within-unit CV squared, clean angle squared, paired noise log-I change",
+  "proxy": "all17train prototypes; two crossed rotation/shift poses; paired noise0,.002,.005,.01 (clean-only excludes noisy inputs)",
+  "optimizer": {
+    "method": "L-BFGS-B",
+    "gradient": "PyTorch reverse autograd, bounded-memory exact two-pass chain rule; independently checked against exact forward Jacobian",
+    "maxiter": 60,
+    "maxfun": 100,
+    "maxls": 12,
+    "ftol": 1e-11,
+    "gtol": 1e-06
+  },
+  "separable": "same maxiter/maxfun, fixed moment1, starts G4, clean and noise1",
+  "selection": "N10: exclude fitted candidates worse than G4 in clean log-q variance; per-noise-weight select minimum declared objective on validation with G4 always anchored; separately select N among5/10/20/30 for the frozen noise1 arm via same validation objective",
+  "test": "freeze protocol,manifest,models,reference set,N,weights before single fresh test; no test-based ruler selection",
+  "resources": {
+    "primary": "complete2D",
+    "threeD": "verified12orbit kernels and differentiation smoke only; no allotted3D optimization budget; 8GiB CPU environment, prioritize full2D multistart",
+    "wider": "7x7,exchange,observer retuning deferred; no automatic budget expansion"
+  }
+}

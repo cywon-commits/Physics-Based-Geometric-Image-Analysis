@@ -1,0 +1,16 @@
+arm_id,dim,generated_derivative,exchange,observer,N,purpose
+A,2D,G4 fixed,NN axial,G4 fixed,10,primary anchor; must be included exactly
+B,2D,legacy notebook 5x5 imported,NN axial,G4 fixed,10,"historical kernel transplant, not full legacy algorithm"
+C,2D,previous pilot 5x5 imported,NN axial,G4 fixed,10,historical pilot kernel only; not new proof
+D,2D,new 5x5 nonseparable L-BFGS-B,NN axial,G4 fixed,10,primary generator-only result
+E,2D,new 5x5 separable L-BFGS-B,NN axial,G4 fixed,10,parameterization ablation
+F,2D,new 7x7 nonseparable,NN axial,G4 fixed,10,"conditional extension, report if not run"
+G,2D,new 5x5 nonseparable,raw Hadamard tied,G4 fixed,10,exchange effect without normalization; secondary
+H,2D,new 5x5 nonseparable,free exchange,G4 fixed,10,exchange learning; secondary
+I,2D,new 5x5 nonseparable,NN axial,retrained geom+orient,10,observer effect separately
+J,2D,G4 fixed,NN axial,retrained geom+orient,10,fair observer-only control
+K,2D,new 5x5 nonseparable clean-only vs noisy-trained,NN axial,G4 fixed,10,noise trade-off
+L,2D,G4 fixed / new 5x5,NN axial,G4 fixed,"5,10,20,30",fixed N transfer; label extra-budget
+M,3D,G4 fixed,NN axial,G4 fixed,10,3D primary anchor
+N,3D,new 5x5x5 12-orbit kernel,NN axial,G4 fixed,10,3D learning after 2D completion
+O,3D,new 5x5x5,raw Hadamard tied,G4 fixed,10,optional 3D exchange effect

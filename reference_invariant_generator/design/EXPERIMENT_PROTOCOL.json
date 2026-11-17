@@ -1,0 +1,137 @@
+{
+  "name": "PBGIA reference-invariant generator learning (fresh rerun)",
+  "version": "2026-11-17",
+  "reference_branch": "codex/generator-first-20261116",
+  "new_directory": "reference_invariant_generator",
+  "sources_read_only": [
+    "generator_first/",
+    "joint_operator/reference/",
+    "attached reference/"
+  ],
+  "primary_question": "reference-independent proportionality of generated-field integral I to continuous P(2D)/A(3D)",
+  "primary_losses": {
+    "geometry": "prototype-balanced variance of log mean(I/G_true), no chosen ruler",
+    "rotation_shift": "within-prototype CV^2 over rotations and shifts",
+    "orientation": "axis-angle squared for identifiable major-axis only",
+    "noise": "paired log q/noise vs clean; pre-specified ablations"
+  },
+  "primary_controls": {
+    "init": "binary EDT/tanh width=2.3 lattice",
+    "J": 1.0,
+    "D": 1.0,
+    "h": 2.0,
+    "exchange": "axial nearest neighbor sum (fixed)",
+    "observer": "fixed fourth-order derivative gradient tensor",
+    "iterations_N_primary": 10,
+    "boundary": "periodic",
+    "no_kernel_normalization": true
+  },
+  "generator_2d": {
+    "support": [
+      5,
+      5
+    ],
+    "parity": "odd derivative axis, even transverse axis",
+    "independent_coefficients": 6,
+    "coefficient_order": [
+      "w01",
+      "w02",
+      "w11",
+      "w12",
+      "w21",
+      "w22"
+    ],
+    "G4": [
+      0.6666666666666666,
+      -0.08333333333333333,
+      0,
+      0,
+      0,
+      0
+    ],
+    "legacy_5x5_start": [
+      1,
+      0.57063894,
+      0.30414468,
+      0.33693168,
+      0.09205035,
+      0.08973684
+    ],
+    "pilot_start": [
+      0.997721901,
+      0.262736838,
+      0.618148076,
+      -0.053713896,
+      0.265501073,
+      -0.378951811
+    ]
+  },
+  "generator_3d": {
+    "support": [
+      5,
+      5,
+      5
+    ],
+    "parity": "one odd axis + two even transverse axes, symmetric transverse interchange",
+    "independent_orbits": 12,
+    "G4_inclusion_required": true
+  },
+  "optimizer": {
+    "algorithm": "L-BFGS-B with autodiff gradient",
+    "multistart_min": 4,
+    "initializations": [
+      "G4",
+      "original uploaded notebook 5x5",
+      "previous 2D pilot 5x5",
+      "new perturbation from G4"
+    ],
+    "record_every_eval": true,
+    "bounds_and_maxiter": "must freeze before running; run to specified convergence or explicit budget limit",
+    "baseline_candidate_always_in_selection": true
+  },
+  "stages": [
+    "preflight smoke & source verification",
+    "2D fixed observer optimization",
+    "2D validation selection and frozen new test",
+    "2D reference-ruler sweep/noise/curvature analysis",
+    "optional exchange/observer ablations",
+    "3D symmetry family and genuine train/validation/test if resources permit"
+  ],
+  "data_policy": {
+    "split_by": "continuous prototype ID, NOT image rotations",
+    "reference_data": "train-only fresh standards",
+    "previous_test_data": "historical-only; forbidden for new test",
+    "seed": "freeze and report before training",
+    "test_lock_required": true
+  },
+  "calibration_sweep": {
+    "references": [
+      "multiple training-only circles of different radius",
+      "training-only ellipses",
+      "training-only stadiums"
+    ],
+    "metrics": [
+      "c_ref",
+      "MARE_ref",
+      "bias_ref",
+      "p95_ref",
+      "max_ref",
+      "CV_of_c_ref",
+      "median-MARE_across_refs",
+      "worst-MARE_across_refs"
+    ],
+    "cannot_choose_best_test_ref": true
+  },
+  "forbidden_objectives": [
+    "Dice",
+    "IoU",
+    "Euler",
+    "connected components",
+    "topological degree",
+    "mask reconstruction",
+    "wall width",
+    "residual threshold"
+  ],
+  "phase1_definition_of_done": "precommitted 2D experiment with independent frozen test and calibration-free proportionality metrics, raw data, uncertainty, and comparisons",
+  "phase2_definition_of_done": "3D prototype-level independently split surface-area experiment with honest limitations and same primary metrics"
+}
