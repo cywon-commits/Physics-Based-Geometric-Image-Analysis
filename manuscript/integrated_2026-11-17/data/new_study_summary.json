@@ -1,0 +1,142 @@
+{
+  "experiment": "new_bounded_pbgia_n30_studies",
+  "stadium_orientation_MAAE_deg": 0.21409732521337688,
+  "stadium_perimeter_MARE_heldout_pct": 0.9314312250253541,
+  "2d_topology": [
+    {
+      "case": "one disk",
+      "Q2": 1.0000000048778712,
+      "input_euler": 1
+    },
+    {
+      "case": "two disks",
+      "Q2": 2.000000019107956,
+      "input_euler": 2
+    },
+    {
+      "case": "annulus",
+      "Q2": 1.3141927623791253e-08,
+      "input_euler": 0
+    },
+    {
+      "case": "disk + ring",
+      "Q2": 1.0000000193508196,
+      "input_euler": 1
+    }
+  ],
+  "3d_study": [
+    {
+      "kind": "sphere",
+      "degree": 1,
+      "area_error_pct": 0.0,
+      "fiber_axis_error_deg": NaN
+    },
+    {
+      "kind": "capsule",
+      "degree": 1,
+      "area_error_pct": 1.1462211886585472,
+      "fiber_axis_error_deg": NaN
+    },
+    {
+      "kind": "torus",
+      "degree": 0,
+      "area_error_pct": -1.3369383864604845,
+      "fiber_axis_error_deg": NaN
+    },
+    {
+      "kind": "pair",
+      "degree": 2,
+      "area_error_pct": 0.7438679832517892,
+      "fiber_axis_error_deg": NaN
+    },
+    {
+      "kind": "fibers",
+      "degree": 4,
+      "area_error_pct": -2.451900674599372,
+      "fiber_axis_error_deg": 3.7584697096831134
+    },
+    {
+      "kind": "porous",
+      "degree": -5,
+      "area_error_pct": NaN,
+      "fiber_axis_error_deg": NaN
+    }
+  ],
+  "3d_targets": [
+    {
+      "shape": "sphere",
+      "target_id": 0,
+      "degree": 1
+    },
+    {
+      "shape": "sphere",
+      "target_id": 1,
+      "degree": 1
+    },
+    {
+      "shape": "sphere",
+      "target_id": 2,
+      "degree": 1
+    },
+    {
+      "shape": "capsule",
+      "target_id": 0,
+      "degree": 1
+    },
+    {
+      "shape": "capsule",
+      "target_id": 1,
+      "degree": 1
+    },
+    {
+      "shape": "capsule",
+      "target_id": 2,
+      "degree": 1
+    },
+    {
+      "shape": "torus",
+      "target_id": 0,
+      "degree": 0
+    },
+    {
+      "shape": "torus",
+      "target_id": 1,
+      "degree": 0
+    },
+    {
+      "shape": "torus",
+      "target_id": 2,
+      "degree": 0
+    },
+    {
+      "shape": "pair",
+      "target_id": 0,
+      "degree": 2
+    },
+    {
+      "shape": "pair",
+      "target_id": 1,
+      "degree": 2
+    },
+    {
+      "shape": "pair",
+      "target_id": 2,
+      "degree": 2
+    },
+    {
+      "shape": "fibers",
+      "target_id": 0,
+      "degree": 4
+    },
+    {
+      "shape": "fibers",
+      "target_id": 1,
+      "degree": 4
+    },
+    {
+      "shape": "fibers",
+      "target_id": 2,
+      "degree": 4
+    }
+  ]
+}

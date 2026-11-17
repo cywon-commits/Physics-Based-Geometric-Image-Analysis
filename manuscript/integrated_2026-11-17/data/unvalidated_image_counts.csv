@@ -1,0 +1,8 @@
+sample,source,provisional_watershed_count,threshold,ROI_width,ROI_height
+gold_panel_a,"user-provided internet screenshot, NOT publication-cleared",234,0.3892946464092778,255,254
+gold_panel_b,"user-provided internet screenshot, NOT publication-cleared",344,0.3716559296573936,255,254
+gold_panel_c,"user-provided internet screenshot, NOT publication-cleared",330,0.3789116973379272,255,254
+gold_panel_d,"user-provided internet screenshot, NOT publication-cleared",264,0.3165532345880015,255,254
+gold_panel_e,"user-provided internet screenshot, NOT publication-cleared",277,0.33501031156464345,255,254
+gold_panel_f,"user-provided internet screenshot, NOT publication-cleared",162,0.30173344893179077,255,254
+CC0 brick image,skimage.data.brick (CC0),44,0.5128676891326904,512,512

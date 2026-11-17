@@ -1,0 +1,3 @@
+image,valid_fraction,median_axial_difference_deg,pbgia_mae_gt_deg,st_mae_gt_deg,note
+synthetic curved stratification,0.098759765625,1.381500244140625,0.6950373162004562,1.0088543986613612,analytic tangent ground truth
+CC0 retinal vessel photograph,0.179677734375,2.252166748046875,nan,nan,agreement only; molecular director not measured; vessel mask via grayscale threshold
