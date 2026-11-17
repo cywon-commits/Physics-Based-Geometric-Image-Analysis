@@ -1,0 +1,5 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+output/run_logs/mpl_cache/
+output/run_logs/dependencies.log

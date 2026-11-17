@@ -1,0 +1,12 @@
+{
+  "domain": "finite cube with negative_s exterior3voxel collar compactified to southpole; periodic evolution and degreeboundary aredistinct",
+  "interpolation": "normalized barycentric Freudenthal tetrahedra",
+  "sign": "inward radial hedgehog +1 with thiscoordinate/targetorientation",
+  "certificate": "openhemisphere or convex-hull numerical active-face lowerbound, notinterval arithmetic",
+  "no_geometry_selection": true,
+  "distinct_from": [
+    "inputEuler",
+    "inputcomponents",
+    "RPloopclass"
+  ]
+}

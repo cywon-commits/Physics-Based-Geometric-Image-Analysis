@@ -1,0 +1,7 @@
+{
+  "wall_seconds": 6.523444272999768,
+  "peak_rss_MiB": 160.4765625,
+  "tensors": 72,
+  "positive_controls": 10,
+  "coordinate_order": "array axes x0,x1,x2; maps ordered by remaining ascending axes"
+}

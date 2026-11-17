@@ -1,0 +1,10 @@
+{
+  "fixed_observers": [
+    "generated_s0",
+    "local_inward_normal",
+    "v_grad_s_alignment"
+  ],
+  "baseline_energy_verified": true,
+  "selection_unchanged": true,
+  "torus_PCA_target_correction_cases": 24
+}

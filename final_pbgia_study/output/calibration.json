@@ -1,0 +1,72 @@
+[
+  {
+    "dim": 2,
+    "source": "I_E",
+    "coefficient": 0.6078775804900558,
+    "reference_units": [
+      "ref2_13.783",
+      "ref2_5.783",
+      "ref2_9.783"
+    ]
+  },
+  {
+    "dim": 2,
+    "source": "I_TV",
+    "coefficient": 0.9633393063282816,
+    "reference_units": [
+      "ref2_13.783",
+      "ref2_5.783",
+      "ref2_9.783"
+    ]
+  },
+  {
+    "dim": 2,
+    "source": "Crofton",
+    "coefficient": 1.0009312005097701,
+    "reference_units": [
+      "ref2_13.783",
+      "ref2_5.783",
+      "ref2_9.783"
+    ]
+  },
+  {
+    "dim": 2,
+    "source": "marching_squares",
+    "coefficient": 0.9489422824106916,
+    "reference_units": [
+      "ref2_13.783",
+      "ref2_5.783",
+      "ref2_9.783"
+    ]
+  },
+  {
+    "dim": 3,
+    "source": "I_E",
+    "coefficient": 0.34888467213945723,
+    "reference_units": [
+      "ref3_11.783",
+      "ref3_4.783",
+      "ref3_7.783"
+    ]
+  },
+  {
+    "dim": 3,
+    "source": "I_TV",
+    "coefficient": 0.9902669891445045,
+    "reference_units": [
+      "ref3_11.783",
+      "ref3_4.783",
+      "ref3_7.783"
+    ]
+  },
+  {
+    "dim": 3,
+    "source": "marching_cubes",
+    "coefficient": 0.9275677038925524,
+    "reference_units": [
+      "ref3_11.783",
+      "ref3_4.783",
+      "ref3_7.783"
+    ]
+  }
+]

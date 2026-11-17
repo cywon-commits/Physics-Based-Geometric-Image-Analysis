@@ -1,0 +1,11 @@
+{
+  "exact_source_matches_at_first_test": {
+    "code/common.py": true,
+    "code/data.py": true,
+    "code/geometry_study.py": true,
+    "vendor/baseline.py": true,
+    "vendor/geometry_previous.py": true
+  },
+  "posttest_changes": "new standalone diagnostics, packaging/reporting, regression fixture compression; primary inference unchanged",
+  "independent_reproduction_14_columns_exact": true
+}

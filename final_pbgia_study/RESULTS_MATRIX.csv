@@ -1,0 +1,29 @@
+dimension,function,status,evidence,limitation
+2,boundary_extent,SUCCESS,clean selected MARE=0.893203%; output/geometry_summary.csv,6 prototypes; calibrated conventional methods better on clean test
+2,local_normal,SUCCESS,clean mean signed cosine=0.993778; output/test_raw.csv,analytic evaluation band; finite shapes/noise only
+2,global_normal_distribution_axis,PARTIAL_SUCCESS,output/orientation_summary.csv,cannot infer pair connection axis; no axis for circle/sphere
+2,spatial_axis,SUCCESS,pair clean angle=0.080deg,separate positional covariance; PCA competitive/faster
+2,unoriented_integral_lines,SUCCESS,output/figures/normal_integral_lines_2d.png,3D result is a slice; no transport meaning
+2,signed_flow_from_projector,FAILURE,Q(n)=Q(-n); MODEL_AND_PROJECTION_THEORY.md,not identifiable without additional lift/sign data; not a velocity
+2,unconditional_energy_descent,FAILURE,checkerboard deltaH/site=1.93936; output/synchronous_counterexample.csv,"analytic spin counterexample, not EDT input frequency"
+2,thin_structure_preservation,FAILURE,thickness .75: positive input42 -> scalar3,digital shell already fragmented; generator adds further loss
+2,pixel_information_lower_bound,SUCCESS,identical mask smooth pairs; output/pixel_pairs.csv,"two-shape lower bound, not full uncertainty or unique error decomposition"
+2,RP_loop_positive_controls,SUCCESS,RP1 4 defined+1 degenerate correct,synthetic controls separate from generated defects
+2,new_generator_kernel_optimization,NOT_TESTED,bounded final protocol: no new kernel search,intentional stopping; optional moment constraint not run
+3,boundary_extent,SUCCESS,clean selected MARE=0.732478%; output/geometry_summary.csv,6 prototypes; calibrated conventional methods better on clean test
+3,local_normal,SUCCESS,clean mean signed cosine=0.996671; output/test_raw.csv,analytic evaluation band; finite shapes/noise only
+3,global_normal_distribution_axis,PARTIAL_SUCCESS,output/orientation_summary.csv,cannot infer pair connection axis; no axis for circle/sphere
+3,spatial_axis,SUCCESS,pair clean angle=0.162deg,separate positional covariance; PCA competitive/faster
+3,unoriented_integral_lines,SUCCESS,output/figures/normal_integral_lines_3d.png,3D result is a slice; no transport meaning
+3,signed_flow_from_projector,FAILURE,Q(n)=Q(-n); MODEL_AND_PROJECTION_THEORY.md,not identifiable without additional lift/sign data; not a velocity
+3,unconditional_energy_descent,FAILURE,checkerboard deltaH/site=2.3135; output/synchronous_counterexample.csv,"analytic spin counterexample, not EDT input frequency"
+3,thin_structure_preservation,FAILURE,thickness .75: positive input669 -> scalar0,digital shell already fragmented; generator adds further loss
+3,pixel_information_lower_bound,SUCCESS,identical mask smooth pairs; output/pixel_pairs.csv,"two-shape lower bound, not full uncertainty or unique error decomposition"
+3,RP_loop_positive_controls,SUCCESS,RP2 4 defined+1 degenerate correct,synthetic controls separate from generated defects
+3,new_generator_kernel_optimization,NOT_TESTED,bounded final protocol: no new kernel search,intentional stopping; optional moment constraint not run
+2,S2_spin_degree,NOT_TESTED,no new S2 integer degree,3D S3 degree not substituted
+2,native_director_defect_ground_truth,NOT_TESTED,native lines visualized only,projected 3D maps are separate experiments
+3,S3_spin_degree,PARTIAL_SUCCESS,sphere/capsule/torus/pair=1/1/0/2; output/spin_topology.csv,compactified endpoints; not all-step homotopy or binary topology identity
+3,fiber_projection_to_2D,PARTIAL_SUCCESS,72 tensors +36 in-plane maps; output/projection_summary.csv,"mixture tensor, eigenline only where gap/trace sufficient"
+3,projected_loop_candidates,PARTIAL_SUCCESS,266 nontrivial candidates stable on 64/128 square-loop samples,bilinear tensor evidence; no proof of original magnetic singularity
+3,projected_defect_FP_FN_on_continuous_GT,INCONCLUSIVE,no continuous projected defect GT available,positive controls are not actual-data accuracy

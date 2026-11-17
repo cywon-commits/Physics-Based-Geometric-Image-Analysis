@@ -1,0 +1,5 @@
+dim,model,initial_energy,one_step_energy,energy_change_per_site,initialization
+2,base_normalized_alignment,38.39999999999999,162.51902389526367,1.939359748363495,"analytic checkerboard spin, NOT binary EDT"
+2,reciprocal_Riemannian_descent,38.39999999999999,26.375338279259395,-0.18788533938657181,"analytic checkerboard spin, NOT binary EDT"
+3,base_normalized_alignment,819.2000000000002,2003.7120666503906,2.3135001301765437,"analytic checkerboard spin, NOT binary EDT"
+3,reciprocal_Riemannian_descent,819.2000000000002,723.0027062340758,-0.18788533938657093,"analytic checkerboard spin, NOT binary EDT"

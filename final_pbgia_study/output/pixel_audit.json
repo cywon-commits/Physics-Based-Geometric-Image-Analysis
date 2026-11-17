@@ -1,0 +1,19 @@
+{
+  "mask_pairs": 48,
+  "unique_base_fields": 24,
+  "duplicate_determinism_checks": [
+    {
+      "dim": 2,
+      "bitwise_equal_estimator_outputs": true,
+      "mask_sha256": "3c264d2480a8e2b53456c1dbfd8245d5c3b6ee9f05f5fbaf90414d09d65947db"
+    },
+    {
+      "dim": 3,
+      "bitwise_equal_estimator_outputs": true,
+      "mask_sha256": "d32bc01e080da72a4b35fe93be74a93f45e686b56c641105cbbd8c716da78ce5"
+    }
+  ],
+  "wall_seconds": 16.643371005993686,
+  "peak_rss_MiB": 241.82421875,
+  "policy": "Fixed dimensionless pixel model at each spacing; perimeter/area rescaled by a^(d-1); no pair truth calibration, no claim of full error decomposition"
+}

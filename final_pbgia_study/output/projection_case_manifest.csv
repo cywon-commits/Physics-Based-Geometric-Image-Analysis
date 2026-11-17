@@ -1,0 +1,7 @@
+case,unit,dim,family,R,params,size,rep,noise,spacing,seed,noise_seed,noise_kind
+diag_3_sphere_7.431_0,diag_3_sphere_7.431,3,sphere,7.431,{},40,0,0.0,1.0,28011743,27911743,salt_pepper
+diag_3_capsule_4.431_18,diag_3_capsule_4.431,3,capsule,4.431,"{""Lratio"": 1.7}",40,0,0.0,1.0,28011761,27911761,salt_pepper
+diag_3_torus_10.431_36,diag_3_torus_10.431,3,torus,10.431,"{""minor"": 2.731}",40,0,0.0,1.0,28011779,27911779,salt_pepper
+diag_3_pair_3.931_54,diag_3_pair_3.931,3,pair,3.931,"{""gap"": 7.3}",40,0,0.0,1.0,28011797,27911797,salt_pepper
+diag_3_ellipsoid_6.431_72,diag_3_ellipsoid_6.431,3,ellipsoid,6.431,"{""axes"": [1.83, 0.83, 0.57]}",40,0,0.0,1.0,28011815,27911815,salt_pepper
+diag_3_shell_8.431_90,diag_3_shell_8.431,3,shell,8.431,"{""thickness"": 2.3}",40,0,0.0,1.0,28011833,27911833,salt_pepper
