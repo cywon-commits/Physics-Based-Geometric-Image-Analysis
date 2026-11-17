@@ -1,0 +1,34 @@
+CASE 1 / 562 2 analytic_planar wall 0.3
+/workspace/domain_wall_readout_study/code/run_study.py:31: IntegrationWarning: Extremely bad integrand behavior occurs at some points of the
+  integration interval.
+  out[method]=quad(density,-limit,limit,points=points,epsabs=1e-7,epsrel=1e-7,limit=200)[0]
+CASE 21 / 562 2 analytic_planar wall 6.0
+CASE 41 / 562 2 analytic_planar wall 11.3
+CASE 61 / 562 2 analytic_planar wall 15.3
+CASE 81 / 562 2 digital_planar wall 16.0
+CASE 101 / 562 2 curvature wall 16.3
+CASE 121 / 562 2 curvature wall 16.5
+CASE 141 / 562 2 interaction wall 16.8
+CASE 161 / 562 2 interaction wall 17.1
+CASE 181 / 562 2 interaction wall 17.4
+CASE 201 / 562 2 interaction wall 17.7
+CASE 221 / 562 2 interaction wall 18.0
+CASE 241 / 562 2 interaction wall 18.3
+CASE 261 / 562 2 shape wall 18.6
+CASE 281 / 562 2 spacing wall 19.0
+CASE 301 / 562 3 analytic_planar wall 39.7
+CASE 321 / 562 3 analytic_planar wall 60.4
+CASE 341 / 562 3 digital_planar wall 72.8
+CASE 361 / 562 3 curvature wall 81.3
+CASE 381 / 562 3 curvature wall 91.1
+CASE 401 / 562 3 interaction wall 100.8
+CASE 421 / 562 3 interaction wall 110.6
+CASE 441 / 562 3 interaction wall 120.0
+CASE 461 / 562 3 interaction wall 129.6
+CASE 481 / 562 3 interaction wall 140.1
+CASE 501 / 562 3 shape wall 149.4
+CASE 521 / 562 3 shape wall 159.1
+CASE 541 / 562 3 shape wall 169.0
+CASE 561 / 562 3 spacing wall 179.6
+CASE 562 / 562 3 spacing wall 179.9
+RUN COMPLETE

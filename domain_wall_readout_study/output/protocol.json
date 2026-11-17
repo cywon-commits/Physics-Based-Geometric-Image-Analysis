@@ -1,0 +1,152 @@
+{
+  "seed": 17111791,
+  "created_utc": "2026-11-17T01:03:34.306270+00:00",
+  "generator": {
+    "gradient": "exact G4 current s",
+    "exchange": "fixed axialNN sum2d",
+    "J": 1,
+    "D": 1,
+    "h": 2,
+    "N": 10,
+    "normalization": "H/norm,retain previous ifnorm<=1e-12",
+    "div_v": false,
+    "initialization": "binaryEDT tanh width lattice"
+  },
+  "suites": [
+    "analytic_planar",
+    "digital_planar",
+    "curvature",
+    "interaction",
+    "shape",
+    "spacing",
+    "reference"
+  ],
+  "methods": {
+    "energy": {
+      "kind": "energy",
+      "epsilon": null,
+      "discrete_density": "sum_i,a (G4_i n_a)^2",
+      "continuum_density": "sum_i,a (partial_i n_a)^2",
+      "flat_wall_integrand": "sum_a (dn_a/du)^2",
+      "physical_units": "length^(d-2)",
+      "normal_rule": "common G4(s) normal"
+    },
+    "scalar_energy": {
+      "kind": "scalar_energy",
+      "epsilon": null,
+      "discrete_density": "sum_i (G4_i s)^2",
+      "continuum_density": "|grad s|^2",
+      "flat_wall_integrand": "(ds/du)^2",
+      "physical_units": "length^(d-2)",
+      "normal_rule": "common G4(s) normal"
+    },
+    "tv": {
+      "kind": "tv",
+      "epsilon": null,
+      "discrete_density": "0.5 |G4 s|",
+      "continuum_density": "0.5 |grad s|",
+      "flat_wall_integrand": "0.5 |ds/du|",
+      "physical_units": "length^(d-1)",
+      "normal_rule": "common G4(s) normal"
+    },
+    "weighted_tv": {
+      "kind": "weighted_tv",
+      "epsilon": null,
+      "discrete_density": "0.75 max(0,1-s^2) |G4 s|",
+      "continuum_density": "0.75 (1-s^2) |grad s| for |s|<=1",
+      "flat_wall_integrand": "0.75 (1-s^2) |ds/du|",
+      "physical_units": "length^(d-1)",
+      "normal_rule": "common G4(s) normal"
+    },
+    "generated_s0_marching": {
+      "kind": "marching",
+      "epsilon": null,
+      "discrete_density": "native s=0 contour length / triangle area",
+      "continuum_density": "delta(s) |grad s|",
+      "flat_wall_integrand": "zero-level plane patch area",
+      "physical_units": "length^(d-1)",
+      "normal_rule": "native segment/triangle normal",
+      "roi_footprint": "ROI sample-center span, open patches, no capping"
+    },
+    "point_coarea_eps_0.20": {
+      "kind": "point_coarea",
+      "epsilon": 0.2,
+      "delta": "exp(-s^2/(2 epsilon^2)) / (sqrt(2 pi) epsilon Z)",
+      "delta_normalization": "Z=Phi(1/epsilon)-Phi(-1/epsilon)",
+      "discrete_density": "delta_epsilon(s) |G4 s|",
+      "CDF": "H=(Phi(s/epsilon)-Phi(-1/epsilon))/Z",
+      "continuum_density": "delta_epsilon(s) |grad s|",
+      "flat_wall_integrand": "delta_epsilon(s) |ds/du|",
+      "physical_units": "length^(d-1)",
+      "normal_rule": "common G4(s) normal"
+    },
+    "integrated_coarea_eps_0.20": {
+      "kind": "integrated_coarea",
+      "epsilon": 0.2,
+      "delta": "exp(-s^2/(2 epsilon^2)) / (sqrt(2 pi) epsilon Z)",
+      "delta_normalization": "Z=Phi(1/epsilon)-Phi(-1/epsilon)",
+      "discrete_density": "|G4 H_epsilon(s)|",
+      "CDF": "H=(Phi(s/epsilon)-Phi(-1/epsilon))/Z",
+      "continuum_density": "delta_epsilon(s) |grad s|",
+      "flat_wall_integrand": "delta_epsilon(s) |ds/du|",
+      "physical_units": "length^(d-1)",
+      "normal_rule": "common G4(s) normal"
+    },
+    "point_coarea_eps_0.35": {
+      "kind": "point_coarea",
+      "epsilon": 0.35,
+      "delta": "exp(-s^2/(2 epsilon^2)) / (sqrt(2 pi) epsilon Z)",
+      "delta_normalization": "Z=Phi(1/epsilon)-Phi(-1/epsilon)",
+      "discrete_density": "delta_epsilon(s) |G4 s|",
+      "CDF": "H=(Phi(s/epsilon)-Phi(-1/epsilon))/Z",
+      "continuum_density": "delta_epsilon(s) |grad s|",
+      "flat_wall_integrand": "delta_epsilon(s) |ds/du|",
+      "physical_units": "length^(d-1)",
+      "normal_rule": "common G4(s) normal"
+    },
+    "integrated_coarea_eps_0.35": {
+      "kind": "integrated_coarea",
+      "epsilon": 0.35,
+      "delta": "exp(-s^2/(2 epsilon^2)) / (sqrt(2 pi) epsilon Z)",
+      "delta_normalization": "Z=Phi(1/epsilon)-Phi(-1/epsilon)",
+      "discrete_density": "|G4 H_epsilon(s)|",
+      "CDF": "H=(Phi(s/epsilon)-Phi(-1/epsilon))/Z",
+      "continuum_density": "delta_epsilon(s) |grad s|",
+      "flat_wall_integrand": "delta_epsilon(s) |ds/du|",
+      "physical_units": "length^(d-1)",
+      "normal_rule": "common G4(s) normal"
+    },
+    "point_coarea_eps_0.50": {
+      "kind": "point_coarea",
+      "epsilon": 0.5,
+      "delta": "exp(-s^2/(2 epsilon^2)) / (sqrt(2 pi) epsilon Z)",
+      "delta_normalization": "Z=Phi(1/epsilon)-Phi(-1/epsilon)",
+      "discrete_density": "delta_epsilon(s) |G4 s|",
+      "CDF": "H=(Phi(s/epsilon)-Phi(-1/epsilon))/Z",
+      "continuum_density": "delta_epsilon(s) |grad s|",
+      "flat_wall_integrand": "delta_epsilon(s) |ds/du|",
+      "physical_units": "length^(d-1)",
+      "normal_rule": "common G4(s) normal"
+    },
+    "integrated_coarea_eps_0.50": {
+      "kind": "integrated_coarea",
+      "epsilon": 0.5,
+      "delta": "exp(-s^2/(2 epsilon^2)) / (sqrt(2 pi) epsilon Z)",
+      "delta_normalization": "Z=Phi(1/epsilon)-Phi(-1/epsilon)",
+      "discrete_density": "|G4 H_epsilon(s)|",
+      "CDF": "H=(Phi(s/epsilon)-Phi(-1/epsilon))/Z",
+      "continuum_density": "delta_epsilon(s) |grad s|",
+      "flat_wall_integrand": "delta_epsilon(s) |ds/du|",
+      "physical_units": "length^(d-1)",
+      "normal_rule": "common G4(s) normal"
+    }
+  },
+  "primary": "readout-only contrast on exactly the same frozen field; no kernels/head coefficients/eps fitted; allreadouts reported",
+  "calibration": "only closedcircle/sphere reference rows atwidth2.3/a1; sharedprototype-balancedglobalLS coefficient andallindividualrulers; no testbestrulerchoice",
+  "planar": "centralROI excludesperiodicboundarywall; densitytruthcellbox vs marchingtruthsamplecenterbox, independentfinitewindowcontinuumquadrature",
+  "spacing": "samephysicalgeometryre-rasterized, physicalwidthfixed inspacing suite; generatorgradient/a, observationgradient/a*dV; J/h fixed, not a continuumPDEconvergenceclaim",
+  "prohibition": "No reconstruction/topology/wallwidth/residualloss,gates orfallback",
+  "test_policy": "new diagnostic shapes andseeds, fixed methods preregistered before evaluation; not an optimizer/modelselectionstudy; no claims of tunedmodelindependenttest superiority",
+  "manifest_sha256": "212467a93dfd2dc0d5e3e72434f40da8fb63a9d142307745d95275ba464bff71",
+  "size": 562
+}

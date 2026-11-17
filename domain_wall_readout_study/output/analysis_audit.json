@@ -1,0 +1,33 @@
+{
+  "raw_sha256": "f10fc02213eaa31ab20cc430936e79cc01d2d813cfcedbebf9411c86335396c4",
+  "analysis_only": true,
+  "model_selection": false,
+  "test_reference_selection": false,
+  "train_only_global_calibration": true,
+  "reference_width": 2.3,
+  "reference_spacing": 1.0,
+  "reference_units": 6,
+  "evaluation_cases": 550,
+  "evaluation_rows": 6050,
+  "finite_rows": 6050,
+  "methods": [
+    "energy",
+    "generated_s0_marching",
+    "integrated_coarea_eps_0.20",
+    "integrated_coarea_eps_0.35",
+    "integrated_coarea_eps_0.50",
+    "point_coarea_eps_0.20",
+    "point_coarea_eps_0.35",
+    "point_coarea_eps_0.50",
+    "scalar_energy",
+    "tv",
+    "weighted_tv"
+  ],
+  "dimensions": [
+    2,
+    3
+  ],
+  "generated_levelset_not_GT": true,
+  "method_specific_planar_truth_domain": true,
+  "normal_and_spatial_targets_separate": true
+}
