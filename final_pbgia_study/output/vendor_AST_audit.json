@@ -1,0 +1,87 @@
+[
+  {
+    "file": "baseline.py",
+    "function": "initialize",
+    "original_AST_match": true
+  },
+  {
+    "file": "baseline.py",
+    "function": "gradient",
+    "original_AST_match": true
+  },
+  {
+    "file": "baseline.py",
+    "function": "old_step",
+    "original_AST_match": true
+  },
+  {
+    "file": "baseline.py",
+    "function": "derivative",
+    "original_AST_match": true
+  },
+  {
+    "file": "baseline.py",
+    "function": "tensor",
+    "original_AST_match": true
+  },
+  {
+    "file": "geometry_previous.py",
+    "function": "make_manifest",
+    "original_AST_match": true
+  },
+  {
+    "file": "geometry_previous.py",
+    "function": "rotation",
+    "original_AST_match": true
+  },
+  {
+    "file": "geometry_previous.py",
+    "function": "fixture",
+    "original_AST_match": true
+  },
+  {
+    "file": "degree_legacy.py",
+    "function": "degree",
+    "original_AST_match": true
+  },
+  {
+    "file": "topology_certificate.py",
+    "function": "certificate",
+    "original_AST_match": true
+  },
+  {
+    "file": "readouts_previous.py",
+    "function": "derivative_g4",
+    "original_AST_match": true
+  },
+  {
+    "file": "readouts_previous.py",
+    "function": "_prepare",
+    "original_AST_match": true
+  },
+  {
+    "file": "readouts_previous.py",
+    "function": "_moments",
+    "original_AST_match": true
+  },
+  {
+    "file": "readouts_previous.py",
+    "function": "_marching",
+    "original_AST_match": true
+  },
+  {
+    "file": "readouts_previous.py",
+    "function": "measure",
+    "original_AST_match": true
+  },
+  {
+    "file": "readouts_previous.py",
+    "function": "orientation_tensors",
+    "original_AST_match": true
+  },
+  {
+    "file": "historical_geometry.py",
+    "function": "geometry",
+    "original_AST_match": true
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "freeze_sha256": "6dffae61ae426fa959875f74f1b5fc20d47f2e3fee5fdbb98dae59392c2e70ab",
+  "no_retuning": true,
+  "images": 144,
+  "units": 12,
+  "start_utc": "2026-11-17T06:31:53.939995+00:00",
+  "end_utc": "2026-11-17T06:32:42.728458+00:00",
+  "wall_seconds": 48.7884945209953,
+  "peak_rss_MiB": 158.35546875,
+  "source_sha256": {
+    "code/topology_study.py": "f37008bb050997914e53e5d2693d0e6045751ce9a52ac79b1a13143a79d876dc",
+    "code/interactions.py": "f99dab3db17657a20feab1ab860835173f65fb035509aee9e2f6fc637b88077b",
+    "code/common.py": "9ee524773e46b534d43e689b97daea6f16d39bec1b0b7b44e7c3965d1c945c1a",
+    "code/physics.py": "c9f47eb93714dccad740392d1f8bd760adcb87f44988fe228aba6242bf5def56",
+    "code/projections_study.py": "7320eaee41f8469f99b3172896fa082db1aecded6deef650b9bc103c9073cfff",
+    "code/preflight.py": "ddae52f12281afc5b8a4c10d0dc6a191d1d239d3fa95450acb083597ba63e633",
+    "code/data.py": "0110e6e7a2600fb5d2bc5968862358a7e74c73804f15baa7c03ff50301f0adc7",
+    "code/geometry_study.py": "49a63c1f7f4f3b85c05f1b1d7819b9fb1c49b77d56a466f4d1a11862a3f73287",
+    "code/projective.py": "ef73d3bf10d920672da59bdebee0ef82aa2372d1e2eb876d86cc6b5dba92beb4",
+    "vendor/baseline.py": "2621476960dac74e0eb9b73fe2d3673021a1cab7cdd0931fe29b3b977c897f06",
+    "vendor/historical_geometry.py": "ebc9de42e0aa8f646104771d15d6a5df93f1f24895079d1ef7f2f1b66c66e220",
+    "vendor/geometry_previous.py": "357013397f143b5f706a3fa1c19eb2d19cd382ac2c0b713e96c664456ebcca88",
+    "vendor/degree_legacy.py": "a49d3e9394566f77aabadaee1bdc05e2958c20c1b32cc73d56ad5d140f01bf89",
+    "vendor/topology_certificate.py": "b29552edf84acc2235ebfbd80721527ed00bb33803199121e2d17ea49d234d5e",
+    "vendor/readouts_previous.py": "9f6ea7311ca5190b2f66bb01d5edce2bfcc1f69bc801777605696c926c130b5d"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "selection": {
+    "2": {
+      "alpha": 0.0,
+      "status": "ACCEPTED_VALIDATION",
+      "c_E": 0.6078775804900558,
+      "c_TV": 0.9633393063282816,
+      "validation_baseline_MARE": 2.1672052670614868,
+      "validation_blend_MARE": 1.1927005969606754,
+      "N": 30
+    },
+    "3": {
+      "alpha": 0.5,
+      "status": "ACCEPTED_VALIDATION",
+      "c_E": 0.34888467213945723,
+      "c_TV": 0.9902669891445045,
+      "validation_baseline_MARE": 0.9812578984565933,
+      "validation_blend_MARE": 0.7080107064604153,
+      "N": 30
+    }
+  },
+  "freeze_utc": "2026-11-17T06:17:01.990805+00:00",
+  "test_seen": false,
+  "hashes": {
+    "protocol.json": "5a8d8b3ed18fe61cebc9eea6f6446cb9390387a14444745a94284a66778692c7",
+    "manifest.csv": "a2d6a637ffa481511cdea4fe8c2cab7975a49f2b1b48c50e57d74ae136cec3b9",
+    "calibration.json": "30bc9de7503d9e6546b7737c8eb8a685462236272cf01840d9be04b59ecbced6",
+    "alpha_validation.csv": "58fb0c779c7415b914e26c0fa7c8d52064fe493f747edaf152d20d54d152965c"
+  },
+  "baseline_configuration_sha256": "3d27e3cce53a33b3a7ef69b0e5a9701cd919100e2f0c333f38f3786fe18015f3"
+}

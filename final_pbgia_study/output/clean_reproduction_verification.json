@@ -1,0 +1,140 @@
+{
+  "verification_only": true,
+  "no_new_candidate": true,
+  "workdir": "/workspace/pbgia_final_clean_reproduction",
+  "stage_times": [
+    {
+      "stage": "preflight",
+      "wall_seconds": 0.6589275919977808,
+      "cumulative_child_peak_rss_MiB": 71.2421875
+    },
+    {
+      "stage": "smoke",
+      "wall_seconds": 1.7726598879962694,
+      "cumulative_child_peak_rss_MiB": 119.75
+    },
+    {
+      "stage": "train_validate",
+      "wall_seconds": 96.57949028800067,
+      "cumulative_child_peak_rss_MiB": 157.65234375
+    },
+    {
+      "stage": "frozen_test",
+      "wall_seconds": 47.78782756099827,
+      "cumulative_child_peak_rss_MiB": 157.66796875
+    },
+    {
+      "stage": "physics",
+      "wall_seconds": 38.87267436399998,
+      "cumulative_child_peak_rss_MiB": 196.52734375
+    },
+    {
+      "stage": "interactions",
+      "wall_seconds": 3.224695488999714,
+      "cumulative_child_peak_rss_MiB": 196.52734375
+    },
+    {
+      "stage": "spin_topology",
+      "wall_seconds": 3.3239423380000517,
+      "cumulative_child_peak_rss_MiB": 196.52734375
+    },
+    {
+      "stage": "projections",
+      "wall_seconds": 7.642913507996127,
+      "cumulative_child_peak_rss_MiB": 196.52734375
+    },
+    {
+      "stage": "pixel_information",
+      "wall_seconds": 13.336235615002806,
+      "cumulative_child_peak_rss_MiB": 242.984375
+    },
+    {
+      "stage": "controlled_benchmarks",
+      "wall_seconds": 15.152781839991803,
+      "cumulative_child_peak_rss_MiB": 242.984375
+    },
+    {
+      "stage": "analysis",
+      "wall_seconds": 4.71670991499559,
+      "cumulative_child_peak_rss_MiB": 242.984375
+    },
+    {
+      "stage": "final_tests",
+      "wall_seconds": 1.4249663860100554,
+      "cumulative_child_peak_rss_MiB": 242.984375
+    }
+  ],
+  "comparisons": [
+    {
+      "file": "test_raw.csv",
+      "column": "I_E",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "test_raw.csv",
+      "column": "I_TV",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "test_raw.csv",
+      "column": "I_s0",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "test_raw.csv",
+      "column": "normal_cos",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "test_raw.csv",
+      "column": "energy_axis_error",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "test_raw.csv",
+      "column": "spatial_axis_error",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "pixel_pairs.csv",
+      "column": "estimate",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "pixel_pairs.csv",
+      "column": "truth_low",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "pixel_pairs.csv",
+      "column": "truth_high",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "spin_topology.csv",
+      "column": "degree",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "spin_topology.csv",
+      "column": "interpolation_norm_lower_bound",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "projection_summary.csv",
+      "column": "defined_fraction",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "projection_summary.csv",
+      "column": "mean_purity",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "projection_summary.csv",
+      "column": "stable_candidates",
+      "max_absolute_difference": 0.0
+    }
+  ],
+  "selection_exact_match": true
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "test_images": 144,
+  "test_prototypes": 12,
+  "positive_control_cases": 10,
+  "exact_reproduction_columns": 14,
+  "local_links_checked": 56,
+  "large_3d_checkpoints_included": false
+}

@@ -1,0 +1,57 @@
+{
+  "seed": 27111743,
+  "N": 30,
+  "baseline": "frozen fixed_iteration central generator,float32,independent learned observation kernels and original c retained as separate historical-calibration baseline",
+  "physics": {
+    "J": 1,
+    "D": 1,
+    "h": 2,
+    "alpha": 1
+  },
+  "primary_update": "dynamic current grad(s),positiveNNsum,normalized synchronous alignment,scalar no reciprocal; binaryEDT only",
+  "limited_optimization": {
+    "alpha_grid": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "per_dimension": true,
+    "acceptance": "validation overall MARE lower by>=.10pp and eachnoise no regression>.10pp vs equally train-reference-recalibratedenergy; elsealpha1; no morphology/topology/residual gate",
+    "kernel_search": "NOT_TESTED_NOT_PERMITTED"
+  },
+  "projection": {
+    "local_full": "n nT",
+    "vector": "v vT amplitude-retaining; integrated then trace-normalized",
+    "weights": [
+      "uniform",
+      "1-s^2"
+    ],
+    "gap_threshold": 0.001,
+    "trace_threshold": 1e-10,
+    "loop_min_abs_dot": 0.2,
+    "primary": "2Ddirector maps from3D fiberintegration axes0,1,2; fullRP3,vectorRP2,inplaneRP1 explicitlydistinguished",
+    "topology": "positivecontrols and actualdata scanned; degeneracy/inconclusive recorded, no geometrygating"
+  },
+  "diagnostic_budget": {
+    "physics_iterations": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "widths_init": [
+      1.15,
+      2.3,
+      4.6
+    ],
+    "generated_topology_cases": 4,
+    "projection_cases": 6,
+    "variational_comparison": "onefixtureperdimension,40ArmijoRiemanniansteps,notreplacement",
+    "pixel_pairs": "smooth circles/spheres across3spacings+ellipseanglepairs+onepathologicalcorrugationfamily"
+  },
+  "evaluation": "previous tests historical only; newprototypegroup train/val/test; one frozenfinaltest; no posttestnewcandidate",
+  "stopping": "complete fixed declared experiments then conclude; no newlargeoptimizers"
+}

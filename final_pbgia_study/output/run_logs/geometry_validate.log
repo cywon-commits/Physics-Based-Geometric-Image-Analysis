@@ -1,0 +1,14 @@
+GEOMETRY train 2 0 / 300
+GEOMETRY train 2 24 / 300
+GEOMETRY train 2 48 / 300
+GEOMETRY validation 2 72 / 300
+GEOMETRY validation 2 96 / 300
+GEOMETRY validation 2 120 / 300
+GEOMETRY train 2 144 / 300
+GEOMETRY train 3 168 / 300
+GEOMETRY train 3 192 / 300
+GEOMETRY train 3 216 / 300
+GEOMETRY validation 3 240 / 300
+GEOMETRY validation 3 264 / 300
+GEOMETRY validation 3 288 / 300
+FROZEN {'2': {'alpha': 0.0, 'status': 'ACCEPTED_VALIDATION', 'c_E': 0.6078775804900558, 'c_TV': 0.9633393063282816, 'validation_baseline_MARE': 2.1672052670614868, 'validation_blend_MARE': 1.1927005969606754, 'N': 30}, '3': {'alpha': 0.5, 'status': 'ACCEPTED_VALIDATION', 'c_E': 0.34888467213945723, 'c_TV': 0.9902669891445045, 'validation_baseline_MARE': 0.9812578984565933, 'validation_blend_MARE': 0.7080107064604153, 'N': 30}}

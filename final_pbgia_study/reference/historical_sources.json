@@ -1,0 +1,26 @@
+[
+  {
+    "study": "dynamic",
+    "source_path": "/workspace/research/PBGIA_Codex_handoff_20261116/RESEARCH_REPORT.md",
+    "commit": "historical main handoff",
+    "sha256": "88ebeac87e76eebd2df1f25ca95f93c888d9f5f11fd4001e81bfd5e7735546d0"
+  },
+  {
+    "study": "fixed30",
+    "source_path": "/workspace/fixed_iteration_study/PBGIA_Codex_fixed_iteration_20261116/output/REPORT_KO.md",
+    "commit": "0ec340537c956bf4fe333e7268ce9495eebb9527",
+    "sha256": "24526161446b22884eebc52a47c340199b847916e13b04d07e0bdef26064e29b"
+  },
+  {
+    "study": "q_optimization",
+    "source_path": "/workspace/reference_invariant_generator/output/RESEARCH_REPORT_KO.md",
+    "commit": "cf4f99ab4e98bb5658b050eaa9420ed50efabb9c",
+    "sha256": "a24b928d2d62e6e47331a1d8140f067ee65747e63df6aff4e6ed1e6a4af347b0"
+  },
+  {
+    "study": "readouts",
+    "source_path": "/workspace/domain_wall_readout_study/output/RESEARCH_REPORT_KO.md",
+    "commit": "0dcff4b61ff439bbfb56f5705f614c8853a2922d",
+    "sha256": "b03c2015e58c4584d4a3e7c94796e7c736bb3f5b67dfd34fa9bf66bf1aa94100"
+  }
+]

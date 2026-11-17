@@ -1,0 +1,10 @@
+Fontconfig error: No writable cache directories
+PROJECTION sphere
+PROJECTION capsule
+PROJECTION torus
+PROJECTION pair
+PROJECTION ellipsoid
+PROJECTION shell
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/patches.py:3436: RuntimeWarning: invalid value encountered in scalar divide
+  cos_t, sin_t = head_length / head_dist, head_width / head_dist
+PROJECTION COMPLETE

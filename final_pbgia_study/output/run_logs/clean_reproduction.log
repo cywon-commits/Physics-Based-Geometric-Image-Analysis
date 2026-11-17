@@ -1,0 +1,13 @@
+preflight
+smoke
+train_validate
+frozen_test
+physics
+interactions
+spin_topology
+projections
+pixel_information
+controlled_benchmarks
+analysis
+final_tests
+VERIFIED numerical reproduction; no additional model selection

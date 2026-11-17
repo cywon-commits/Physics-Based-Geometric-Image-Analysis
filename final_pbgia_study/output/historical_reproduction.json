@@ -1,0 +1,16 @@
+[
+  {
+    "dim": 2,
+    "case": "g002_r0_n0",
+    "bitwise_state_match": true,
+    "prediction": 56.86702990513605,
+    "historical_prediction": 56.86702990513605
+  },
+  {
+    "dim": 3,
+    "case": "g022_r0_n0",
+    "bitwise_state_match": true,
+    "prediction": 253.0697279832277,
+    "historical_prediction": 253.0697279832277
+  }
+]
