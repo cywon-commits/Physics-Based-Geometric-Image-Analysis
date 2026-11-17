@@ -1,0 +1,7 @@
+{
+  "selection_sha256": "57065f5612e134781cd7b70dfc868b6f11fed06bd19d94844c16097caadc15e2",
+  "test_images": 408,
+  "independent_prototypes": 17,
+  "no_retuning": true,
+  "all_cases_retained": true
+}

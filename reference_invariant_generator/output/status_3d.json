@@ -1,0 +1,25 @@
+{
+  "benchmark_32cubed_N10_forward_backward_seconds": 0.4473919090014533,
+  "peak_rss_kb": 323184,
+  "benchmark_note": "Single synthetic32^3 I gradient, not geometry accuracy or full training runtime. No throughput extrapolation claimed.",
+  "status": "verified_partial_3D_NOT_trained_NOT_tested",
+  "parameters": 12,
+  "G4_embedded": true,
+  "N_smoke": 3,
+  "grid": [
+    8,
+    8,
+    8
+  ],
+  "max_FD_gradient_absolute_error": 1.9068824030910037e-07,
+  "finite_gradients": true,
+  "unit_error": 2.220446049250313e-16,
+  "seconds": 0.03183951800019713,
+  "blocker": "No3D optimizer budget allocated: prioritize 14 full2D L-BFGS-B runs under8GiB CPU; 3D costs grow with grid volume and12 parameters. No claim of hardware impossibility.",
+  "remaining": [
+    "fresh3D geometry manifest",
+    "multi-start3D training",
+    "validation/freeze",
+    "independent area and reference sphere sweep"
+  ]
+}

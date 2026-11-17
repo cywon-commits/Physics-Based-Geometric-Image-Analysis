@@ -1,0 +1,14 @@
+[
+  {
+    "cell": 31,
+    "output": "Starting optimization...\n  message: CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL\n  success: True\n   status: 0\n      fun: 0.13977424342061517\n        x: [ 3.041e-01]\n      nit: 6\n      jac: [ 3.608e-08]\n     nfev: 18\n     njev: 9\n hess_inv: <1x1 LbfgsInvHessProduct with dtype=float64>\n[0.30414468]\n"
+  },
+  {
+    "cell": 38,
+    "output": "Starting optimization...\n  message: CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL\n  success: True\n   status: 0\n      fun: 0.10533458844524204\n        x: [ 5.706e-01  3.369e-01  8.974e-02  9.205e-02]\n      nit: 19\n      jac: [ 8.007e-07  4.649e-07 -3.757e-06 -2.377e-06]\n     nfev: 115\n     njev: 23\n hess_inv: <4x4 LbfgsInvHessProduct with dtype=float64>\n[0.57063894 0.33693168 0.08973684 0.09205035]\n"
+  },
+  {
+    "cell": 45,
+    "output": "Starting optimization...\n  message: CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL\n  success: True\n   status: 0\n      fun: 0.10485553913553927\n        x: [ 6.604e-02  1.617e-01  3.441e-01  1.224e-01  2.955e-02\n             2.234e-01]\n      nit: 15\n      jac: [-2.127e-06  1.286e-06 -6.305e-06 -8.833e-06  1.818e-07\n            -1.911e-06]\n     nfev: 112\n     njev: 16\n hess_inv: <6x6 LbfgsInvHessProduct with dtype=float64>\n[0.06604264 0.16170641 0.34412011 0.12243503 0.02954822 0.22342547]\n"
+  }
+]

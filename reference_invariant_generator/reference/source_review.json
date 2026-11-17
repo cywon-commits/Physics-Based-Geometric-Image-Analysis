@@ -1,0 +1,50 @@
+{
+  "commit": "54287cdc0b1e4ce3fefecb2df42467c190985355",
+  "files": [
+    {
+      "path": "generator_first/code/operators.py",
+      "sha256": "3c1a915d2cdfb4a7c63cf0b92ca34afaedd401744aed5a0f723f372aeee1b55b",
+      "bytes": 8016
+    },
+    {
+      "path": "generator_first/code/engine.py",
+      "sha256": "edfafa97618561e17d61a175077ee91e1bbd35dec18cf774ddc56fec14d11ad9",
+      "bytes": 4642
+    },
+    {
+      "path": "generator_first/code/study.py",
+      "sha256": "12f73f2ddf3f7ff7810b704d8ca77561f60005459fbeef5c9a4fdf3bddd9d36c",
+      "bytes": 7399
+    },
+    {
+      "path": "generator_first/code/observer.py",
+      "sha256": "a5441af66c2a991c9ee366d2ac9ce0aced39e6195128789f3823f1a890e45c20",
+      "bytes": 3347
+    },
+    {
+      "path": "generator_first/code/data.py",
+      "sha256": "357013397f143b5f706a3fa1c19eb2d19cd382ac2c0b713e96c664456ebcca88",
+      "bytes": 5823
+    },
+    {
+      "path": "generator_first/run_all.py",
+      "sha256": "32954f7d91e468546a621de4a45d5ce832d1353b32b3954c3463fe24dbb073a6",
+      "bytes": 1764
+    },
+    {
+      "path": "generator_first/output/RESEARCH_REPORT_KO.md",
+      "sha256": "718563a3e00b6653d47f46dec2225ab5cfa75506055c3093bed1a5f9e0ab5b5f",
+      "bytes": 70822
+    },
+    {
+      "path": "generator_first/output/test_summary.csv",
+      "sha256": "257229e7661206286b9ec8c623f7c48e48de3c22f334a550153ddc65e5b3fad9",
+      "bytes": 13257
+    },
+    {
+      "path": "generator_first/output/pretest_selection.json",
+      "sha256": "dcd09497b92c477da3a1cd8cd671a92fc7755565d012ca6a5838b6afc9d6ff16",
+      "bytes": 349689
+    }
+  ]
+}

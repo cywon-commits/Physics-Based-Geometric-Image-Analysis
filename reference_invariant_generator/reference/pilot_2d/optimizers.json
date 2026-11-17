@@ -1,0 +1,36 @@
+{
+  "fourth_start": {
+    "coefficients": [
+      0.9002636760333255,
+      0.04796869199859278,
+      0.6520891276640542,
+      0.11983542432996823,
+      0.25406929875061146,
+      -0.4224020451764385
+    ],
+    "train_objective": 0.00023420553256342912,
+    "val_objective": 0.00040490632371344766,
+    "success": false,
+    "termination": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+    "nit": 16,
+    "nfev": 18,
+    "seconds": 11.303228378295898
+  },
+  "legacy_start": {
+    "coefficients": [
+      0.9977219010289544,
+      0.2627368383575577,
+      0.6181480762811193,
+      -0.0537138956609405,
+      0.2655010729403643,
+      -0.378951810896454
+    ],
+    "train_objective": 0.0002362473657681987,
+    "val_objective": 0.00039806636386736547,
+    "success": false,
+    "termination": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+    "nit": 16,
+    "nfev": 18,
+    "seconds": 11.396807432174683
+  }
+}
