@@ -1,0 +1,433 @@
+kind,method,sig,err
+line,PBGIA v (pixel),0.0,5.182211506767903
+line,PBGIA director,1.0,4.739755568663519
+line,PBGIA director,2.0,3.723630049261032
+line,PBGIA director,4.0,2.077550507976639
+line,Gaussian gradient,1.0,5.978393573827261
+line,Gaussian gradient,1.5,4.657058016034032
+line,Gaussian gradient,2.0,3.807685176083892
+line,Gaussian gradient,4.0,1.8801020885040294
+line,partial-volume gradient,1.0,0.7980145933206523
+line,PBGIA v (pixel),0.0,3.531442212399609
+line,PBGIA director,1.0,2.4975727183514307
+line,PBGIA director,2.0,1.954746284007181
+line,PBGIA director,4.0,1.7591568713602168
+line,Gaussian gradient,1.0,4.8920939716693255
+line,Gaussian gradient,1.5,2.6060961133686913
+line,Gaussian gradient,2.0,1.4596074194795283
+line,Gaussian gradient,4.0,0.29621001707310085
+line,partial-volume gradient,1.0,2.6012076905649915
+line,PBGIA v (pixel),0.0,4.877493688730735
+line,PBGIA director,1.0,3.1824141507299437
+line,PBGIA director,2.0,1.7123562455405714
+line,PBGIA director,4.0,1.505124669239795
+line,Gaussian gradient,1.0,7.308384315146627
+line,Gaussian gradient,1.5,3.5979889324122407
+line,Gaussian gradient,2.0,1.5564034414720638
+line,Gaussian gradient,4.0,0.36874957493426264
+line,partial-volume gradient,1.0,1.9470986048158403
+line,PBGIA v (pixel),0.0,2.8786607732661786
+line,PBGIA director,1.0,1.722412979276311
+line,PBGIA director,2.0,1.3584428476982024
+line,PBGIA director,4.0,1.0999748784149161
+line,Gaussian gradient,1.0,4.610956895547091
+line,Gaussian gradient,1.5,1.9653249063666651
+line,Gaussian gradient,2.0,1.301382478027559
+line,Gaussian gradient,4.0,0.530703214126765
+line,partial-volume gradient,1.0,1.8016851251736503
+line,PBGIA v (pixel),0.0,4.66157447679666
+line,PBGIA director,1.0,4.304061525078254
+line,PBGIA director,2.0,3.4793206956720946
+line,PBGIA director,4.0,2.109756702462894
+line,Gaussian gradient,1.0,5.3271154296293775
+line,Gaussian gradient,1.5,4.2173726554955
+line,Gaussian gradient,2.0,3.517885142881157
+line,Gaussian gradient,4.0,1.9323854588325704
+line,partial-volume gradient,1.0,0.7464211491746365
+line,PBGIA v (pixel),0.0,5.760116798356572
+line,PBGIA director,1.0,4.641748478513873
+line,PBGIA director,2.0,2.4969383789660666
+line,PBGIA director,4.0,1.0987422967630813
+line,Gaussian gradient,1.0,7.538321470582792
+line,Gaussian gradient,1.5,5.092893787813363
+line,Gaussian gradient,2.0,3.307132533761808
+line,Gaussian gradient,4.0,0.2863443247821007
+line,partial-volume gradient,1.0,1.5290600741892015
+line,PBGIA v (pixel),0.0,3.498444698307288
+line,PBGIA director,1.0,2.4971974373204784
+line,PBGIA director,2.0,2.104545260372258
+line,PBGIA director,4.0,1.7945902497519286
+line,Gaussian gradient,1.0,4.447248358208353
+line,Gaussian gradient,1.5,2.3043692707315646
+line,Gaussian gradient,2.0,1.5636557160415092
+line,Gaussian gradient,4.0,0.43757797212070304
+line,partial-volume gradient,1.0,2.552291798253955
+line,PBGIA v (pixel),0.0,3.2136546905423855
+line,PBGIA director,1.0,2.2119469326471033
+line,PBGIA director,2.0,1.5962056546081225
+line,PBGIA director,4.0,1.3525860311421656
+line,Gaussian gradient,1.0,4.863916405929447
+line,Gaussian gradient,1.5,2.608823367353816
+line,Gaussian gradient,2.0,1.4568495930324827
+line,Gaussian gradient,4.0,0.27102991248828195
+line,partial-volume gradient,1.0,2.2734636257099874
+line,PBGIA v (pixel),0.0,3.0499182325281295
+line,PBGIA director,1.0,1.5812390530135183
+line,PBGIA director,2.0,0.9025662184170739
+line,PBGIA director,4.0,0.82403823850277
+line,Gaussian gradient,1.0,5.49511798350435
+line,Gaussian gradient,1.5,2.19526399653232
+line,Gaussian gradient,2.0,0.8207595605482296
+line,Gaussian gradient,4.0,0.29571188455016906
+line,partial-volume gradient,1.0,1.4507696923246352
+line,PBGIA v (pixel),0.0,3.533206666183173
+line,PBGIA director,1.0,2.647528726188051
+line,PBGIA director,2.0,2.000184966569804
+line,PBGIA director,4.0,1.7159297844288943
+line,Gaussian gradient,1.0,4.696608022971692
+line,Gaussian gradient,1.5,2.816504640961484
+line,Gaussian gradient,2.0,1.7762865683146385
+line,Gaussian gradient,4.0,0.325526069916213
+line,partial-volume gradient,1.0,2.5958292995940595
+line,PBGIA v (pixel),0.0,3.88339721993535
+line,PBGIA director,1.0,2.412565098993945
+line,PBGIA director,2.0,1.9691963571240807
+line,PBGIA director,4.0,1.7571991046652589
+line,Gaussian gradient,1.0,5.4728941252875645
+line,Gaussian gradient,1.5,2.0897614823636976
+line,Gaussian gradient,2.0,1.248467804508207
+line,Gaussian gradient,4.0,0.4925076183612803
+line,partial-volume gradient,1.0,2.3162443446243857
+line,PBGIA v (pixel),0.0,3.533094597554341
+line,PBGIA director,1.0,2.6532397012908224
+line,PBGIA director,2.0,2.018192468899384
+line,PBGIA director,4.0,1.7190915837400684
+line,Gaussian gradient,1.0,4.6964129552277205
+line,Gaussian gradient,1.5,2.8457722426352636
+line,Gaussian gradient,2.0,1.8373180898283457
+line,Gaussian gradient,4.0,0.25543083885869095
+line,partial-volume gradient,1.0,2.5969250127023535
+line,PBGIA v (pixel),0.0,3.4567059787929844
+line,PBGIA director,1.0,2.373856267428625
+line,PBGIA director,2.0,1.942938660611805
+line,PBGIA director,4.0,1.8343419446448013
+line,Gaussian gradient,1.0,4.840023912965379
+line,Gaussian gradient,1.5,2.2321694303047153
+line,Gaussian gradient,2.0,1.0484046360436843
+line,Gaussian gradient,4.0,0.32764460836581877
+line,partial-volume gradient,1.0,2.600182498681076
+line,PBGIA v (pixel),0.0,3.415967627245042
+line,PBGIA director,1.0,2.0827247906252726
+line,PBGIA director,2.0,0.8932613619632949
+line,PBGIA director,4.0,0.707135998669441
+line,Gaussian gradient,1.0,5.865478528498352
+line,Gaussian gradient,1.5,3.1521426533619543
+line,Gaussian gradient,2.0,1.4404222982100052
+line,Gaussian gradient,4.0,0.24791670919196063
+line,partial-volume gradient,1.0,1.1665965984889326
+line,PBGIA v (pixel),0.0,3.0563672626612677
+line,PBGIA director,1.0,1.7797749659383986
+line,PBGIA director,2.0,1.156092584258375
+line,PBGIA director,4.0,0.9684731998999335
+line,Gaussian gradient,1.0,5.136506763377238
+line,Gaussian gradient,1.5,2.2924865249865842
+line,Gaussian gradient,2.0,1.267469810378106
+line,Gaussian gradient,4.0,0.2154026096974803
+line,partial-volume gradient,1.0,1.6559299569618777
+line,PBGIA v (pixel),0.0,2.663059216660246
+line,PBGIA director,1.0,1.5507419952561872
+line,PBGIA director,2.0,1.3398166455104106
+line,PBGIA director,4.0,1.2288305508062172
+line,Gaussian gradient,1.0,4.133934373254272
+line,Gaussian gradient,1.5,1.479018559295024
+line,Gaussian gradient,2.0,0.9346138003646385
+line,Gaussian gradient,4.0,0.48387294163812566
+line,partial-volume gradient,1.0,1.9545177138628689
+line,PBGIA v (pixel),0.0,3.403856040883413
+line,PBGIA director,1.0,2.286958211705455
+line,PBGIA director,2.0,1.887623650564088
+line,PBGIA director,4.0,1.8044493392277143
+line,Gaussian gradient,1.0,4.82386367052394
+line,Gaussian gradient,1.5,2.131091219833753
+line,Gaussian gradient,2.0,0.898963841984776
+line,Gaussian gradient,4.0,0.1393273409711532
+line,partial-volume gradient,1.0,2.598004681615169
+line,PBGIA v (pixel),0.0,5.773972262436295
+line,PBGIA director,1.0,5.122941400899661
+line,PBGIA director,2.0,3.681389665013544
+line,PBGIA director,4.0,1.4229086329589564
+line,Gaussian gradient,1.0,6.891508880402736
+line,Gaussian gradient,1.5,5.169415982610673
+line,Gaussian gradient,2.0,4.019692454161722
+line,Gaussian gradient,4.0,1.2582653881836803
+line,partial-volume gradient,1.0,1.0782552034915867
+line,PBGIA v (pixel),0.0,4.317174776173397
+line,PBGIA director,1.0,2.6753065985959403
+line,PBGIA director,2.0,1.8507457207014815
+line,PBGIA director,4.0,1.6429378009968472
+line,Gaussian gradient,1.0,6.346933043089016
+line,Gaussian gradient,1.5,2.577612998096255
+line,Gaussian gradient,2.0,1.2881971052094294
+line,Gaussian gradient,4.0,0.11625614002041368
+line,partial-volume gradient,1.0,2.18585869416716
+line,PBGIA v (pixel),0.0,3.5831112778639747
+line,PBGIA director,1.0,2.4114083545427825
+line,PBGIA director,2.0,1.04422864245923
+line,PBGIA director,4.0,0.5415933100488323
+line,Gaussian gradient,1.0,5.842386159293013
+line,Gaussian gradient,1.5,3.5950837048300435
+line,Gaussian gradient,2.0,2.016059768103058
+line,Gaussian gradient,4.0,0.2042968578715315
+line,partial-volume gradient,1.0,0.9889168382539832
+line,PBGIA v (pixel),0.0,3.068365625918209
+line,PBGIA director,1.0,1.7763857158975656
+line,PBGIA director,2.0,1.1500539474288274
+line,PBGIA director,4.0,0.9356001805866246
+line,Gaussian gradient,1.0,5.192259073088306
+line,Gaussian gradient,1.5,2.3063576231249967
+line,Gaussian gradient,2.0,1.277466354511539
+line,Gaussian gradient,4.0,0.29415908327949025
+line,partial-volume gradient,1.0,1.629190042437239
+line,PBGIA v (pixel),0.0,5.819390957274837
+line,PBGIA director,1.0,4.709066381740742
+line,PBGIA director,2.0,2.561898488735621
+line,PBGIA director,4.0,1.1148066687116662
+line,Gaussian gradient,1.0,7.57338053907025
+line,Gaussian gradient,1.5,5.1589426500725
+line,Gaussian gradient,2.0,3.3895861173240744
+line,Gaussian gradient,4.0,0.34265323239107226
+line,partial-volume gradient,1.0,1.501627794856814
+line,PBGIA v (pixel),0.0,3.5343467872576904
+line,PBGIA director,1.0,2.613021013528035
+line,PBGIA director,2.0,1.9833345873194743
+line,PBGIA director,4.0,1.726448014745781
+line,Gaussian gradient,1.0,4.756076658096543
+line,Gaussian gradient,1.5,2.826141873262418
+line,Gaussian gradient,2.0,1.7672147344219598
+line,Gaussian gradient,4.0,0.3247522183801143
+line,partial-volume gradient,1.0,2.597143360552663
+line,PBGIA v (pixel),0.0,4.243489614071297
+line,PBGIA director,1.0,2.6383271182910826
+line,PBGIA director,2.0,1.8968705328387847
+line,PBGIA director,4.0,1.6470451447518588
+line,Gaussian gradient,1.0,6.233107939431201
+line,Gaussian gradient,1.5,2.5066863753176896
+line,Gaussian gradient,2.0,1.3246363759531419
+line,Gaussian gradient,4.0,0.31730100068660533
+line,partial-volume gradient,1.0,2.1843972012725543
+disk,PBGIA v (pixel),0.0,3.9294733691743335
+disk,PBGIA director,1.0,2.760345355402196
+disk,PBGIA director,2.0,1.8108023230619508
+disk,PBGIA director,4.0,1.3653805525693987
+disk,Gaussian gradient,1.0,5.690646698221897
+disk,Gaussian gradient,1.5,3.195739767346043
+disk,Gaussian gradient,2.0,1.994494260726552
+disk,Gaussian gradient,4.0,0.595767338495291
+disk,partial-volume gradient,1.0,1.942209622341688
+disk,PBGIA v (pixel),0.0,3.9372566693161803
+disk,PBGIA director,1.0,2.916317209660869
+disk,PBGIA director,2.0,2.0238992306059354
+disk,PBGIA director,4.0,1.485215043850941
+disk,Gaussian gradient,1.0,5.489264754965355
+disk,Gaussian gradient,1.5,3.1754574096638626
+disk,Gaussian gradient,2.0,2.094803071598695
+disk,Gaussian gradient,4.0,0.7559092881781376
+disk,partial-volume gradient,1.0,1.9477890999184662
+disk,PBGIA v (pixel),0.0,3.65693064440437
+disk,PBGIA director,1.0,2.6425837378250097
+disk,PBGIA director,2.0,1.887576381793629
+disk,PBGIA director,4.0,1.4272875106257432
+disk,Gaussian gradient,1.0,5.184773397036182
+disk,Gaussian gradient,1.5,2.950579230467574
+disk,Gaussian gradient,2.0,1.9767329709378567
+disk,Gaussian gradient,4.0,0.6421701847317778
+disk,partial-volume gradient,1.0,1.9553479412910555
+disk,PBGIA v (pixel),0.0,3.631325822177062
+disk,PBGIA director,1.0,2.5903858790151504
+disk,PBGIA director,2.0,1.822396335346972
+disk,PBGIA director,4.0,1.381921046752658
+disk,Gaussian gradient,1.0,5.189017909961793
+disk,Gaussian gradient,1.5,2.908339532761254
+disk,Gaussian gradient,2.0,1.8875793453790535
+disk,Gaussian gradient,4.0,0.6217206330079018
+disk,partial-volume gradient,1.0,1.9478742281606873
+disk,PBGIA v (pixel),0.0,4.272276666920489
+disk,PBGIA director,1.0,3.1628749892536465
+disk,PBGIA director,2.0,2.0417190153533182
+disk,PBGIA director,4.0,1.4834864157152148
+disk,Gaussian gradient,1.0,6.000330982075978
+disk,Gaussian gradient,1.5,3.580006501619117
+disk,Gaussian gradient,2.0,2.239635953436963
+disk,Gaussian gradient,4.0,0.6403278028559642
+disk,partial-volume gradient,1.0,1.948092442523627
+disk,PBGIA v (pixel),0.0,3.7538177548924265
+disk,PBGIA director,1.0,2.7895055887598708
+disk,PBGIA director,2.0,1.9398836994036175
+disk,PBGIA director,4.0,1.519662586407071
+disk,Gaussian gradient,1.0,5.20076111411832
+disk,Gaussian gradient,1.5,2.9907340658216675
+disk,Gaussian gradient,2.0,1.9020276814510466
+disk,Gaussian gradient,4.0,0.5897324502314193
+disk,partial-volume gradient,1.0,1.935548026797502
+disk,PBGIA v (pixel),0.0,4.050201096279308
+disk,PBGIA director,1.0,2.8937206726987994
+disk,PBGIA director,2.0,1.888548467134726
+disk,PBGIA director,4.0,1.3896114507342203
+disk,Gaussian gradient,1.0,5.810136122230302
+disk,Gaussian gradient,1.5,3.2694970460187944
+disk,Gaussian gradient,2.0,2.058372329979837
+disk,Gaussian gradient,4.0,0.6532855439851694
+disk,partial-volume gradient,1.0,1.9171349399706308
+disk,PBGIA v (pixel),0.0,3.834876483024695
+disk,PBGIA director,1.0,2.765559649779594
+disk,PBGIA director,2.0,1.833146711765686
+disk,PBGIA director,4.0,1.4248969218703107
+disk,Gaussian gradient,1.0,5.462834908576752
+disk,Gaussian gradient,1.5,3.192945714907493
+disk,Gaussian gradient,2.0,2.0338686381281113
+disk,Gaussian gradient,4.0,0.6864067172757996
+disk,partial-volume gradient,1.0,1.957333145611078
+disk,PBGIA v (pixel),0.0,3.7969054771695308
+disk,PBGIA director,1.0,2.839152308676198
+disk,PBGIA director,2.0,2.0188868855206605
+disk,PBGIA director,4.0,1.5521224733503711
+disk,Gaussian gradient,1.0,5.2420470703961115
+disk,Gaussian gradient,1.5,3.0335546621235263
+disk,Gaussian gradient,2.0,1.993344285225155
+disk,Gaussian gradient,4.0,0.7795504194819741
+disk,partial-volume gradient,1.0,1.9255210029784433
+disk,PBGIA v (pixel),0.0,3.945313955112547
+disk,PBGIA director,1.0,2.9414779490879868
+disk,PBGIA director,2.0,2.0507792188362135
+disk,PBGIA director,4.0,1.4414979566788773
+disk,Gaussian gradient,1.0,5.49656913037243
+disk,Gaussian gradient,1.5,3.2088020348895654
+disk,Gaussian gradient,2.0,2.134306978250795
+disk,Gaussian gradient,4.0,0.7786665514468893
+disk,partial-volume gradient,1.0,1.9338311269837951
+disk,PBGIA v (pixel),0.0,4.070101001394198
+disk,PBGIA director,1.0,3.1430938701844746
+disk,PBGIA director,2.0,2.2237137911297924
+disk,PBGIA director,4.0,1.5675852343127725
+disk,Gaussian gradient,1.0,5.523815523637033
+disk,Gaussian gradient,1.5,3.4312112266952197
+disk,Gaussian gradient,2.0,2.3414898482976882
+disk,Gaussian gradient,4.0,0.7931288682640812
+disk,partial-volume gradient,1.0,1.9375777397495557
+disk,PBGIA v (pixel),0.0,4.250290850629074
+disk,PBGIA director,1.0,3.1374010101463186
+disk,PBGIA director,2.0,2.1673555656945087
+disk,PBGIA director,4.0,1.3644872863270006
+disk,Gaussian gradient,1.0,6.002238437163419
+disk,Gaussian gradient,1.5,3.6376071262717566
+disk,Gaussian gradient,2.0,2.5215471065988635
+disk,Gaussian gradient,4.0,0.8101339456760883
+disk,partial-volume gradient,1.0,1.9122076652779243
+disk,PBGIA v (pixel),0.0,3.5053003816525266
+disk,PBGIA director,1.0,2.614526615374855
+disk,PBGIA director,2.0,1.830853655057744
+disk,PBGIA director,4.0,1.3777204601203006
+disk,Gaussian gradient,1.0,4.799431812752607
+disk,Gaussian gradient,1.5,2.9169511571663618
+disk,Gaussian gradient,2.0,1.9682389035685883
+disk,Gaussian gradient,4.0,0.6082589513527784
+disk,partial-volume gradient,1.0,1.944207202740828
+disk,PBGIA v (pixel),0.0,4.034546539871065
+disk,PBGIA director,1.0,3.0117946029428477
+disk,PBGIA director,2.0,2.1220979230789885
+disk,PBGIA director,4.0,1.629588739510827
+disk,Gaussian gradient,1.0,5.589988317854578
+disk,Gaussian gradient,1.5,3.217540755541241
+disk,Gaussian gradient,2.0,2.0568223893679183
+disk,Gaussian gradient,4.0,0.6677677726593096
+disk,partial-volume gradient,1.0,1.9553217185709295
+disk,PBGIA v (pixel),0.0,3.958806149243238
+disk,PBGIA director,1.0,3.039867835597219
+disk,PBGIA director,2.0,2.159794909454148
+disk,PBGIA director,4.0,1.5202635342501798
+disk,Gaussian gradient,1.0,5.386553636154183
+disk,Gaussian gradient,1.5,3.2964439798680982
+disk,Gaussian gradient,2.0,2.263332733902418
+disk,Gaussian gradient,4.0,0.7824600127180377
+disk,partial-volume gradient,1.0,1.9278359872853355
+disk,PBGIA v (pixel),0.0,3.8383272621991793
+disk,PBGIA director,1.0,2.76401405364945
+disk,PBGIA director,2.0,1.9025817492878838
+disk,PBGIA director,4.0,1.483314823509102
+disk,Gaussian gradient,1.0,5.440130887971929
+disk,Gaussian gradient,1.5,3.0701935626946133
+disk,Gaussian gradient,2.0,1.9453982240649534
+disk,Gaussian gradient,4.0,0.6558064432726105
+disk,partial-volume gradient,1.0,1.9406341203483324
+disk,PBGIA v (pixel),0.0,3.6728605681913145
+disk,PBGIA director,1.0,2.7036540157438687
+disk,PBGIA director,2.0,1.9533166775468283
+disk,PBGIA director,4.0,1.4338396670029236
+disk,Gaussian gradient,1.0,5.1306091180001685
+disk,Gaussian gradient,1.5,2.9856139869374627
+disk,Gaussian gradient,2.0,2.035039342302008
+disk,Gaussian gradient,4.0,0.8216329383186713
+disk,partial-volume gradient,1.0,1.9444477085393372
+disk,PBGIA v (pixel),0.0,3.790769172355598
+disk,PBGIA director,1.0,2.808906686268076
+disk,PBGIA director,2.0,1.9247257957544226
+disk,PBGIA director,4.0,1.3657311792006173
+disk,Gaussian gradient,1.0,5.276776519666518
+disk,Gaussian gradient,1.5,3.086776385258849
+disk,Gaussian gradient,2.0,2.0495684728142427
+disk,Gaussian gradient,4.0,0.70606161532436
+disk,partial-volume gradient,1.0,1.9371076406404837
+disk,PBGIA v (pixel),0.0,3.668501265830539
+disk,PBGIA director,1.0,2.7191301982843235
+disk,PBGIA director,2.0,2.0055013002741577
+disk,PBGIA director,4.0,1.5139759230767311
+disk,Gaussian gradient,1.0,5.131461020319428
+disk,Gaussian gradient,1.5,2.9409579724895374
+disk,Gaussian gradient,2.0,2.0029037725676964
+disk,Gaussian gradient,4.0,0.8410167432037154
+disk,partial-volume gradient,1.0,1.9287896896037005
+disk,PBGIA v (pixel),0.0,3.767413732498261
+disk,PBGIA director,1.0,2.6645169671369118
+disk,PBGIA director,2.0,1.6655517512616678
+disk,PBGIA director,4.0,1.075671637924569
+disk,Gaussian gradient,1.0,5.429117205583081
+disk,Gaussian gradient,1.5,3.235056385689995
+disk,Gaussian gradient,2.0,2.141403391892729
+disk,Gaussian gradient,4.0,0.7668575067551852
+disk,partial-volume gradient,1.0,1.9060080106794002
+disk,PBGIA v (pixel),0.0,4.030628852428164
+disk,PBGIA director,1.0,3.009179543126422
+disk,PBGIA director,2.0,2.1132194012983065
+disk,PBGIA director,4.0,1.5633787426388086
+disk,Gaussian gradient,1.0,5.600238493609844
+disk,Gaussian gradient,1.5,3.1707442672536135
+disk,Gaussian gradient,2.0,2.054601916464647
+disk,Gaussian gradient,4.0,0.6122378205437151
+disk,partial-volume gradient,1.0,1.9342629598188932
+disk,PBGIA v (pixel),0.0,3.5772404763660544
+disk,PBGIA director,1.0,2.6623241318357214
+disk,PBGIA director,2.0,1.9860427833510776
+disk,PBGIA director,4.0,1.5154081156377288
+disk,Gaussian gradient,1.0,4.9022322533411335
+disk,Gaussian gradient,1.5,2.800738609423694
+disk,Gaussian gradient,2.0,1.9366746560051924
+disk,Gaussian gradient,4.0,0.795882414750197
+disk,partial-volume gradient,1.0,1.9416975448342377
+disk,PBGIA v (pixel),0.0,3.689920975601804
+disk,PBGIA director,1.0,2.6710307359171965
+disk,PBGIA director,2.0,1.945601966708405
+disk,PBGIA director,4.0,1.5196301088501492
+disk,Gaussian gradient,1.0,5.22660326098756
+disk,Gaussian gradient,1.5,2.901867228998191
+disk,Gaussian gradient,2.0,1.870417753540601
+disk,Gaussian gradient,4.0,0.5553776851980771
+disk,partial-volume gradient,1.0,1.9607195396526198
+disk,PBGIA v (pixel),0.0,3.956585445528659
+disk,PBGIA director,1.0,2.8150146467190664
+disk,PBGIA director,2.0,1.799511236371255
+disk,PBGIA director,4.0,1.3631207899813655
+disk,Gaussian gradient,1.0,5.669315950415418
+disk,Gaussian gradient,1.5,3.189696034357226
+disk,Gaussian gradient,2.0,1.9450732132313324
+disk,Gaussian gradient,4.0,0.5596415651227047
+disk,partial-volume gradient,1.0,1.9349276865853886

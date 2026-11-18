@@ -1,0 +1,17 @@
+seq,method,quantity,rel_resid_pct
+0,PBGIA_bin,area_um2,0.43304954093520726
+0,PBGIA_bin,perim_um,1.329905317617474
+0,PBGIA_cont,area_um2,0.43265622103967233
+0,PBGIA_cont,perim_um,1.088700006914261
+0,gauss_ms,area_um2,0.4340250294510897
+0,gauss_ms,perim_um,1.2837899281605656
+0,median_otsu,area_um2,1.8880110918167632
+0,median_otsu,perim_um,17.080190365082267
+1,PBGIA_bin,area_um2,0.5523013973361565
+1,PBGIA_bin,perim_um,1.2168741160342573
+1,PBGIA_cont,area_um2,0.5074701273635736
+1,PBGIA_cont,perim_um,0.5151889422783777
+1,gauss_ms,area_um2,0.4846031374462759
+1,gauss_ms,perim_um,1.4902915851140979
+1,median_otsu,area_um2,1.1339117815469515
+1,median_otsu,perim_um,11.275015300934738

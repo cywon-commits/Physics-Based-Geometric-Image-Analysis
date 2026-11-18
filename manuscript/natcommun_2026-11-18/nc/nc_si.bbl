@@ -1,0 +1,65 @@
+\begin{thebibliography}{8}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Berry and Dennis(2000)]{Berry2000}
+M.~V. Berry and M.~R. Dennis.
+\newblock Phase singularities in isotropic random waves.
+\newblock \emph{Proceedings of the Royal Society of London A}, 456:\penalty0
+  2059--2079, 2000.
+\newblock \doi{10.1098/rspa.2000.0602}.
+
+\bibitem[Berg and L{\"u}scher(1981)]{Berg1981}
+B.~Berg and M.~L{\"u}scher.
+\newblock Definition and statistical distributions of a topological number in
+  the lattice {O}(3) $\sigma$-model.
+\newblock \emph{Nuclear Physics B}, 190\penalty0 (2):\penalty0 412--424, 1981.
+\newblock \doi{10.1016/0550-3213(81)90568-X}.
+
+\bibitem[McCray et~al.(2024)]{McCray2024}
+Arthur R.~C. McCray et~al.
+\newblock Simulation-trained machine learning models for {L}orentz transmission
+  electron microscopy.
+\newblock \emph{APL Machine Learning}, 2024.
+\newblock \doi{10.1063/5.0197138}.
+
+\bibitem[Zhao et~al.(2026)Zhao, Fern{\'a}ndez-Pacheco, et~al.]{Zhao2026}
+Le~Zhao, Amalio Fern{\'a}ndez-Pacheco, et~al.
+\newblock Dataset for extended depth of field magneto-optical {K}err microscopy
+  for applications in {3D} nanomagnetism.
+\newblock \url{https://researchdata.tuwien.ac.at/records/0196e-9b515}, 2026.
+\newblock CC-BY 4.0.
+
+\bibitem[Guddeti(2020)]{KerrPy}
+Sreekar Guddeti.
+\newblock {KerrPy}: an {OpenCV}-based {P}ython project for processing {K}err
+  microscopy images, version 0.2.4.
+\newblock \url{https://github.com/Baalkikhaal/KerrPy}, 2020.
+
+\bibitem[van~der Walt et~al.(2014)van~der Walt, Sch\"onberger, Nunez-Iglesias,
+  Boulogne, Warner, Yager, Gouillart, Yu, and {the scikit-image
+  contributors}]{VanderWalt2014}
+St\'efan van~der Walt, Johannes~L. Sch\"onberger, Juan Nunez-Iglesias,
+  Fran\c{c}ois Boulogne, Joshua~D. Warner, Neil Yager, Emmanuelle Gouillart,
+  Tony Yu, and {the scikit-image contributors}.
+\newblock {scikit-image}: Image processing in python.
+\newblock \emph{PeerJ}, 2:\penalty0 e453, 2014.
+\newblock \doi{10.7717/peerj.453}.
+
+\bibitem[Mermin(1979)]{Mermin1979}
+N.~David Mermin.
+\newblock The topological theory of defects in ordered media.
+\newblock \emph{Reviews of Modern Physics}, 51:\penalty0 591--648, 1979.
+\newblock \doi{10.1103/RevModPhys.51.591}.
+
+\bibitem[Di~Zenzo(1986)]{DiZenzo1986}
+Silvano Di~Zenzo.
+\newblock A note on the gradient of a multi-image.
+\newblock \emph{Computer Vision, Graphics, and Image Processing}, 33\penalty0
+  (1):\penalty0 116--125, 1986.
+\newblock \doi{10.1016/0734-189X(86)90223-9}.
+
+\end{thebibliography}

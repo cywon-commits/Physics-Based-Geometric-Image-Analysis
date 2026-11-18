@@ -1,0 +1,5 @@
+case,Q2_solid_angle,input_euler,input_components,expected_Euler,expected_components
+one disk,1.0000000048778712,1,1,1,1
+two disks,2.000000019107956,2,2,2,2
+annulus,1.3141927623791253e-08,0,1,0,1
+disk + ring,1.0000000193508196,1,2,1,2

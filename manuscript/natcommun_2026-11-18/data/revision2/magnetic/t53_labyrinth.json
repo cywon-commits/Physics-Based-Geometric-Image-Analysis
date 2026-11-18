@@ -1,0 +1,10 @@
+{
+ "period_fft_px": 10.666666666666664,
+ "pixel_agreement_with_authors_binary": 0.8467412306777645,
+ "wall_density_pbgia": 0.23674682598293204,
+ "period_from_wall_density_pbgia": 8.447842929662709,
+ "period_from_wall_density_crofton_authors": 6.091975700212111,
+ "period_from_wall_density_ms_authors": 6.50409587162692,
+ "n_truth_plus": 489,
+ "n_truth_minus": 615
+}

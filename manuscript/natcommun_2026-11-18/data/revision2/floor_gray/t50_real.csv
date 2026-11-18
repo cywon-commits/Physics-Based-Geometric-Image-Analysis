@@ -1,0 +1,73 @@
+image,method,sigma,local_rot_err,gt_err,n_defects
+Curved strata (synthetic),cont_w1,2,0.30599540878988557,0.5240340828849583,0
+Curved strata (synthetic),cont_w1,4,0.29190558160010033,0.31554209693612295,0
+Curved strata (synthetic),cont_w1,8,0.26790831650095304,0.2336954195983734,0
+Curved strata (synthetic),cont_w1,16,0.2079690785609173,1.9888973664044642,0
+Curved strata (synthetic),cont_w2,2,0.39220725057811395,0.6548208011348181,0
+Curved strata (synthetic),cont_w2,4,0.385928208498553,0.4930488962515525,0
+Curved strata (synthetic),cont_w2,8,0.37331900061952056,0.2452824337524062,0
+Curved strata (synthetic),cont_w2,16,0.3273417772327758,1.562112857445849,0
+Collagen-like fibers (synthetic),cont_w1,2,0.7618823149020465,nan,174
+Collagen-like fibers (synthetic),cont_w1,4,0.5169871098181454,nan,53
+Collagen-like fibers (synthetic),cont_w1,8,0.4061004059277835,nan,0
+Collagen-like fibers (synthetic),cont_w1,16,0.3105590474339327,nan,0
+Collagen-like fibers (synthetic),cont_w2,2,0.7888775407765701,nan,168
+Collagen-like fibers (synthetic),cont_w2,4,0.5711431938965972,nan,41
+Collagen-like fibers (synthetic),cont_w2,8,0.49679754310323593,nan,2
+Collagen-like fibers (synthetic),cont_w2,16,0.4486274526953756,nan,0
+Leaf veins (synthetic),cont_w1,2,0.4973245609944139,nan,64
+Leaf veins (synthetic),cont_w1,4,0.46098714452948586,nan,62
+Leaf veins (synthetic),cont_w1,8,0.44250757487926357,nan,26
+Leaf veins (synthetic),cont_w1,16,0.44936833359362655,nan,4
+Leaf veins (synthetic),cont_w2,2,0.6564919078226162,nan,64
+Leaf veins (synthetic),cont_w2,4,0.6384060555973886,nan,68
+Leaf veins (synthetic),cont_w2,8,0.62404970171139,nan,26
+Leaf veins (synthetic),cont_w2,16,0.6231855778542897,nan,3
+Wood grain (synthetic),cont_w1,2,0.2091635981144401,nan,33
+Wood grain (synthetic),cont_w1,4,0.16987272809270593,nan,14
+Wood grain (synthetic),cont_w1,8,0.13105378465789091,nan,0
+Wood grain (synthetic),cont_w1,16,0.08252153610889994,nan,0
+Wood grain (synthetic),cont_w2,2,0.22740203987298496,nan,45
+Wood grain (synthetic),cont_w2,4,0.21153880866759803,nan,16
+Wood grain (synthetic),cont_w2,8,0.20911287398535747,nan,0
+Wood grain (synthetic),cont_w2,16,0.17767507024190946,nan,0
+Textile weave (synthetic),cont_w1,2,0.3282166012716466,nan,629
+Textile weave (synthetic),cont_w1,4,0.17237185455318751,nan,611
+Textile weave (synthetic),cont_w1,8,0.43290224501703023,nan,233
+Textile weave (synthetic),cont_w1,16,0.7903696625486998,nan,29
+Textile weave (synthetic),cont_w2,2,0.3503590094388642,nan,637
+Textile weave (synthetic),cont_w2,4,0.24898327982171314,nan,616
+Textile weave (synthetic),cont_w2,8,0.5241940534851894,nan,215
+Textile weave (synthetic),cont_w2,16,0.9524578820062004,nan,28
+Building array (synthetic),cont_w1,2,1.1634810520388286,nan,314
+Building array (synthetic),cont_w1,4,0.7892843850089253,nan,97
+Building array (synthetic),cont_w1,8,0.7763837481454439,nan,54
+Building array (synthetic),cont_w1,16,0.6899263333374792,nan,9
+Building array (synthetic),cont_w2,2,1.2434544524200024,nan,299
+Building array (synthetic),cont_w2,4,0.971035682946426,nan,97
+Building array (synthetic),cont_w2,8,1.0385992459741784,nan,38
+Building array (synthetic),cont_w2,16,0.8981030088834573,nan,8
+CC0 brick wall,cont_w1,2,1.0081250459210993,nan,211
+CC0 brick wall,cont_w1,4,0.9848539083841551,nan,198
+CC0 brick wall,cont_w1,8,0.9983767289534269,nan,14
+CC0 brick wall,cont_w1,16,1.0044701549364998,nan,0
+CC0 brick wall,cont_w2,2,1.187976750423842,nan,215
+CC0 brick wall,cont_w2,4,1.1901229409423393,nan,192
+CC0 brick wall,cont_w2,8,1.2172725668164939,nan,10
+CC0 brick wall,cont_w2,16,1.2314870088818346,nan,0
+CC0 retina vessel contrast,cont_w1,2,0.8203057705773548,nan,169
+CC0 retina vessel contrast,cont_w1,4,0.7216217749954206,nan,92
+CC0 retina vessel contrast,cont_w1,8,0.6253262783243456,nan,37
+CC0 retina vessel contrast,cont_w1,16,0.4460360591878218,nan,4
+CC0 retina vessel contrast,cont_w2,2,1.005794817964287,nan,167
+CC0 retina vessel contrast,cont_w2,4,0.9372664760236407,nan,100
+CC0 retina vessel contrast,cont_w2,8,0.8356876284089854,nan,40
+CC0 retina vessel contrast,cont_w2,16,0.7018519063784303,nan,3
+CC0 grass texture,cont_w1,2,1.6663086141638077,nan,1007
+CC0 grass texture,cont_w1,4,1.382755859060643,nan,333
+CC0 grass texture,cont_w1,8,1.4542137891376012,nan,60
+CC0 grass texture,cont_w1,16,1.5470130132973712,nan,25
+CC0 grass texture,cont_w2,2,1.7657368913105258,nan,996
+CC0 grass texture,cont_w2,4,1.5974430484046716,nan,324
+CC0 grass texture,cont_w2,8,1.566876213562802,nan,65
+CC0 grass texture,cont_w2,16,1.5832313439184098,nan,24

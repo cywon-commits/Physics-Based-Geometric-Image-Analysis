@@ -1,0 +1,22 @@
+{
+ "2": {
+  "gauss_sigma": "gauss_ms_0.75",
+  "constants": {
+   "PBGIA": 1.0,
+   "crofton_cal": 1.0002016974270433,
+   "ms_cal": 0.9482506701200606,
+   "gauss_cal": 0.9910498523610419,
+   "median_crofton_cal": 1.0057149959693008,
+   "median_ms_cal": 0.9534776048980323
+  }
+ },
+ "3": {
+  "gauss_sigma": "gauss_mc_0.5",
+  "constants": {
+   "PBGIA": 1.0,
+   "mc_cal": 0.9228433841172652,
+   "gauss_cal": 0.9662514158212914,
+   "median_mc_cal": 0.9374246836314888
+  }
+ }
+}

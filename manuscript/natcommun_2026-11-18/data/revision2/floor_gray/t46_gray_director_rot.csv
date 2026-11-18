@@ -1,0 +1,28 @@
+image,method,rot_err
+Curved strata (synthetic),cuts5,1.8036213739273177
+Curved strata (synthetic),cont,0.15603577850583047
+Curved strata (synthetic),ST,0.21797460808735178
+Collagen-like fibers (synthetic),cuts5,0.42972766920344646
+Collagen-like fibers (synthetic),cont,0.35824364575372314
+Collagen-like fibers (synthetic),ST,0.22046863921933177
+Leaf veins (synthetic),cuts5,1.152458541596096
+Leaf veins (synthetic),cont,0.3093999172697579
+Leaf veins (synthetic),ST,0.44782499126433045
+Wood grain (synthetic),cuts5,1.4180016427812165
+Wood grain (synthetic),cont,0.031212662001371832
+Wood grain (synthetic),ST,0.22964268521914935
+Textile weave (synthetic),cuts5,3.9616318191987574
+Textile weave (synthetic),cont,3.826526672515771
+Textile weave (synthetic),ST,0.8580241214892125
+Building array (synthetic),cuts5,2.9126113984006503
+Building array (synthetic),cont,0.5767226372881018
+Building array (synthetic),ST,0.5073587111361125
+CC0 brick wall,cuts5,2.4609603440104144
+CC0 brick wall,cont,1.0726284467048768
+CC0 brick wall,ST,0.7351500370135214
+CC0 retina vessel contrast,cuts5,1.2165117915051533
+CC0 retina vessel contrast,cont,0.7546688824170847
+CC0 retina vessel contrast,ST,0.7237986666757946
+CC0 grass texture,cuts5,22.755512526764527
+CC0 grass texture,cont,3.086326325443914
+CC0 grass texture,ST,0.48467771630961515

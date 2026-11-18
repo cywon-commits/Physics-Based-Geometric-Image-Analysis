@@ -1,0 +1,127 @@
+image,method,sigma,local_rot_err,gt_err,n_defects
+Curved strata (synthetic),PBGIA,2,1.4084010048547808,2.267968318882299,0
+Curved strata (synthetic),ST,2,0.17459654932801985,0.48477092682832895,0
+Curved strata (synthetic),PBGIA,3,1.3450427857950693,2.1786889403924325,0
+Curved strata (synthetic),ST,3,0.17276769970740594,0.2918801840318625,0
+Curved strata (synthetic),PBGIA,4,1.334622363757015,2.1070704109570007,0
+Curved strata (synthetic),ST,4,0.17222780113204786,0.18924431937321434,0
+Curved strata (synthetic),PBGIA,6,1.337454989448758,1.9202224658231601,0
+Curved strata (synthetic),ST,6,0.17112606847414014,0.1477720782093902,0
+Curved strata (synthetic),PBGIA,8,1.3411858492199613,1.663078394343495,0
+Curved strata (synthetic),ST,8,0.16960049437562952,0.30980236068068157,0
+Curved strata (synthetic),PBGIA,12,1.3167888702788761,0.9774214478469502,0
+Curved strata (synthetic),ST,12,0.16498904923445248,0.9548941784742688,0
+Curved strata (synthetic),PBGIA,16,1.2481278521750192,0.9312716458892578,0
+Curved strata (synthetic),ST,16,0.15833551890068662,1.846337626823398,0
+Collagen-like fibers (synthetic),PBGIA,2,2.796604219657257,nan,745
+Collagen-like fibers (synthetic),ST,2,0.33212865413509995,nan,396
+Collagen-like fibers (synthetic),PBGIA,3,2.299923438804062,nan,222
+Collagen-like fibers (synthetic),ST,3,0.3169672125129373,nan,134
+Collagen-like fibers (synthetic),PBGIA,4,2.065240729015243,nan,96
+Collagen-like fibers (synthetic),ST,4,0.31993846964617184,nan,54
+Collagen-like fibers (synthetic),PBGIA,6,1.7682239022621995,nan,24
+Collagen-like fibers (synthetic),ST,6,0.3271808937158027,nan,16
+Collagen-like fibers (synthetic),PBGIA,8,1.5267806576845655,nan,12
+Collagen-like fibers (synthetic),ST,8,0.33166459657007535,nan,8
+Collagen-like fibers (synthetic),PBGIA,12,1.2058002419049942,nan,4
+Collagen-like fibers (synthetic),ST,12,0.3337920127308074,nan,2
+Collagen-like fibers (synthetic),PBGIA,16,1.0266091698129691,nan,0
+Collagen-like fibers (synthetic),ST,16,0.3324523816806129,nan,0
+Leaf veins (synthetic),PBGIA,2,6.8521046988283105,nan,546
+Leaf veins (synthetic),ST,2,0.761082454320044,nan,724
+Leaf veins (synthetic),PBGIA,3,5.82406395423715,nan,206
+Leaf veins (synthetic),ST,3,0.741063407873533,nan,544
+Leaf veins (synthetic),PBGIA,4,5.242235707326372,nan,102
+Leaf veins (synthetic),ST,4,0.7258244602361215,nan,500
+Leaf veins (synthetic),PBGIA,6,4.599089016098487,nan,32
+Leaf veins (synthetic),ST,6,0.7048887176570511,nan,500
+Leaf veins (synthetic),PBGIA,8,4.016356649215944,nan,20
+Leaf veins (synthetic),ST,8,0.6938073661969917,nan,510
+Leaf veins (synthetic),PBGIA,12,3.264585526472819,nan,2
+Leaf veins (synthetic),ST,12,0.6892658609270114,nan,114
+Leaf veins (synthetic),PBGIA,16,2.8094675902588553,nan,2
+Leaf veins (synthetic),ST,16,0.6883917359540558,nan,2
+Wood grain (synthetic),PBGIA,2,1.5336105126040462,nan,389
+Wood grain (synthetic),ST,2,0.10479965916347325,nan,332
+Wood grain (synthetic),PBGIA,3,1.3512062989701354,nan,314
+Wood grain (synthetic),ST,3,0.06847984747551701,nan,278
+Wood grain (synthetic),PBGIA,4,1.3552981387889984,nan,194
+Wood grain (synthetic),ST,4,0.0590831170158351,nan,154
+Wood grain (synthetic),PBGIA,6,1.4291075597245793,nan,24
+Wood grain (synthetic),ST,6,0.05392760734238884,nan,33
+Wood grain (synthetic),PBGIA,8,1.496945329206093,nan,10
+Wood grain (synthetic),ST,8,0.05601436969376452,nan,14
+Wood grain (synthetic),PBGIA,12,1.487695907754378,nan,0
+Wood grain (synthetic),ST,12,0.07326087451845249,nan,14
+Wood grain (synthetic),PBGIA,16,1.4116547646767268,nan,0
+Wood grain (synthetic),ST,16,0.09632442510476952,nan,4
+Textile weave (synthetic),PBGIA,2,2.0071459413983663,nan,836
+Textile weave (synthetic),ST,2,0.38744402540532125,nan,891
+Textile weave (synthetic),PBGIA,3,1.7829241874977888,nan,672
+Textile weave (synthetic),ST,3,0.23905760840622162,nan,634
+Textile weave (synthetic),PBGIA,4,1.7672952523682939,nan,489
+Textile weave (synthetic),ST,4,0.18683980028475936,nan,396
+Textile weave (synthetic),PBGIA,6,1.8635363740019784,nan,257
+Textile weave (synthetic),ST,6,0.17027152791651812,nan,234
+Textile weave (synthetic),PBGIA,8,2.172628574528642,nan,150
+Textile weave (synthetic),ST,8,0.19183527388346366,nan,157
+Textile weave (synthetic),PBGIA,12,4.988842382945939,nan,74
+Textile weave (synthetic),ST,12,0.35638067395526574,nan,86
+Textile weave (synthetic),PBGIA,16,6.770458524128242,nan,19
+Textile weave (synthetic),ST,16,0.5114983584308196,nan,19
+Building array (synthetic),PBGIA,2,2.827612413709049,nan,658
+Building array (synthetic),ST,2,0.5327527197010166,nan,1125
+Building array (synthetic),PBGIA,3,2.6826912356689183,nan,326
+Building array (synthetic),ST,3,0.5250721459786294,nan,685
+Building array (synthetic),PBGIA,4,2.6972051684422897,nan,183
+Building array (synthetic),ST,4,0.5314247530193186,nan,280
+Building array (synthetic),PBGIA,6,2.893684687205905,nan,93
+Building array (synthetic),ST,6,0.5482783981362933,nan,101
+Building array (synthetic),PBGIA,8,2.872212849542631,nan,68
+Building array (synthetic),ST,8,0.5588902023000791,nan,13
+Building array (synthetic),PBGIA,12,2.4328519471578263,nan,14
+Building array (synthetic),ST,12,0.5673480937782525,nan,7
+Building array (synthetic),PBGIA,16,2.469800329879119,nan,6
+Building array (synthetic),ST,16,0.5725921426183872,nan,6
+CC0 brick wall,PBGIA,2,2.705952189036557,nan,524
+CC0 brick wall,ST,2,0.8425355376726456,nan,333
+CC0 brick wall,PBGIA,3,2.6296169194971406,nan,279
+CC0 brick wall,ST,3,0.8285823332688546,nan,196
+CC0 brick wall,PBGIA,4,2.637654376522397,nan,206
+CC0 brick wall,ST,4,0.8230794755547792,nan,135
+CC0 brick wall,PBGIA,6,2.7206818178511303,nan,94
+CC0 brick wall,ST,6,0.8239916025676655,nan,51
+CC0 brick wall,PBGIA,8,2.7847825901675125,nan,13
+CC0 brick wall,ST,8,0.8330756868004202,nan,8
+CC0 brick wall,PBGIA,12,2.781302045282751,nan,0
+CC0 brick wall,ST,12,0.8453465207588863,nan,0
+CC0 brick wall,PBGIA,16,2.783246980637476,nan,0
+CC0 brick wall,ST,16,0.8507841373522552,nan,0
+CC0 retina vessel contrast,PBGIA,2,3.3075448808844716,nan,572
+CC0 retina vessel contrast,ST,2,0.7295755853746176,nan,749
+CC0 retina vessel contrast,PBGIA,3,2.7131450606128,nan,250
+CC0 retina vessel contrast,ST,3,0.7004505579416248,nan,587
+CC0 retina vessel contrast,PBGIA,4,2.6129650048609894,nan,118
+CC0 retina vessel contrast,ST,4,0.6865653619335313,nan,375
+CC0 retina vessel contrast,PBGIA,6,2.638583440870869,nan,48
+CC0 retina vessel contrast,ST,6,0.670071138536038,nan,204
+CC0 retina vessel contrast,PBGIA,8,2.5867521815901053,nan,26
+CC0 retina vessel contrast,ST,8,0.6550236384754805,nan,141
+CC0 retina vessel contrast,PBGIA,12,2.4644322353800625,nan,18
+CC0 retina vessel contrast,ST,12,0.6402742940134574,nan,25
+CC0 retina vessel contrast,PBGIA,16,2.3587145633688027,nan,10
+CC0 retina vessel contrast,ST,16,0.675846078002981,nan,2
+CC0 grass texture,PBGIA,2,3.3926502980570943,nan,1193
+CC0 grass texture,ST,2,0.8223982177185022,nan,962
+CC0 grass texture,PBGIA,3,3.284047821919039,nan,562
+CC0 grass texture,ST,3,0.7804742911815877,nan,458
+CC0 grass texture,PBGIA,4,3.2614233025363424,nan,329
+CC0 grass texture,ST,4,0.7952986579364413,nan,273
+CC0 grass texture,PBGIA,6,3.324657160495293,nan,149
+CC0 grass texture,ST,6,0.8460638710779603,nan,118
+CC0 grass texture,PBGIA,8,3.4499031398910676,nan,74
+CC0 grass texture,ST,8,0.9008825230015792,nan,67
+CC0 grass texture,PBGIA,12,3.6532957564095607,nan,30
+CC0 grass texture,ST,12,0.9410796680595834,nan,37
+CC0 grass texture,PBGIA,16,3.8363973324102743,nan,23
+CC0 grass texture,ST,16,0.9557294421730662,nan,21

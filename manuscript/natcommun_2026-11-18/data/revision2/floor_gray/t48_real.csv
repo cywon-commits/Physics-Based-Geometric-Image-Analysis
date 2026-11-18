@@ -1,0 +1,289 @@
+image,method,sigma,local_rot_err,gt_err,n_defects
+Curved strata (synthetic),cuts5,2,1.4084010048547808,2.267968318882299,0
+Curved strata (synthetic),cuts5,4,1.334622363757015,2.1070704109570007,0
+Curved strata (synthetic),cuts5,8,1.3411858492199613,1.663078394343495,0
+Curved strata (synthetic),cuts5,16,1.2481278521750192,0.9312716458892578,0
+Curved strata (synthetic),cont,2,0.35939964569731353,0.5957700493245041,0
+Curved strata (synthetic),cont,4,0.3471755731259811,0.3898563195892773,0
+Curved strata (synthetic),cont,8,0.3221395016006429,0.20311875890413728,0
+Curved strata (synthetic),cont,16,0.2562372651996877,2.06863860016651,0
+Curved strata (synthetic),sat_b1,2,0.4204545345884122,0.6912478992025913,0
+Curved strata (synthetic),sat_b1,4,0.4065805251700295,0.5025886363782196,0
+Curved strata (synthetic),sat_b1,8,0.37832026532283247,0.1685772877744936,0
+Curved strata (synthetic),sat_b1,16,0.3032730563019474,1.9420432746916307,0
+Curved strata (synthetic),sat_b3,2,0.6872461941696558,1.1283326623167682,0
+Curved strata (synthetic),sat_b3,4,0.6686358091524862,0.9771991598867484,0
+Curved strata (synthetic),sat_b3,8,0.6311595911664432,0.42533707086957295,0
+Curved strata (synthetic),sat_b3,16,0.5241115441099132,1.416022968463652,0
+Curved strata (synthetic),cont_eq,2,0.27280070815025115,0.46782118049644905,0
+Curved strata (synthetic),cont_eq,4,0.263131534117426,0.232473369710068,0
+Curved strata (synthetic),cont_eq,8,0.2439136589370098,0.35159264537444757,0
+Curved strata (synthetic),cont_eq,16,0.19211177190873155,2.2539514747311022,0
+Curved strata (synthetic),filtstack_8,2,0.7746599382843791,0.63593093901394,0
+Curved strata (synthetic),filtstack_8,4,0.378802482496891,0.2726938314626503,0
+Curved strata (synthetic),filtstack_8,8,0.23987717304534587,0.3956075517994224,0
+Curved strata (synthetic),filtstack_8,16,0.1845234238366526,2.2883780686742243,0
+Curved strata (synthetic),filtstack_16,2,0.5104268327791984,0.5506589200139292,0
+Curved strata (synthetic),filtstack_16,4,0.32762963554368557,0.27725952677302695,0
+Curved strata (synthetic),filtstack_16,8,0.27386786151646425,0.3445185019505659,0
+Curved strata (synthetic),filtstack_16,16,0.20904567999901646,2.2426776604229492,0
+Curved strata (synthetic),filtstack_32,2,0.31864182468623553,0.4791359083886159,0
+Curved strata (synthetic),filtstack_32,4,0.2672549657709389,0.2349671888498054,0
+Curved strata (synthetic),filtstack_32,8,0.24318504672195615,0.35205826926999995,0
+Curved strata (synthetic),filtstack_32,16,0.1922799274167309,2.2528326442312765,0
+Collagen-like fibers (synthetic),cuts5,2,2.796604219657257,nan,745
+Collagen-like fibers (synthetic),cuts5,4,2.065240729015243,nan,96
+Collagen-like fibers (synthetic),cuts5,8,1.5267806576845655,nan,12
+Collagen-like fibers (synthetic),cuts5,16,1.0266091698129691,nan,0
+Collagen-like fibers (synthetic),cont,2,0.9230534614568067,nan,176
+Collagen-like fibers (synthetic),cont,4,0.6561346696019771,nan,65
+Collagen-like fibers (synthetic),cont,8,0.5228582651843976,nan,7
+Collagen-like fibers (synthetic),cont,16,0.3493159519829991,nan,0
+Collagen-like fibers (synthetic),sat_b1,2,0.8688963739937783,nan,178
+Collagen-like fibers (synthetic),sat_b1,4,0.674244002664354,nan,59
+Collagen-like fibers (synthetic),sat_b1,8,0.5577245186402979,nan,4
+Collagen-like fibers (synthetic),sat_b1,16,0.389626321425335,nan,0
+Collagen-like fibers (synthetic),sat_b3,2,0.997105720237745,nan,182
+Collagen-like fibers (synthetic),sat_b3,4,0.8619005667036743,nan,45
+Collagen-like fibers (synthetic),sat_b3,8,0.7491339501474354,nan,2
+Collagen-like fibers (synthetic),sat_b3,16,0.594048286681697,nan,0
+Collagen-like fibers (synthetic),cont_eq,2,0.6573878876862687,nan,305
+Collagen-like fibers (synthetic),cont_eq,4,0.3902340170369359,nan,109
+Collagen-like fibers (synthetic),cont_eq,8,0.2693570011230054,nan,4
+Collagen-like fibers (synthetic),cont_eq,16,0.15989814218147244,nan,0
+Collagen-like fibers (synthetic),filtstack_8,2,1.3308506210963877,nan,304
+Collagen-like fibers (synthetic),filtstack_8,4,0.7589680645779773,nan,96
+Collagen-like fibers (synthetic),filtstack_8,8,0.4474609525220821,nan,7
+Collagen-like fibers (synthetic),filtstack_8,16,0.2553087617032242,nan,0
+Collagen-like fibers (synthetic),filtstack_16,2,1.0430349817616678,nan,295
+Collagen-like fibers (synthetic),filtstack_16,4,0.5551531994080344,nan,99
+Collagen-like fibers (synthetic),filtstack_16,8,0.35048373369667146,nan,4
+Collagen-like fibers (synthetic),filtstack_16,16,0.23273399226936023,nan,0
+Collagen-like fibers (synthetic),filtstack_32,2,0.7666776279219515,nan,295
+Collagen-like fibers (synthetic),filtstack_32,4,0.4469672301066111,nan,105
+Collagen-like fibers (synthetic),filtstack_32,8,0.29305182545675384,nan,4
+Collagen-like fibers (synthetic),filtstack_32,16,0.19741575612832246,nan,0
+Leaf veins (synthetic),cuts5,2,6.8521046988283105,nan,546
+Leaf veins (synthetic),cuts5,4,5.242235707326372,nan,102
+Leaf veins (synthetic),cuts5,8,4.016356649215944,nan,20
+Leaf veins (synthetic),cuts5,16,2.8094675902588553,nan,2
+Leaf veins (synthetic),cont,2,0.5360380064693478,nan,58
+Leaf veins (synthetic),cont,4,0.5057166986591124,nan,56
+Leaf veins (synthetic),cont,8,0.4827622511425412,nan,24
+Leaf veins (synthetic),cont,16,0.4901104559812751,nan,5
+Leaf veins (synthetic),sat_b1,2,0.6331562209355014,nan,58
+Leaf veins (synthetic),sat_b1,4,0.611883756979426,nan,56
+Leaf veins (synthetic),sat_b1,8,0.5946054390013396,nan,24
+Leaf veins (synthetic),sat_b1,16,0.6012301516232392,nan,5
+Leaf veins (synthetic),sat_b3,2,1.1535812341171185,nan,58
+Leaf veins (synthetic),sat_b3,4,1.1629643550502766,nan,56
+Leaf veins (synthetic),sat_b3,8,1.150694979925547,nan,16
+Leaf veins (synthetic),sat_b3,16,1.1408221922388082,nan,2
+Leaf veins (synthetic),cont_eq,2,2.1742411018722687,nan,100
+Leaf veins (synthetic),cont_eq,4,4.244450312420636,nan,75
+Leaf veins (synthetic),cont_eq,8,6.920902043153068,nan,3
+Leaf veins (synthetic),cont_eq,16,8.017149342245979,nan,0
+Leaf veins (synthetic),filtstack_8,2,nan,nan,0
+Leaf veins (synthetic),filtstack_8,4,nan,nan,0
+Leaf veins (synthetic),filtstack_8,8,nan,nan,0
+Leaf veins (synthetic),filtstack_8,16,33.09044951073939,nan,4
+Leaf veins (synthetic),filtstack_16,2,nan,nan,0
+Leaf veins (synthetic),filtstack_16,4,nan,nan,0
+Leaf veins (synthetic),filtstack_16,8,nan,nan,0
+Leaf veins (synthetic),filtstack_16,16,33.09044951073939,nan,4
+Leaf veins (synthetic),filtstack_32,2,nan,nan,0
+Leaf veins (synthetic),filtstack_32,4,nan,nan,0
+Leaf veins (synthetic),filtstack_32,8,nan,nan,0
+Leaf veins (synthetic),filtstack_32,16,33.09044951073939,nan,4
+Wood grain (synthetic),cuts5,2,1.5336105126040462,nan,389
+Wood grain (synthetic),cuts5,4,1.3552981387889984,nan,194
+Wood grain (synthetic),cuts5,8,1.496945329206093,nan,10
+Wood grain (synthetic),cuts5,16,1.4116547646767268,nan,0
+Wood grain (synthetic),cont,2,0.22171433483128444,nan,33
+Wood grain (synthetic),cont,4,0.18400768183295826,nan,12
+Wood grain (synthetic),cont,8,0.14855896595725224,nan,0
+Wood grain (synthetic),cont,16,0.08692795497223309,nan,0
+Wood grain (synthetic),sat_b1,2,0.2232317925460961,nan,37
+Wood grain (synthetic),sat_b1,4,0.1943282469770587,nan,16
+Wood grain (synthetic),sat_b1,8,0.1670911912472984,nan,0
+Wood grain (synthetic),sat_b1,16,0.10027207693957026,nan,0
+Wood grain (synthetic),sat_b3,2,0.33144879197544347,nan,56
+Wood grain (synthetic),sat_b3,4,0.31209332989795224,nan,21
+Wood grain (synthetic),sat_b3,8,0.292468468743741,nan,0
+Wood grain (synthetic),sat_b3,16,0.1912374683013265,nan,0
+Wood grain (synthetic),cont_eq,2,0.26924802873451625,nan,33
+Wood grain (synthetic),cont_eq,4,0.21658437581156337,nan,12
+Wood grain (synthetic),cont_eq,8,0.15422305375071832,nan,0
+Wood grain (synthetic),cont_eq,16,0.08466364655264398,nan,0
+Wood grain (synthetic),filtstack_8,2,0.7754678644147067,nan,30
+Wood grain (synthetic),filtstack_8,4,0.5285815025130863,nan,12
+Wood grain (synthetic),filtstack_8,8,0.2853587831389639,nan,0
+Wood grain (synthetic),filtstack_8,16,0.18139192031404733,nan,0
+Wood grain (synthetic),filtstack_16,2,0.5491069230228758,nan,33
+Wood grain (synthetic),filtstack_16,4,0.38585354563924196,nan,14
+Wood grain (synthetic),filtstack_16,8,0.23710646181956266,nan,0
+Wood grain (synthetic),filtstack_16,16,0.10405852672994831,nan,0
+Wood grain (synthetic),filtstack_32,2,0.43267845508271474,nan,33
+Wood grain (synthetic),filtstack_32,4,0.303845190031423,nan,10
+Wood grain (synthetic),filtstack_32,8,0.18974181432823561,nan,0
+Wood grain (synthetic),filtstack_32,16,0.09695551328593004,nan,0
+Textile weave (synthetic),cuts5,2,2.0071459413983663,nan,836
+Textile weave (synthetic),cuts5,4,1.7672952523682939,nan,489
+Textile weave (synthetic),cuts5,8,2.172628574528642,nan,150
+Textile weave (synthetic),cuts5,16,6.770458524128242,nan,19
+Textile weave (synthetic),cont,2,0.344785598751424,nan,624
+Textile weave (synthetic),cont,4,0.2033787492718246,nan,608
+Textile weave (synthetic),cont,8,0.5480029771133196,nan,212
+Textile weave (synthetic),cont,16,0.9797008956381356,nan,19
+Textile weave (synthetic),sat_b1,2,0.37486168366786954,nan,635
+Textile weave (synthetic),sat_b1,4,0.22427470003662373,nan,610
+Textile weave (synthetic),sat_b1,8,0.610852947338991,nan,210
+Textile weave (synthetic),sat_b1,16,1.0579405302912928,nan,23
+Textile weave (synthetic),sat_b3,2,0.5344936739461713,nan,687
+Textile weave (synthetic),sat_b3,4,0.39920949975950737,nan,612
+Textile weave (synthetic),sat_b3,8,1.0165984956827896,nan,208
+Textile weave (synthetic),sat_b3,16,1.5168709060387011,nan,27
+Textile weave (synthetic),cont_eq,2,1.1812306466382378,nan,623
+Textile weave (synthetic),cont_eq,4,1.231406050804759,nan,526
+Textile weave (synthetic),cont_eq,8,1.61521672819764,nan,169
+Textile weave (synthetic),cont_eq,16,1.6835158980537466,nan,24
+Textile weave (synthetic),filtstack_8,2,3.7209868114049254,nan,595
+Textile weave (synthetic),filtstack_8,4,3.2416638825706436,nan,483
+Textile weave (synthetic),filtstack_8,8,2.500676900225245,nan,155
+Textile weave (synthetic),filtstack_8,16,2.1496165939070604,nan,25
+Textile weave (synthetic),filtstack_16,2,2.2905327101019086,nan,571
+Textile weave (synthetic),filtstack_16,4,2.1907613909140844,nan,486
+Textile weave (synthetic),filtstack_16,8,2.129488951826657,nan,168
+Textile weave (synthetic),filtstack_16,16,2.9588833376071157,nan,24
+Textile weave (synthetic),filtstack_32,2,1.474747070269369,nan,633
+Textile weave (synthetic),filtstack_32,4,1.425595814567328,nan,509
+Textile weave (synthetic),filtstack_32,8,1.3431834458210963,nan,169
+Textile weave (synthetic),filtstack_32,16,1.5107993595410132,nan,26
+Building array (synthetic),cuts5,2,2.827612413709049,nan,658
+Building array (synthetic),cuts5,4,2.6972051684422897,nan,183
+Building array (synthetic),cuts5,8,2.872212849542631,nan,68
+Building array (synthetic),cuts5,16,2.469800329879119,nan,6
+Building array (synthetic),cont,2,1.823997160675882,nan,431
+Building array (synthetic),cont,4,1.060478172735401,nan,83
+Building array (synthetic),cont,8,0.9811527387153082,nan,37
+Building array (synthetic),cont,16,0.8888160526837879,nan,7
+Building array (synthetic),sat_b1,2,1.9278055358063824,nan,442
+Building array (synthetic),sat_b1,4,1.1587382941365847,nan,129
+Building array (synthetic),sat_b1,8,1.2007223707305874,nan,37
+Building array (synthetic),sat_b1,16,1.2634282493119164,nan,7
+Building array (synthetic),sat_b3,2,2.892684945241481,nan,321
+Building array (synthetic),sat_b3,4,1.806847887898616,nan,107
+Building array (synthetic),sat_b3,8,2.190679892009294,nan,46
+Building array (synthetic),sat_b3,16,2.7328552196569085,nan,9
+Building array (synthetic),cont_eq,2,1.1958617086468242,nan,59
+Building array (synthetic),cont_eq,4,0.9320338888273954,nan,20
+Building array (synthetic),cont_eq,8,0.7748215187938887,nan,18
+Building array (synthetic),cont_eq,16,0.6694160976717242,nan,5
+Building array (synthetic),filtstack_8,2,2.123147282048693,nan,29
+Building array (synthetic),filtstack_8,4,1.9484281142527367,nan,22
+Building array (synthetic),filtstack_8,8,1.6107466706061022,nan,16
+Building array (synthetic),filtstack_8,16,0.8338824383501036,nan,5
+Building array (synthetic),filtstack_16,2,1.2428572772961985,nan,61
+Building array (synthetic),filtstack_16,4,0.950076975476135,nan,20
+Building array (synthetic),filtstack_16,8,0.8603614132263847,nan,16
+Building array (synthetic),filtstack_16,16,0.7458142962530495,nan,6
+Building array (synthetic),filtstack_32,2,1.136681922139525,nan,62
+Building array (synthetic),filtstack_32,4,0.8262546716020903,nan,20
+Building array (synthetic),filtstack_32,8,0.7739578831020504,nan,16
+Building array (synthetic),filtstack_32,16,0.7092694033360727,nan,6
+CC0 brick wall,cuts5,2,2.705952189036557,nan,524
+CC0 brick wall,cuts5,4,2.637654376522397,nan,206
+CC0 brick wall,cuts5,8,2.7847825901675125,nan,13
+CC0 brick wall,cuts5,16,2.783246980637476,nan,0
+CC0 brick wall,cont,2,1.1701894054641502,nan,213
+CC0 brick wall,cont,4,1.144711156619476,nan,201
+CC0 brick wall,cont,8,1.1673139078451464,nan,15
+CC0 brick wall,cont,16,1.1856737385120113,nan,0
+CC0 brick wall,sat_b1,2,1.2901961036196736,nan,211
+CC0 brick wall,sat_b1,4,1.2856723362667992,nan,200
+CC0 brick wall,sat_b1,8,1.3162181980315795,nan,15
+CC0 brick wall,sat_b1,16,1.3309664190058672,nan,0
+CC0 brick wall,sat_b3,2,2.112553684340635,nan,217
+CC0 brick wall,sat_b3,4,2.0326776328457035,nan,181
+CC0 brick wall,sat_b3,8,2.065586485346287,nan,10
+CC0 brick wall,sat_b3,16,2.033637282476066,nan,0
+CC0 brick wall,cont_eq,2,2.5181144343338002,nan,320
+CC0 brick wall,cont_eq,4,2.002839381872896,nan,224
+CC0 brick wall,cont_eq,8,1.3424667009577764,nan,31
+CC0 brick wall,cont_eq,16,1.0701443142595934,nan,3
+CC0 brick wall,filtstack_8,2,2.988041613859693,nan,311
+CC0 brick wall,filtstack_8,4,2.0410867212455033,nan,239
+CC0 brick wall,filtstack_8,8,1.2115697526180278,nan,35
+CC0 brick wall,filtstack_8,16,0.7847422382255433,nan,4
+CC0 brick wall,filtstack_16,2,2.9702691534282133,nan,310
+CC0 brick wall,filtstack_16,4,2.2936005633799197,nan,225
+CC0 brick wall,filtstack_16,8,1.8050397644289704,nan,38
+CC0 brick wall,filtstack_16,16,1.3736217140741631,nan,3
+CC0 brick wall,filtstack_32,2,2.616857342615147,nan,321
+CC0 brick wall,filtstack_32,4,2.126595485140733,nan,228
+CC0 brick wall,filtstack_32,8,1.5507765111063059,nan,33
+CC0 brick wall,filtstack_32,16,1.143366637460261,nan,3
+CC0 retina vessel contrast,cuts5,2,3.3075448808844716,nan,572
+CC0 retina vessel contrast,cuts5,4,2.6129650048609894,nan,118
+CC0 retina vessel contrast,cuts5,8,2.5867521815901053,nan,26
+CC0 retina vessel contrast,cuts5,16,2.3587145633688027,nan,10
+CC0 retina vessel contrast,cont,2,0.9158609903951055,nan,167
+CC0 retina vessel contrast,cont,4,0.8328988111916893,nan,97
+CC0 retina vessel contrast,cont,8,0.7676109261618815,nan,37
+CC0 retina vessel contrast,cont,16,0.5876006744254211,nan,9
+CC0 retina vessel contrast,sat_b1,2,1.0180324029079495,nan,173
+CC0 retina vessel contrast,sat_b1,4,0.9278177494109152,nan,103
+CC0 retina vessel contrast,sat_b1,8,0.8488983015430316,nan,35
+CC0 retina vessel contrast,sat_b1,16,0.6926844722523423,nan,12
+CC0 retina vessel contrast,sat_b3,2,1.5760610697845607,nan,173
+CC0 retina vessel contrast,sat_b3,4,1.3573245212430751,nan,93
+CC0 retina vessel contrast,sat_b3,8,1.2090168810046502,nan,35
+CC0 retina vessel contrast,sat_b3,16,1.126880787932023,nan,6
+CC0 retina vessel contrast,cont_eq,2,4.30274471658036,nan,114
+CC0 retina vessel contrast,cont_eq,4,2.7638915811357263,nan,86
+CC0 retina vessel contrast,cont_eq,8,2.1624718493787185,nan,14
+CC0 retina vessel contrast,cont_eq,16,2.1385023923684954,nan,4
+CC0 retina vessel contrast,filtstack_8,2,3.0522515356890834,nan,80
+CC0 retina vessel contrast,filtstack_8,4,1.867327904057765,nan,72
+CC0 retina vessel contrast,filtstack_8,8,1.657412734154989,nan,22
+CC0 retina vessel contrast,filtstack_8,16,0.953453220628153,nan,2
+CC0 retina vessel contrast,filtstack_16,2,3.228209795046718,nan,80
+CC0 retina vessel contrast,filtstack_16,4,1.9150257517320781,nan,76
+CC0 retina vessel contrast,filtstack_16,8,1.8018547568131265,nan,24
+CC0 retina vessel contrast,filtstack_16,16,1.004282385475809,nan,2
+CC0 retina vessel contrast,filtstack_32,2,2.9086590257073164,nan,80
+CC0 retina vessel contrast,filtstack_32,4,1.5784986933200507,nan,76
+CC0 retina vessel contrast,filtstack_32,8,1.542177687596388,nan,24
+CC0 retina vessel contrast,filtstack_32,16,0.9917298060385643,nan,2
+CC0 grass texture,cuts5,2,3.3926502980570943,nan,1193
+CC0 grass texture,cuts5,4,3.2614233025363424,nan,329
+CC0 grass texture,cuts5,8,3.4499031398910676,nan,74
+CC0 grass texture,cuts5,16,3.8363973324102743,nan,23
+CC0 grass texture,cont,2,1.9047403775615142,nan,1025
+CC0 grass texture,cont,4,1.5376944785319546,nan,352
+CC0 grass texture,cont,8,1.7033413557034673,nan,72
+CC0 grass texture,cont,16,1.7922412234283338,nan,26
+CC0 grass texture,sat_b1,2,1.7276406186592008,nan,1051
+CC0 grass texture,sat_b1,4,1.4057937040630966,nan,355
+CC0 grass texture,sat_b1,8,1.5107086424911267,nan,74
+CC0 grass texture,sat_b1,16,1.4470354228218085,nan,24
+CC0 grass texture,sat_b3,2,1.6663542614339553,nan,1141
+CC0 grass texture,sat_b3,4,1.4485536052890364,nan,335
+CC0 grass texture,sat_b3,8,1.6691304891084822,nan,67
+CC0 grass texture,sat_b3,16,1.4209895275783142,nan,16
+CC0 grass texture,cont_eq,2,1.5937157087336922,nan,992
+CC0 grass texture,cont_eq,4,1.4702038906968438,nan,326
+CC0 grass texture,cont_eq,8,1.6562717709621229,nan,75
+CC0 grass texture,cont_eq,16,1.7811981582355736,nan,22
+CC0 grass texture,filtstack_8,2,3.144416891596272,nan,972
+CC0 grass texture,filtstack_8,4,2.760147724853927,nan,332
+CC0 grass texture,filtstack_8,8,3.298274285179592,nan,78
+CC0 grass texture,filtstack_8,16,3.403507694786086,nan,21
+CC0 grass texture,filtstack_16,2,1.8743357699101402,nan,955
+CC0 grass texture,filtstack_16,4,1.5956340367068504,nan,340
+CC0 grass texture,filtstack_16,8,1.5838012206492618,nan,85
+CC0 grass texture,filtstack_16,16,1.4327536123340554,nan,22
+CC0 grass texture,filtstack_32,2,1.711532328586789,nan,975
+CC0 grass texture,filtstack_32,4,1.447568583225962,nan,330
+CC0 grass texture,filtstack_32,8,1.639483972001759,nan,87
+CC0 grass texture,filtstack_32,16,1.8799338972922974,nan,21

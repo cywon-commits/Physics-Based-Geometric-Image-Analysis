@@ -1,0 +1,286 @@
+% Nature Communications Article -- draft restructured from the full manuscript (rev12), 18 November 2026.
+% Red/yellow boxes mark items the AUTHORS must complete or confirm before submission.
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=2.3cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[font=small,labelfont=bf,labelsep=period]{caption}
+\usepackage[super,sort&compress,comma]{natbib}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{setspace}
+\usepackage{lineno}
+\usepackage{microtype}
+\usepackage{xurl}
+\usepackage{xr-hyper}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+\externaldocument[S-]{nc_si}
+\onehalfspacing
+\linenumbers
+\setlength{\parskip}{0.3em}
+\newcommand{\nn}{\bm n}
+\newcommand{\vv}{\bm v}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\RP}{\mathbb{RP}}
+\newcommand{\Sn}{\mathbb S}
+% ---- author-to-complete markers
+\definecolor{todo}{RGB}{200,0,0}
+\newtcolorbox{authorbox}{colback=yellow!22,colframe=todo,boxrule=1.2pt,arc=1mm,left=2mm,right=2mm,top=1mm,bottom=1mm,
+  fonttitle=\bfseries\small,title={AUTHOR TO COMPLETE / CONFIRM}}
+
+
+\newcommand{\fillin}[1]{\textcolor{todo}{\bfseries $\blacktriangleright$\,[AUTHOR: #1]}}
+\renewcommand{\figurename}{Fig.}
+
+\begin{document}
+\begin{center}
+{\LARGE\bfseries Reading image geometry and topology from the magnetization a binary image induces\par}
+\vspace{1em}
+{\large Changyeon Won$^{1,*}$\par}
+\vspace{0.5em}
+{\small $^1$Department of Physics, Kyung Hee University, Seoul 02447, Republic of Korea\\
+$^*$Corresponding author. E-mail: cywon@khu.ac.kr\par}
+\end{center}
+\begin{authorbox}
+Add any co-authors, their affiliations and ORCID iDs (Nature Communications requires ORCID for the corresponding author). Confirm the postal code and the corresponding-author e-mail. The title has 12 words (limit 15).
+\end{authorbox}
+
+\section*{Abstract}
+A magnet placed in a field reveals the field's shape: where the field reverses, the magnetization turns, and the turning region follows the contour. We ask whether this can be inverted into a principled way of measuring images. A binary image is treated as a static field acting on unit-vector spins, and a simple alignment rule generates the response. Although the rule has no energy function, its fixed points obey closed equations. They predict the width of the walls, a sign rule that filters noise below a sharp size threshold, boundary lengths and areas from the field's total variation with constants fixed once on planar walls, disks and spheres, a projective director whose half-integer defects obey exact laws across observation scales, and an integer degree equal to the Euler characteristic. On 294 shapes with exact geometry, the readout, never calibrated on these shapes, is more accurate than calibrated conventional estimators in two dimensions, matches them in three, and remains the most accurate under noise. Without training, it counts cell nuclei in annotated fluorescence images as accurately as a threshold pipeline tuned on them. The same physics predicts where the method fails and how many updates it needs.
+
+\section*{Introduction}
+A ferromagnet placed in a nonuniform field reveals the shape of that field. Where the field reverses, the magnetization must turn, and the turning region---a domain wall---follows the contour of the reversal. The wall carries more than position. Its transverse magnetization points across the contour, its extent grows with the contour's length, and the way the magnetization wraps the sphere of directions counts the enclosed domains\cite{Mermin1979,Nagaosa2013}. If an image were read as such a field, the magnetization it induces could provide a single, analyzable representation of the image's geometry, orientation and topology.
+
+Image geometry is usually obtained piece by piece. Lengths come from contour tracing or Crofton counting, areas from marching cubes\cite{Lorensen1987}, orientations from structure tensors\cite{Bigun1991,DiZenzo1986}, and connectivity from Euler analysis. Each tool is efficient, but each starts again from the raw raster, and their accuracies, failure modes and parameter dependences are not connected by a common principle. Diffuse-interface measures of boundary extent\cite{Modica1987,Allen1979,Chan2001} and total-variation functionals\cite{Rudin1992} rest on related intuitions, and magnetic analogies have been used to count objects\cite{Park2024AMT}, to compute Euler characteristics\cite{Moon2025SR} and to analyze fingerprint defects\cite{Park2025iScience}. In these works, however, the magnetic picture served as motivation. The algorithms actually run---fast, synchronous alignment updates---do not minimize the energy that inspired them, so energy arguments cannot say how wide the walls are, how accurate a measurement will be, or when the generated field departs from the input.
+
+Here we treat the alignment rule itself as the physical system. We show that, although it admits no energy function, its fixed points obey closed equations and every geometric readout follows from an identifiable mechanism. Wall widths obey a scaling law in which the chiral coupling acts as a nonconservative force. An exact sign rule makes the field a filter with a sharp size threshold. The coarea formula and lattice symmetry turn the field's total variation into a measure of boundary extent whose constants come from planar walls and one curvature law, not from the shapes being measured. A projective average of the transverse spin yields a director field whose half-integer defects obey exact laws when the observation scale changes, and Hopf's theorem identifies the spin degree with the Euler characteristic. We confirm each prediction numerically and on a benchmark with exact geometry, test the readouts on annotated images of cell nuclei, and show that the same theory predicts where the method must fail and how fast the generator converges.
+
+\section*{Results}
+\subsection*{A binary image as a magnetic field}
+On a pixel or voxel lattice with spacing $a$, a binary mask defines a fixed source $f_i=\pm1$ (inside/outside). Each site carries a unit vector $\nn_i=(\vv_i,s_i)\in\Sn^d$, whose scalar component $s$ follows the source and whose transverse part $\vv\in\mathbb R^d$ is appreciable only in walls (Fig.~\ref{fig:concept}). Starting from the distance transform of the mask, the field is updated synchronously $N$ times,
+\begin{equation}
+\bm H_{v,i}=J\!\!\sum_{j\in\mathrm{NN}(i)}\!\!\vv_j+D\,(Gs)_i,\qquad
+H_{s,i}=J\!\!\sum_{j\in\mathrm{NN}(i)}\!\! s_j+h f_i,\qquad
+\nn_i\leftarrow\bm H_i/|\bm H_i|,
+\label{eq:update}
+\end{equation}
+where NN are the $2d$ axial neighbors and $G$ is the centered difference. We use $J=D=1$, $h=2$ and $N=30$ unless stated otherwise. The coupling of $s$ into $\bm H_v$ has no counterpart coupling $\vv$ into $H_s$, so the effective field is not the gradient of any energy: half of the chiral term is nonreciprocal (Supplementary Note~1). Energy-based reasoning therefore does not apply, and the properties of the generated texture have to be derived from its fixed points. Splitting the chiral coupling into a reciprocal and a nonreciprocal half shows what is lost: the reciprocal half derives from an interfacial Lifshitz invariant, as in a N\'eel-type chiral magnet\cite{Dzyaloshinskii1958,Moriya1960}, but the nonreciprocal half has no Hamiltonian counterpart. Four exact symmetries constrain the fixed points instead. Rescaling $(J,D,h)$ by a positive constant leaves the update unchanged, so only $h/J$ and $D/J$ matter. The update is covariant under the lattice point group ($C_{4v}$ in 2D, $O_h$ in 3D). The inside--outside symmetry $(f,s,\vv)\to-(f,s,\vv)$ treats objects and holes of the same shape identically. Finally, because $H_s$ does not contain $\vv$, the chirality symmetry $(D,\vv)\to(-D,-\vv)$ holds at fixed $(f,s)$: the scalar field and every readout built from it depend on $D$ only through $cD$, where $c$ is the wall chirality. In a reciprocal model the sign of $D$ would instead set the energy of each chirality, so this symmetry is itself a signature of nonreciprocity.
+
+\begin{figure}[t]
+\centering\includegraphics[width=\linewidth]{figures/Fig1_concept_v2.pdf}
+\caption{\textbf{From a binary image to a spin texture whose walls carry extent, orientation and topology.} \textbf{a}, Procedure. (1) The pixels of a binary image define a source $f_i=\pm1$, (2) read as a Zeeman field $hf_i$. (3) The alignment rule of Eq.~(\ref{eq:update}) generates the spin texture $\mathbf{n}=(\mathbf{v},s)$, shown in perspective (cones; color, $s$): $s$ follows the source, and in the walls the spins rotate so that $\mathbf{v}$ points along the inward normal. (4) Three readouts follow from the texture. The lattice in \textbf{a} is $26\times26$ for visibility. \textbf{b}--\textbf{e}, The readouts, enlarged; all inputs are synthetic. \textbf{b}, Extent: the wall density $\tfrac12|\nabla s|/m(\varphi,\kappa)$ of a five-petal flower $r=R[1+0.15\cos(5\theta)]$, $R=32$, drawn as height; its sum, $\hat P=227.2$, gives the perimeter (exact $227.0$) with constants fixed on planar walls and disks (Eq.~(\ref{eq:refree})). \textbf{c}, Orientation: the projective director $q_\sigma$ of $\mathbf{v}$ (Eq.~(\ref{eq:q})) for a three-lobed object with a hole and a disk, $\sigma=8$; sticks show the boundary direction, color its angle (inset wheel), and opacity the coherence $|q_\sigma|$. \textbf{d}, Defects: for a three-armed object, the director at $\sigma=3$ has a $+\tfrac12$ defect (red up-triangles) in each end cap and a $-\tfrac12$ defect (blue down-triangle) at the branch point (Eq.~(\ref{eq:charge})); the total, $+1$, is the winding of the outline. Zeros of $q_\sigma$ far from every wall, where $\mathrm{tr}\,Q_\sigma<10^{-6}$ of its maximum and the phase is undefined, are not shown. \textbf{e}, Topology: spin texture of a disk, an annulus and a domain with two holes; the degree summed over the region nearest to each domain is $1$, $0$ and $-1$ (to within $5\times10^{-4}$), equal to its Euler characteristic, and the total is $\chi(\{s>0\})=0$ (Eq.~(\ref{eq:hopf})). $J=D=1$, $h=2$, $N=30$.}
+\label{fig:concept}
+\end{figure}
+
+\subsection*{Walls with a nonconservative chiral force}
+A fixed point requires each spin to be parallel to its local field. For a planar wall with normal coordinate $u$ and polar angle $\theta(u)$, projecting the continuum limit of Eq.~(\ref{eq:update}) onto the direction of rotation gives
+\begin{equation}
+Ja^2\theta''=hf\sin\theta+cD\sin\theta\cos\theta\,\theta' ,
+\label{eq:ode}
+\end{equation}
+with $c=\pm1$ the wall chirality (Supplementary Note~2). In the energy model that motivated the rule, the chiral term integrates to a constant across a planar wall. Here it survives as a force proportional to $\theta'$, damping on one side of the wall and anti-damping on the other, so the mechanical energy of the profile is not conserved. The force is odd under reflection through the wall center, so the wall stays centered on the input boundary while its width changes. Equation~(\ref{eq:ode}) contains only $\ell=a\sqrt{J/h}$ and $\kappa=cD/\sqrt{Jh}$, so every width obeys $w=\ell F(\kappa)$, and the center slope is $(\sqrt2/\ell)(1-K\kappa)$ with $K=2\sqrt2/15$. Lattice walls with $\ell/a=7.1$ and $3.5$ collapse onto $F(\kappa)$ to within $0.3\%$ and $0.9\%$ (Fig.~\ref{fig:wall}). The working setting deliberately uses lattice-scale walls ($\ell=0.71a$). They pin the zero level of $s$ to the raster boundary, so clean masks are reproduced exactly, and they activate the discrete filtering described next. Clean masks are then reproduced with a Dice coefficient of one for all 2D test shapes down to disks of radius $1.5$ pixels. In this regime the collapse is only qualitative, but the chiral term still widens the wall, by $45\%$ at $\kappa=0.71$, and the wider wall is sampled more smoothly by the lattice, which reduces the metrication error discussed below.
+
+\begin{figure}[t]
+\centering\includegraphics[width=\linewidth]{figures/Fig2_wall_theory.pdf}
+\caption{\textbf{Wall widths collapse onto $w=\ell F(\kappa)$ once walls span several lattice spacings.} \textbf{a}, Fixed-point profiles of Eq.~(\ref{eq:ode}) for four values of $\kappa=cD/\sqrt{Jh}$. \textbf{b}, Width (standard deviation of $|\partial_us|$) divided by $\ell=a\sqrt{J/h}$. Line, continuum equation; symbols, lattice update at five ratios $h/J$ (filled, $\ell\ge3.5a$; open, lattice-scale walls). The arrow marks the working setting. \textbf{c}, Center slope and the first-order law $1-K\kappa$. All values are exact computations.}
+\label{fig:wall}
+\end{figure}
+
+\subsection*{A sign rule filters below a sharp size threshold}
+Because $s_i$ is set to $H_{s,i}/|\bm H_i|$, its sign after an update equals the sign of $H_{s,i}$, which contains neither $D$ nor $\vv$. A site with $z_{\rm in}$ like and $z_{\rm out}$ unlike neighbors therefore keeps its sign if and only if
+\begin{equation}
+h>J\,(z_{\rm out}-z_{\rm in}).
+\label{eq:sign}
+\end{equation}
+An isolated pixel survives only if $h>2dJ$, so salt-and-pepper defects are removed in the first update, and the filtering scale is set by $h/J$ independently of the wall width set by $\kappa$. The rule predicted the fate of 23 of 24 strictly decided feature--field combinations (Fig.~\ref{fig:filter}a). The one exception, a $2\times2$ block at $h/J=1$, occurs where walls are no longer lattice-scale. Repeating the test at $D/J=0$, 1 and 2 gave identical outcomes except for one marginal case, confirming that filtering is controlled by $h/J$ and not by $D$. The rule also predicts erosion: in 2D at $h=2J$, line ends with one like neighbor are marginal, and in 3D, sheets and edges one voxel thick are unstable. Filtering therefore removes noise and true features below the same threshold, and it can change topology, a point we return to below. Under salt-and-pepper corruption of 12 stadium masks, the readout stays at $0.45\%$ and $0.43\%$ error for flip rates of $0.2\%$ and $1\%$, whereas raw Crofton counting fails completely ($88\%$ already at $0.2\%$), because every flipped pixel adds boundary (Fig.~\ref{fig:filter}b). A $3\times3$ median filter followed by Crofton gives $1.20\%$ and $1.15\%$. At a $5\%$ flip rate, adjacent defects and defects touching the boundary become common; many are stable or marginal under Eq.~(\ref{eq:sign}), and the error rises to $10\%$, worse than the median baseline. The field is thus a filter with a defined scale, not a general-purpose denoiser.
+
+\begin{figure}[t]
+\centering\includegraphics[width=\linewidth]{figures/Fig4_filter.pdf}
+\caption{\textbf{The sign rule predicts which features survive and keeps perimeters accurate under sparse noise.} \textbf{a}, Fraction of feature pixels whose sign survives 30 updates (color and upper number), with the prediction of Eq.~(\ref{eq:sign}) for the least-supported site (lower label; ``marg.'', equality; $\times$, disagreement). Holes give identical results. \textbf{b}, Perimeter error (MARE) of 12 stadium shapes versus salt-and-pepper flip rate; PBGIA uses $I_{\rm TV}/\bar m_2$ to isolate the effect of filtering. Bars, standard error over shapes.}
+\label{fig:filter}
+\end{figure}
+
+\subsection*{Boundary measures from the total variation}
+We read boundary extent from half the total variation of the scalar field, $I_{\rm TV}=\tfrac12\int|\nabla s|\,\dd^dx$. By the coarea formula,
+\begin{equation}
+I_{\rm TV}=\tfrac12\int_{-1}^{1}\mathcal A_{d-1}\bigl(\partial\{s>t\}\bigr)\,\dd t ,
+\label{eq:coarea}
+\end{equation}
+the perimeter or surface area of the level sets of $s$, averaged over all levels. The wall width need not be known, provided the field saturates on both sides, and Steiner's formula shows that the curvature correction vanishes in 2D for centered walls (Supplementary Note~2). What remains is lattice metrication: the discrete gradient of a planar wall depends on its orientation. Lattice symmetry fixes this dependence exactly. The factor $m(\varphi)$ is invariant under the point group, so in 2D it contains only the harmonics $\cos4j\varphi$, and it equals one along the mirror directions, where the centered differences telescope (Fig.~\ref{fig:metric}a). Walls a few lattice spacings wide do not resolve small radii of curvature, so the factor also depends on the local curvature $\kappa_x$, which the field supplies itself. The resulting estimator,
+\begin{equation}
+\widehat{\mathcal A}_{d-1}=\sum_x\frac{\tfrac12|Gs|_x}{m(\varphi_x)+\Delta(\kappa_x)},
+\label{eq:refree}
+\end{equation}
+has constants fixed once by planar walls and by disks and spheres (Fig.~\ref{fig:metric}b,c), as universal properties of the generator on the cubic lattice; none comes from the shapes on which it is evaluated, and no shape-specific calibration follows. The numbers confirm each step. Straight walls give $m=1$ to machine precision at $0^\circ$ and $45^\circ$ and at most $1.028$ in between; the orientation averages are $\bar m_2=1.0189$ and $\bar m_3=1.0160$. Without the chiral coupling, $\bar m_2$ rises to $1.0437$, because narrower walls are sampled more coarsely, so the nonreciprocal widening of the previous section directly reduces the measurement error. Disks with $R\ge8$ pixels have a wall offset below $0.021$ pixels, as the centering argument requires. At small radii the measured factor falls below the planar value. The deficit has the opposite sign to the continuum Steiner correction in 3D, so it reflects lattice sampling of curvature, which the curvature law absorbs.
+
+\begin{figure}[t]
+\centering\includegraphics[width=\linewidth]{figures/Fig3_metrication.pdf}
+\caption{\textbf{Lattice symmetry fixes the planar metrication, and one curvature law describes disks and spheres.} \textbf{a}, $I_{\rm TV}$ per unit length of straight walls versus normal angle for $D/J=0$ and $1$; values are exact. Unity on the mirror directions $0^\circ$ and $45^\circ$ follows from telescoping; dotted lines mark orientation averages. \textbf{b}, Ratio of $I_{\rm TV}$ to the exact perimeter for disks versus curvature $a/R$, with the planar value (star) and the fitted curvature law (line); points, means over six subpixel centers; bars, standard deviation. \textbf{c}, The same for spheres versus $2a/R$.}
+\label{fig:metric}
+\end{figure}
+
+We tested the estimator on shapes whose perimeters and areas are known exactly: seven families per dimension, including ellipses, thin rings, non-convex flowers and bumpy spheres, tori, and separated and near-touching pairs, with random sizes, rotations and subpixel shifts (294 test shapes; Methods). Conventional estimators were calibrated, and their smoothing width selected, on a separate training set. PBGIA (physics-based geometric image analysis, our name for the method) used training shapes only to choose between two theory-motivated settings. Without calibration on the benchmark shapes, PBGIA has the lowest clean 2D error, $0.54\%$, against $0.70$--$1.17\%$ for the comparators (Table~\ref{tab:bench} and Fig.~\ref{fig:bench}). The paired difference to Gaussian smoothing with marching squares is $-0.15$ percentage points (95\% interval $[-0.22,-0.09]$). In 3D it matches calibrated marching cubes ($0.35\%$ each). Under salt-and-pepper noise, raster estimators fail without preprocessing, and smoothing or median filtering costs accuracy. PBGIA remains the most accurate at every noise level, because the sign rule removes defects that raster methods count as boundary. At the $1\%$ flip rate in 2D, the paired improvement over Gaussian smoothing is $-0.25$ points ($[-0.40,-0.11]$), and in 3D Gaussian smoothing fails ($10.1\%$). The advantage persists when disks and spheres, from which the curvature law was fitted, are excluded ($0.59\%$ against $0.72\%$ and $0.78\%$ in 2D). The two settings chosen on the training set also follow the theory. The weaker field $h/J=1.5$ leaves clean accuracy unchanged and reduces the error at $1\%$ noise by $0.14$ points, because by Eq.~(\ref{eq:sign}) it removes defects attached to the boundary ($z_{\rm in}=1$). The direction-resolved metrication removes the systematic error of straight boundaries at unfavorable angles. For large, clean, isolated volumes, calibrated marching cubes is as accurate (MARE $0.15\%$ against $0.26\%$ on five $68^3$ volumes) and simpler.
+
+The theory also predicts where the readout must fail, and the failures appear there. Flowers whose smallest radius of curvature is below about $1.7$ pixels carry the largest error, because the field erodes lobe tips. Two objects closer than the wall width merge in the deeper level sets of Eq.~(\ref{eq:coarea}), so their facing boundaries are undercounted below a gap of two pixels: by $0.6\%$ at $1.75$ pixels and by $4\%$ at one pixel, whereas the readout is accurate to within $0.2\%$ for gaps of two pixels or more (Fig.~\ref{fig:bench}e). Averaged over gaps of 1--3 pixels, the near-touching families still give $0.53\%$ (2D) and $0.44\%$ (3D).
+
+\begin{table}[t]
+\centering
+\caption{\textbf{Benchmark error (MARE, \%) over the six non-contact families.} 2D, 180 test shapes; 3D, 72 test shapes; each at three salt-and-pepper flip rates. Conventional estimators are calibrated on a separate training set. PBGIA is not calibrated on benchmark shapes; its constants were fixed beforehand on planar walls, disks and spheres. In 2D, Crofton and marching squares on the binary mask coincide after calibration. The smallest error in each column is in bold.}
+\label{tab:bench}
+\small\begin{tabular}{@{}lrrrrrr@{}}\toprule
+ & \multicolumn{3}{c}{2D perimeter} & \multicolumn{3}{c}{3D surface area}\\\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+Method / flip rate & 0 & 0.002 & 0.01 & 0 & 0.002 & 0.01\\\midrule
+PBGIA (constants from walls, disks, spheres) & \textbf{0.54} & \textbf{0.58} & \textbf{0.81} & \textbf{0.35} & \textbf{0.36} & \textbf{0.49}\\
+Crofton / marching cubes, calibrated & 0.81 & 106 & 539 & \textbf{0.35} & 96 & 508\\
+Gaussian + marching squares/cubes, calibrated & 0.70 & 0.71 & 1.06 & 0.56 & 0.76 & 10.1\\
+Median filter + Crofton/marching cubes, calibrated & 1.17 & 1.16 & 1.17 & 1.83 & 1.81 & 1.78\\\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[t]
+\centering\includegraphics[width=\linewidth]{figures/Fig5_benchmark.pdf}
+\caption{\textbf{Without shape-specific calibration, PBGIA is the most accurate estimator in 2D, ties calibrated marching cubes in 3D, and stays accurate under noise without preprocessing.} \textbf{a}, Clean 2D perimeter errors of the 30 test shapes per family (small symbols) and family means (large symbols). \textbf{b}, MARE over the six non-contact families versus flip rate (clean plotted at $5\times10^{-4}$). \textbf{c},\textbf{d}, The same for 3D surface areas (12 shapes per family). \textbf{e}, Perimeter error of two disks of radius 12 versus their gap (six random poses per gap; bars, standard deviation). Gray, gaps at which the raster joins the disks; dashed line, gap of two lattice spacings, below which the deepest level sets merge.}
+\label{fig:bench}
+\end{figure}
+
+\emph{How many updates are needed.} The theory describes fixed points, whereas the generator stops after $N=30$ updates. Linearizing Eq.~(\ref{eq:update}) about a saturated domain gives the approach. A transverse deviation $\bm\delta$ of a bulk spin is replaced by $J\sum_j\bm\delta_j/(zJ+h)$, with $z=2d$ neighbors, so the slowest, uniform mode decays as $\lambda^N$ with
+\begin{equation}
+\lambda=\frac{zJ}{zJ+h},
+\label{eq:rate}
+\end{equation}
+$0.727$ for the 2D readout ($h/J=1.5$) and $0.75$ in 3D ($h/J=2$). The residual $|\mathbf n-\mathbf H/|\mathbf H||$ on the walls decays at $0.74$--$0.75$ per update, slightly slower because $|\mathbf H|$ is smaller in a wall, and falls to $10^{-4}$ at $N=20$ and $6\times10^{-6}$ at $N=30$ (Supplementary Fig.~\ref{S-fig:nsteps}). The readouts converge sooner than the field, because the distance-transform initialization already has the shape of a wall. On clean images, the 2D perimeter error is within $0.01$ points of its converged value from $N=8$ on, the wall-normal error within $0.1^\circ$ from $N=5$ on, and the degree is exact from the start. In 3D the clean error converges by $N=8$ if the constants are re-derived at the same $N$, and by $N=20$ with the constants of $N=30$. Noise sets the requirement, because the sign rule removes a defect only after it has been reversed over several updates. At a $1\%$ flip rate, spurious domains are gone by $N=5$, but the perimeter and area errors reach their converged values only at $N\approx20$ ($0.88\%$ at $N=12$ and $0.82\%$ at $N=20$ in 2D, against $0.81\%$ at $N=30$). The choice $N=30$ is therefore conservative; $N=20$ gives the same accuracy at every noise level tested. Each update is a local stencil, so the cost is linear in pixels and updates and parallelizes directly. On one CPU core in NumPy, PBGIA with $N=30$ takes $12$\,ms for a $128^2$ image and $0.32$\,s for a $64^3$ volume, about thirty times longer than Gaussian smoothing followed by marching squares ($0.4$\,ms) or marching cubes ($12$\,ms).
+
+\emph{What limits the remaining error.} Once the systematic part is removed, the residual error is set by the raster itself. For a disk, pixel membership is linear in $(c_x,c_y,R^2-|\bm c|^2)$, so all disks consistent with a mask form a convex polytope whose width implies
+\begin{equation}
+\delta P/P\simeq 1/2\pi R^2
+\label{eq:bound}
+\end{equation}
+for any estimator, even one told that the object is a disk. For a local estimator, a residual boundary displacement $\delta n$ changes the perimeter by $\delta P=\oint\kappa\,\delta n\,ds$, so its spread over poses obeys $\mathrm{var}(P)=c\oint\kappa^2ds$. Both laws hold numerically (Supplementary Note~3 and Supplementary Fig.~\ref{S-fig:floor}). PBGIA has $c=0.050$, below the value $2/9\pi$ for independent grid crossings. For disks its spread lies within a factor 1.3--3.3 of the bound (\ref{eq:bound}), and pose spread alone accounts for $85\%$ of the error of the non-flower families. The residual error is therefore rasterization, not a deficiency of the readout. Partial-volume input lowers it further, and a linear map of the gray level is singled out because it alone preserves the zeroth moment of a subpixel step (Supplementary Note~7).
+
+\subsection*{A projective director and its topological charges}
+In a striped or fibrous texture, neighboring walls bound domains of opposite sign, so their inward normals point in opposite directions and a vector average of $\vv$ cancels. The outer product $\vv\vv^{\mathsf T}$ survives. We therefore define the scale-$\sigma$ orientation tensor $Q_\sigma=G_\sigma*(\vv\vv^{\mathsf T})$ and, in 2D, the complex order parameter
+\begin{equation}
+q_\sigma=(Q_{xx}-Q_{yy})+2iQ_{xy}=|q_\sigma|e^{2i\varphi},\qquad q_\sigma=G_\sigma*q_0 ,
+\label{eq:q}
+\end{equation}
+whose phase is twice the director angle. The map to $\RP^1$ has the winding number
+\begin{equation}
+k(\Gamma)=\frac1{4\pi}\oint_\Gamma\dd\arg q_\sigma\in\tfrac12\mathbb Z ,
+\label{eq:charge}
+\end{equation}
+so defects carry half-integer charges. Defects are the zeros of $q_\sigma$, where the eigenvalue gap of $Q_\sigma$ closes and no orientation can be assigned. Near a generic zero, $q_\sigma\simeq\alpha z+\beta\bar z$ with $z=x+iy$, and the charge is $+\tfrac12$ if $|\alpha|>|\beta|$ and $-\tfrac12$ otherwise. On the lattice, plaquette charges are exact multiples of $\tfrac12$ and sum exactly to the winding along any boundary, so charge conservation is not an approximation. The director charge must be distinguished from the degree discussed below: projectivization forgets which side of a wall is inside, so an object and a hole of the same shape give the same $Q_\sigma$, and director charges cannot recover the Euler characteristic, which the oriented spin field does (Supplementary Note~6). Because $\{q_\sigma\}$ is a linear scale space of a complex field, the Gaussian window $\sigma$ obeys three exact laws and one statistical law (Supplementary Note~2). (i) Net charge in a fixed region cannot change with $\sigma$, so defects appear and disappear in neutral pairs. (ii) Around an isolated core, $|q_\sigma|=F(r/\sigma)$ with $F(\rho)=\sqrt{\pi/8}\,\rho\,e^{-\rho^2/4}[I_0(\rho^2/4)+I_1(\rho^2/4)]$. (iii) A $\pm\tfrac12$ pair at distance $d$ annihilates at $\sigma_c=0.4413\,d$. (iv) For an orientationally random texture, the defect density is $1/4\pi\sigma^2$, with no adjustable constant\cite{Berry2000}.
+
+All four laws are borne out (Fig.~\ref{fig:defects}). On a texture with four prescribed disclinations, PBGIA finds exactly those four, with correct signs, for $6\le\sigma\le14$. The close pair ($d=40$) annihilates between $\sigma=16$ and $18$ (predicted $17.7$), and the far pair ($d=110$) between $40$ and $50$ (predicted $48.5$), while the net charge stays zero. The core law holds to within $0.03$ at every window. For a grass texture, the defect density follows the random-field law within a factor $0.74$--$1.0$ over $\sigma=2$--$16$, whereas brick and wood fall below it and become defect-free beyond their correlation length. The window thus decides at which scale orientation is reported, and the scale dependence of the defect density gives a parameter-free measure of orientational disorder. As an orientation estimator, the director is comparable to, but not generally better than, the structure tensor (Supplementary Notes~5 and~7).
+
+\begin{figure}[t]
+\centering\includegraphics[width=\linewidth]{figures/Fig7_director_defects.pdf}
+\caption{\textbf{Half-integer defects of the projective director are conserved across scales, annihilate at the predicted window and measure orientational disorder.} \textbf{a},\textbf{b}, Synthetic texture with four prescribed disclinations (open circles) and the PBGIA director at $\sigma=8$ and $20$; detected $+\tfrac12$ (filled up-triangles) and $-\tfrac12$ (open down-triangles). \textbf{c}, Detected defects versus $\sigma$; dashed lines, predicted annihilation windows $0.4413\,d$; zero plotted at $0.5$. \textbf{d}--\textbf{g}, CC0 grass texture with directors and defects at four windows. \textbf{h}, Anisotropy around an isolated defect versus $r/\sigma$, with the exact law. \textbf{i}, Defects in a $271^2$-pixel region versus $\sigma$ for five textures, with the random-field law $A/4\pi\sigma^2$ (line, no fit).}
+\label{fig:defects}
+\end{figure}
+
+\subsection*{The degree counts the topology of the generated domain}
+With the outer collar set to the south pole, the field is a map $\Sn^d\to\Sn^d$ with integer degree $Q_d$. We evaluate it in 2D by summing signed solid angles of spherical triangles\cite{Berg1981} and in 3D by counting the preimages of regular values. If the transverse spin on the zero set $\{s=0\}$ follows the inward normal---which is what the walls do---the preimages of an equatorial value are those of the Gauss map of the boundary, and Hopf's theorem gives
+\begin{equation}
+Q_d=\chi\bigl(\{s>0\}\bigr),
+\label{eq:hopf}
+\end{equation}
+the Euler characteristic of the \emph{generated} domain (Supplementary Note~2). For disks, annuli and their combinations, $Q_2$ equals $\chi$ to within $2\times10^{-8}$. Spheres, capsules, tori, pairs and fiber bundles give $Q_3=1,1,0,2,4$ (Fig.~\ref{fig:topology}). A porous volume is the informative case. Its input is topologically ambiguous ($\chi=-4$ or $-6$, depending on the connectivity convention), and the generator, as Eq.~(\ref{eq:sign}) demands, removes isolated voxels. The degree is $-5$, exactly $\chi$ of the generated domain. The generator changes 231 voxels, and the generated domain is a single component with $\chi=-5$. The degree is therefore a correct invariant of the filtered field, and it differs from the input's topology precisely where the sign rule acts. The Euler characteristic of a digital input is itself defined only after a connectivity convention is chosen; that of the generated field is not ambiguous.
+
+\begin{figure}[t]
+\centering\includegraphics[width=\linewidth]{figures/Fig8_topology.pdf}
+\caption{\textbf{The integer degree of the generated field equals the Euler characteristic of the generated domain, including when filtering changes the input.} \textbf{a}--\textbf{d}, Generated texture for four 2D masks in perspective: the plate shows $s$, cones on the wall ($s=0$) show the in-plane spin $\mathbf{v}$ along the inward normal, and sparse cones in the bulk show $s=\pm1$; with the spherical-triangle charge $Q_2$ and the raster Euler characteristic. \textbf{e}--\textbf{h}, Generated wall $\{s=0\}$ of 3D volumes (isosurface), with the regular-value degree $Q_3$ and $\chi$ of $\{s>0\}$ (26-connectivity). In \textbf{h}, the surface is drawn translucent to show the internal cavities, and dots mark the 231 input voxels removed by the generator. $N=30$.}
+\label{fig:topology}
+\end{figure}
+
+\subsection*{Grayscale and color images}
+Intensity enters the generator only through the source, and its form follows from a conservation argument. With $g\in[0,1]$ the intensity normalized between background and object, the layer-cake identity $2g-1=\int_0^1\mathrm{sign}(g-t)\,\dd t$ shows that the linear source $h(2g-1)$ is the average of the binary sources over all cut levels. For a boundary crossing a pixel, this source is the pixel average of the continuum step, so its sum across the boundary equals the continuum integral for every subpixel offset. To linear order the wall responds to this zeroth moment, so the linear map transmits subpixel position. Nonlinear maps do not, and their error grows with the nonlinearity (Supplementary Note~7). On partial-volume images, the continuous source reduces the perimeter error of a single binary cut by about $40\%$ and its pose variance fourfold, and it keeps the noise robustness of the binary field. On clean gray images a plain marching-squares contour is still more accurate. A stack of binary cuts gives the same result on clean images but fails under noise, because its outermost cuts lie close to the intensity plateaus. For color images, the appropriate reduction depends on the readout. Extent needs the projection with the largest contrast-to-noise ratio, which for a two-phase image is the first principal axis of the pixel colors; luminance discards isoluminant boundaries entirely. Orientation, where channels can carry different structures, needs channel-wise fields pooled as tensors, the PBGIA analog of the color structure tensor\cite{DiZenzo1986}.
+
+\subsection*{Cell nuclei}
+The benchmark is synthetic. To test the readouts on experimental images with independent labels, we counted nuclei in the 50 test images of a public fluorescence data set with expert annotation (BBBC038, StarDist subset\cite{Caicedo2019,Schmidt2018}; Fig.~\ref{fig:cells} and Methods). PBGIA used the settings of the benchmark ($h/J=1.5$, $N=30$) and no training. The comparator, Otsu thresholding with Gaussian pre-smoothing and a minimum object size, had both parameters selected on the 447 annotated training images. On the raw images, plain Otsu thresholding overcounts badly on the noisiest images (mean count error $64\%$, up to $14$-fold), because background noise survives as small objects. PBGIA removes these by the sign rule and matches the tuned pipeline: mean count errors are $15$--$17\%$ for both PBGIA sources against $16\%$, with $2$--$3\%$ of annotated nuclei missed by either. With added Gaussian noise of $0.2$ of the nuclear contrast, the continuous source keeps its error ($17\%$), as does the tuned pipeline, whereas a binary source cut without smoothing fails, because noise clusters larger than one site stabilize each other, as Eq.~(\ref{eq:sign}) states. The remaining error has the cause the theory predicts. Nuclei closer than about two pixels merge in the generated field, as in the near-touching benchmark, and if annotated nuclei within two pixels of each other are counted as one object, the median deviation of the PBGIA counts falls to $5.6\%$ (binary source) and $7.0\%$ (continuous source), against $4.2\%$ for the tuned pipeline. Splitting touching nuclei requires instance segmentation, which neither PBGIA nor thresholding provides.
+
+\begin{figure}[t]
+\centering\includegraphics[width=\linewidth]{figures/Fig10_cells.pdf}
+\caption{\textbf{On fluorescence images of cell nuclei, PBGIA counts objects as accurately as a threshold pipeline tuned on annotated images, without training.} \textbf{a}, Detail of the noisiest test image (BBBC038, StarDist subset\cite{Caicedo2019,Schmidt2018}) with the expert annotation. \textbf{b}, Otsu threshold of the raw image. \textbf{c}, Wall $s=0$ of the field generated from the normalized intensity. Counts refer to the whole image. \textbf{d}, Objects counted versus annotated nuclei for the 50 test images. \textbf{e}, Mean relative count error versus added Gaussian noise. The tuned pipeline (Gaussian pre-smoothing $\sigma=0.5$ and minimum size $10$ pixels) was selected on 447 annotated training images; PBGIA uses the benchmark settings. \textbf{f}, Counts versus annotated nuclei when nuclei closer than two pixels are counted as one object, the merging predicted by the wall width.}
+\label{fig:cells}
+\end{figure}
+
+The readouts were also applied, unchanged, to three published magnetic microscopy data sets whose structures carry known topology (Supplementary Note~\ref{S-subsec:res:magnetic} and Supplementary Fig.~\ref{S-fig:magnetic}). On a skyrmion lattice the degree summed over each of 1074 domains is $1.0000\pm0.0015$, and on a labyrinth the director defects coincide with stripe ends and branch points three to six times more often than random or sign-exchanged controls.
+
+\section*{Discussion}
+Reading an image as a magnetic field turns geometric measurement into a problem of magnetization structure. The alignment rule that generates this structure has no energy function, yet its fixed points are analyzable. Every readout can be traced to a mechanism, and each mechanism rests on an assumption whose validity can be checked. The wall theory assumes only that fixed points align each spin with its local field, which is exact for the rule; the collapse of wall widths confirms that the chiral coupling enters only through $\kappa$. The filtering law assumes Ising-like neighbors, which is accurate in the lattice regime used in practice, and there it predicts survival without a fitted constant. The boundary readout assumes saturated, centered walls, both consequences of the wall theory, so its residual error is lattice metrication. Symmetry reduces that error to a planar constant, invariant harmonics and a smooth curvature law, and the law fixed on disks and spheres transfers to shapes it has never seen. The degree assumes that the transverse spin follows the inward normal on the zero set, and Hopf's theorem then makes it the Euler characteristic, even when filtering changes the input.
+
+The same assumptions predict the failures. Saturation breaks down between objects closer than a wall width, and their facing boundaries are undercounted. The sign rule cannot distinguish a one-site defect from a one-site feature, so it removes both, and at high defect densities clusters stabilize each other and survive. Each failure follows from a formula and appears in the benchmark where the formula places it. Beyond that, the residual error reaches the rasterization floor, which no binary estimator can pass by more than the factor set by global shape knowledge.
+
+The theory separates three length scales that can be set independently: $h/J$ sets the smallest surviving feature, $\kappa$ the wall width and with it the metrication, and the Gaussian window $\sigma$ the scale at which orientation is reported. Because director charge is conserved across windows, a scan over $\sigma$ adds or removes only neutral defect pairs. The defect density, compared with $1/4\pi\sigma^2$, then describes orientational order across scales without an adjustable constant. 
+
+The method has limits. For large, clean, isolated three-dimensional objects, a calibrated mesh estimator is as accurate and simpler. PBGIA is also slower, by a factor of about thirty on a CPU, although Eq.~(\ref{eq:rate}) bounds the number of updates and the stencil runs naturally on parallel hardware. A grayscale structure tensor gives local orientation that is as good or better. The constants of the curvature law are specific to the generator settings and to cubic lattices. The benchmarks with exact geometry are synthetic; the cell images provide expert labels for counts but not exact boundaries, and images with independently known geometry, such as micro-CT phantoms, remain to be analyzed. PBGIA does not separate touching objects. What the approach offers instead is one representation from which extent, normals, director topology and degree all follow, together with an error model derived from its physics. Natural extensions include director defects in three dimensions, classified by $\pi_1(\RP^2)$ and $\pi_2(\RP^2)$, generators with tunable wall width, and measured partial-volume data.
+
+\section*{Methods}
+\subsection*{Generator}
+Equation~(\ref{eq:update}) uses float32 arrays, periodic boundaries with padding, $2d$ axial neighbor sums, a centered scalar gradient and $N=30$ synchronous updates without adaptive stopping. The number of updates follows from Eq.~(\ref{eq:rate}): after 30 updates the wall residual is $6\times10^{-6}$, and all readouts are within $0.01$ points of their values at $N=200$ (Supplementary Note~\ref{S-subsec:res:nsteps}). Timings used one CPU core (\texttt{OMP\_NUM\_THREADS=1}), NumPy float32, and the mean of repeated runs on a $128^2$ flower and a $64^3$ torus from the benchmark. Initialization uses only the binary distance transform: $s^{(0)}=\tanh(\xi/2.3)$ with $\xi$ the signed distance, and $\vv^{(0)}$ along the discrete gradient of $s^{(0)}$ with length $\sqrt{1-s^2}$. Lattice covariance was verified to $1.2\times10^{-7}$ under axis permutations.
+
+\subsection*{Walls}
+Lattice walls used open chains of length $\max(200,40\ell(1+|\kappa|))$ with fixed end spins, iterated to a maximum change below $10^{-13}$. Continuum profiles of Eq.~(\ref{eq:ode}) were obtained by bisection on the center slope with $\theta(0)=\pi/2$ (tolerance $10^{-11}$). Width is the standard deviation of $|\partial_us|$.
+
+\subsection*{Readout constants}
+The planar metrication $m(\varphi)$ was computed from straight walls at 46 rational orientations on periodic $240^2$ arrays and expanded in $\cos4j\varphi$, $j\le6$. In 3D, 40 primitive normals with $|\bm\nu|^2\le50$ on $60^3$ arrays, weighted by their Voronoi solid angles, give $\bar m_3=1.0160$. The curvature correction $\Delta(\kappa)=b_1|a\kappa|+b_2(a\kappa)^2+b_3|a\kappa|^3$ was fitted to disks (radii $2.5$--$40$, six subpixel centers each) and spheres (radii $2.5$--$20$, three centers). Local curvature and normal angle are computed from $s$ smoothed with a unit Gaussian, $\kappa=-\nabla\cdot(\nabla\tilde s/|\nabla\tilde s|)$, clipped at $0.45$ (2D) or $0.85$ (3D). The selected readouts are $h/J=1.5$ with the direction-resolved law in 2D and $h/J=2$ with the orientation-averaged law in 3D.
+
+\subsection*{Benchmark}
+Exact perimeters use the complete elliptic integral for ellipses and converged quadrature of $\int\sqrt{r^2+r'^2}\,\dd\theta$ for flowers, $r=R(1+\epsilon\cos k\theta)$ with $k=3$--$6$ and $\epsilon=0.08$--$0.18$. Exact areas use Legendre's formula for triaxial ellipsoids, $4\pi^2Rr$ for tori, and converged quadrature for bumpy spheres, $r=R(1+\epsilon\sin^2\theta\cos3\phi)$ with $\epsilon=0.08$--$0.15$. Masks are point-sampled at pixel or voxel centers on $128^2$ and $64^3$ grids, with log-uniform radii (4--26 pixels; 4--15 voxels), random rotations and subpixel shifts. The test set contains 30 shapes per family in 2D and 12 in 3D; the training set, 8 and 3. Crofton uses four directions (scikit-image\cite{VanderWalt2014}); marching squares and cubes extract the $0.5$ level of the binary or Gaussian-smoothed mask. Each conventional estimator is multiplied by the median ratio of truth to estimate on the clean training set, and its Gaussian width is selected from $\{0.5,0.75,1,1.5,2\}$ (2D) or $\{0.5,0.75,1,1.5\}$ (3D). For PBGIA, the training set only selected $h/J\in\{1.5,2\}$ and the metrication form; the test set was evaluated once with the selected readouts.
+
+\subsection*{Statistics}
+Errors are mean absolute relative errors per family, averaged over families. Paired differences between methods were bootstrapped within families (4000 resamples), and the family means were then averaged; 95\% percentile intervals are reported.
+
+\subsection*{Rasterization floor}
+The consistent set of a disk mask was bounded by linear programming over pixels within two spacings of the circle and sampled uniformly (at least 3000 points; 16 centers per radius, $R=4$--$26$), with weights $1/R$ for a uniform prior in $R$. Pose ensembles re-rendered each non-contact 2D test geometry with 24 additional random rotations and shifts.
+
+\subsection*{Director and defects}
+The pixel-level field $q_0$ was smoothed with Gaussian windows ($\sigma=1.5$--$50$, reflecting boundaries). For grayscale images, $q_0$ pools the transverse fields generated at the 15, 32.5, 50, 67.5 and 85\% intensity quantiles after smoothing with $0.8$ pixels; a continuous source $h(2g-1)$, with $g$ the normalized intensity, is compared in Supplementary Note~7. Plaquette charges use the wrapped phase differences of $\arg q_\sigma$ around each plaquette. The synthetic defect texture is a line-integral convolution of filtered noise along $\psi=\sum_jk_j\arg(\bm x-\bm x_j)$ with four prescribed cores. A detected defect matches a prescribed one if it has the same sign and lies within $\max(6,\sigma)$ pixels. The annihilation constant was obtained by bisection on lattices with $d=8$--$48$ and by quadrature.
+
+\subsection*{Degree}
+In 2D, each plaquette is split into two triangles and $Q_2=\sum\Omega_\triangle/4\pi$ with $\Omega_\triangle=2\operatorname{atan2}[\nn_1\cdot(\nn_2\times\nn_3),1+\nn_1\cdot\nn_2+\nn_2\cdot\nn_3+\nn_3\cdot\nn_1]$. In 3D, the field is interpolated linearly on six Freudenthal tetrahedra per cell and normalized, and the signed preimages of three generic regular values are counted.
+
+\subsection*{Cell nuclei}
+We used the StarDist subset\cite{Schmidt2018} of BBBC038 (stage-1 training images of the 2018 Data Science Bowl, CC0\cite{Caicedo2019}): 447 training and 50 test fluorescence images ($256^2$ to $520\times696$ pixels) with one label per annotated nucleus. Intensity levels were estimated per image as in the grayscale tests (medians of the two Otsu classes of a copy smoothed with $\sigma=1$ pixel), and the continuous source is $h(2g-1)$ with $g$ the clipped normalized intensity. The binary source is the Otsu mask of the raw image. Images were padded with eight pixels of background, so that nuclei cut by the border remain closed. Objects are connected components of $\{s>0\}$; for the comparators, of the thresholded image. The comparator's smoothing ($\sigma\in\{0,0.5,1,1.5,2,3\}$) and minimum object size ($0$--$80$ pixels) minimized the mean relative count error on the training images. Missed nuclei are annotated nuclei not overlapped by any object. Added noise is Gaussian with standard deviation $0.1$ or $0.2$ of the per-image contrast, with a fixed seed per image.
+
+\subsection*{Magnetic images}
+Sources, preprocessing and controls are given in Supplementary Note~\ref{S-sec:methods}.
+
+\subsection*{Use of artificial intelligence tools}
+\begin{authorbox}
+Nature Portfolio requires that use of large language models (LLMs) be documented in the Methods, and LLMs cannot be listed as authors. Please verify the tools, versions, dates and roles below against your own records, delete what does not apply, and add any tool not listed.
+\end{authorbox}
+Large language models were used during this work. Claude (Anthropic; model Claude Opus 5.5, \fillin{dates of use}) was used to write and run analysis and figure code, to carry out numerical checks of the derivations, and to draft and edit manuscript text. \fillin{OpenAI Codex / GPT model and version, dates: computation scripts of the earlier study} and \fillin{Google Gemini version, dates: an early manuscript draft} were used in earlier stages. All code is archived (Code availability), and all reported numbers were regenerated from it. The author checked every derivation, numerical result, figure and reference and takes full responsibility for the content. No AI tool generated or altered image data: experimental images were processed only by the deterministic algorithms described above, and all figures were produced by the archived plotting scripts.
+
+\section*{Data availability}
+The data generated in this study are available at \url{https://github.com/cywon-commits/Physics-Based-Geometric-Image-Analysis} and will be archived at \fillin{Zenodo DOI}. Third-party data: the cell images are the StarDist subset\cite{Schmidt2018} of BBBC038v1 from the Broad Bioimage Benchmark Collection\cite{Caicedo2019} (CC0); the Lorentz micrograph is distributed with the SkyrmNet demonstration code\cite{McCray2024} (MIT license); the labyrinth image is part of the data set of ref.~\citenum{Zhao2026} (CC-BY 4.0); the Kerr sequences are distributed with KerrPy\cite{KerrPy} (GPL-3.0).
+\begin{authorbox}
+(1) Create a Zenodo (or Figshare) archive of the repository release and insert the DOI. (2) Nature Communications expects a Source Data file for the plotted data; the CSV files in \texttt{data/revision2/} can be assembled into it. (3) Confirm that reuse of the GPL-3.0 Kerr images in a figure is acceptable to the journal, or obtain permission from the KerrPy author.
+\end{authorbox}
+
+\section*{Code availability}
+All code, including the generator, readouts, benchmark and figure scripts, is available at \url{https://github.com/cywon-commits/Physics-Based-Geometric-Image-Analysis} (\fillin{release tag and Zenodo DOI}).
+
+\bibliographystyle{unsrtnat}
+\bibliography{refs}
+
+\section*{Acknowledgements}
+This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government \fillin{MSIT --- confirm ministry} (No.~NRF-2023R1A2C1006050). We thank the authors of refs.~\citenum{McCray2024,Zhao2026,KerrPy} for making their experimental images openly available.
+\begin{authorbox}
+Add other funding sources, computing resources and people to thank.
+\end{authorbox}
+
+\section*{Author contributions}
+\fillin{e.g.\ C.W.\ conceived the study, developed the theory, performed the calculations and wrote the manuscript.}
+\begin{authorbox}
+Write the contribution statement for every author using initials.
+\end{authorbox}
+
+\section*{Competing interests}
+The author declares no competing interests. \fillin{confirm}
+
+\end{document}

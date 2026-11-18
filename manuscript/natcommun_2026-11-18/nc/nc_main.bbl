@@ -1,0 +1,172 @@
+\begin{thebibliography}{22}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Mermin(1979)]{Mermin1979}
+N.~David Mermin.
+\newblock The topological theory of defects in ordered media.
+\newblock \emph{Reviews of Modern Physics}, 51:\penalty0 591--648, 1979.
+\newblock \doi{10.1103/RevModPhys.51.591}.
+
+\bibitem[Nagaosa and Tokura(2013)]{Nagaosa2013}
+Naoto Nagaosa and Yoshinori Tokura.
+\newblock Topological properties and dynamics of magnetic skyrmions.
+\newblock \emph{Nature Nanotechnology}, 8:\penalty0 899--911, 2013.
+\newblock \doi{10.1038/nnano.2013.243}.
+
+\bibitem[Lorensen and Cline(1987)]{Lorensen1987}
+W.~E. Lorensen and H.~E. Cline.
+\newblock Marching cubes: A high resolution 3{D} surface construction
+  algorithm.
+\newblock In \emph{Proceedings of SIGGRAPH '87}, pages 163--169, 1987.
+\newblock \doi{10.1145/37402.37422}.
+
+\bibitem[Bigun et~al.(1991)Bigun, Granlund, and Wiklund]{Bigun1991}
+J.~Bigun, G.~H. Granlund, and J.~Wiklund.
+\newblock Multidimensional orientation estimation with applications to texture
+  analysis and optical flow.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 13:\penalty0 775--790, 1991.
+\newblock \doi{10.1109/34.85668}.
+
+\bibitem[Di~Zenzo(1986)]{DiZenzo1986}
+Silvano Di~Zenzo.
+\newblock A note on the gradient of a multi-image.
+\newblock \emph{Computer Vision, Graphics, and Image Processing}, 33\penalty0
+  (1):\penalty0 116--125, 1986.
+\newblock \doi{10.1016/0734-189X(86)90223-9}.
+
+\bibitem[Modica(1987)]{Modica1987}
+Luciano Modica.
+\newblock The gradient theory of phase transitions and the minimal interface
+  criterion.
+\newblock \emph{Archive for Rational Mechanics and Analysis}, 98\penalty0
+  (2):\penalty0 123--142, 1987.
+\newblock \doi{10.1007/BF00251230}.
+
+\bibitem[Allen and Cahn(1979)]{Allen1979}
+S.~M. Allen and J.~W. Cahn.
+\newblock A microscopic theory for antiphase boundary motion and its
+  application to antiphase domain coarsening.
+\newblock \emph{Acta Metallurgica}, 27\penalty0 (6):\penalty0 1085--1095, 1979.
+\newblock \doi{10.1016/0001-6160(79)90196-2}.
+
+\bibitem[Chan and Vese(2001)]{Chan2001}
+T.~F. Chan and L.~A. Vese.
+\newblock Active contours without edges.
+\newblock \emph{IEEE Transactions on Image Processing}, 10\penalty0
+  (2):\penalty0 266--277, 2001.
+\newblock \doi{10.1109/83.902291}.
+
+\bibitem[Rudin et~al.(1992)Rudin, Osher, and Fatemi]{Rudin1992}
+L.~I. Rudin, S.~Osher, and E.~Fatemi.
+\newblock Nonlinear total variation based noise removal algorithms.
+\newblock \emph{Physica D}, 60:\penalty0 259--268, 1992.
+\newblock \doi{10.1016/0167-2789(92)90242-F}.
+
+\bibitem[Park et~al.(2024)Park, Moon, Yoon, Kwon, and Won]{Park2024AMT}
+Seong~Min Park, Tae~Jung Moon, Han~Gyu Yoon, Hee~Young Kwon, and Changyeon Won.
+\newblock Indexing topological numbers on images by transferring chiral
+  magnetic textures.
+\newblock \emph{Advanced Materials Technologies}, 9\penalty0 (19):\penalty0
+  2400172, 2024.
+\newblock \doi{10.1002/admt.202400172}.
+
+\bibitem[Moon et~al.(2025)Moon, Park, Yoon, Yu, Kwon, and Won]{Moon2025SR}
+Tae~Jung Moon, Seong~Min Park, Han~Gyu Yoon, Gyunghun Yu, Hee~Young Kwon, and
+  Changyeon Won.
+\newblock Computing euler characteristic of {N}-dimensional objects via a
+  skyrmion-inspired overlaying ({N}+1)-dimensional chiral field.
+\newblock \emph{Scientific Reports}, 15:\penalty0 11259, 2025.
+\newblock \doi{10.1038/s41598-025-95495-9}.
+
+\bibitem[Park et~al.(2025)Park, Moon, Yu, Yoon, Choi, Kwon, and
+  Won]{Park2025iScience}
+Seong~Min Park, Tae~Jung Moon, Gyunghun Yu, Han~Gyu Yoon, Jun~Woo Choi,
+  Hee~Young Kwon, and Changyeon Won.
+\newblock Characterizing topological properties in 2d textures with magnetic
+  structure tensors.
+\newblock \emph{iScience}, 28:\penalty0 112592, 2025.
+\newblock \doi{10.1016/j.isci.2025.112592}.
+
+\bibitem[Dzyaloshinskii(1958)]{Dzyaloshinskii1958}
+I.~Dzyaloshinskii.
+\newblock A thermodynamic theory of weak ferromagnetism of antiferromagnetics.
+\newblock \emph{Journal of Physics and Chemistry of Solids}, 4:\penalty0
+  241--255, 1958.
+\newblock \doi{10.1016/0022-3697(58)90076-3}.
+
+\bibitem[Moriya(1960)]{Moriya1960}
+T.~Moriya.
+\newblock Anisotropic superexchange interaction and weak ferromagnetism.
+\newblock \emph{Physical Review}, 120:\penalty0 91--98, 1960.
+\newblock \doi{10.1103/PhysRev.120.91}.
+
+\bibitem[Berry and Dennis(2000)]{Berry2000}
+M.~V. Berry and M.~R. Dennis.
+\newblock Phase singularities in isotropic random waves.
+\newblock \emph{Proceedings of the Royal Society of London A}, 456:\penalty0
+  2059--2079, 2000.
+\newblock \doi{10.1098/rspa.2000.0602}.
+
+\bibitem[Berg and L{\"u}scher(1981)]{Berg1981}
+B.~Berg and M.~L{\"u}scher.
+\newblock Definition and statistical distributions of a topological number in
+  the lattice {O}(3) $\sigma$-model.
+\newblock \emph{Nuclear Physics B}, 190\penalty0 (2):\penalty0 412--424, 1981.
+\newblock \doi{10.1016/0550-3213(81)90568-X}.
+
+\bibitem[Caicedo et~al.(2019)Caicedo, Goodman, Karhohs, Cimini, Ackerman,
+  Haghighi, Heng, Becker, Doan, McQuin, Rohban, Singh, and
+  Carpenter]{Caicedo2019}
+Juan~C. Caicedo, Allen Goodman, Kyle~W. Karhohs, Beth~A. Cimini, Jeanelle
+  Ackerman, Marzieh Haghighi, CherKeng Heng, Tim Becker, Minh Doan, Claire
+  McQuin, Mohammad Rohban, Shantanu Singh, and Anne~E. Carpenter.
+\newblock Nucleus segmentation across imaging experiments: the 2018 {Data
+  Science Bowl}.
+\newblock \emph{Nature Methods}, 16:\penalty0 1247--1253, 2019.
+\newblock \doi{10.1038/s41592-019-0612-7}.
+
+\bibitem[Schmidt et~al.(2018)Schmidt, Weigert, Broaddus, and
+  Myers]{Schmidt2018}
+Uwe Schmidt, Martin Weigert, Coleman Broaddus, and Gene Myers.
+\newblock Cell detection with star-convex polygons.
+\newblock In \emph{Medical Image Computing and Computer Assisted Intervention
+  -- MICCAI 2018}, volume 11071 of \emph{Lecture Notes in Computer Science},
+  pages 265--273, 2018.
+\newblock \doi{10.1007/978-3-030-00934-2_30}.
+
+\bibitem[van~der Walt et~al.(2014)van~der Walt, Sch\"onberger, Nunez-Iglesias,
+  Boulogne, Warner, Yager, Gouillart, Yu, and {the scikit-image
+  contributors}]{VanderWalt2014}
+St\'efan van~der Walt, Johannes~L. Sch\"onberger, Juan Nunez-Iglesias,
+  Fran\c{c}ois Boulogne, Joshua~D. Warner, Neil Yager, Emmanuelle Gouillart,
+  Tony Yu, and {the scikit-image contributors}.
+\newblock {scikit-image}: Image processing in python.
+\newblock \emph{PeerJ}, 2:\penalty0 e453, 2014.
+\newblock \doi{10.7717/peerj.453}.
+
+\bibitem[McCray et~al.(2024)]{McCray2024}
+Arthur R.~C. McCray et~al.
+\newblock Simulation-trained machine learning models for {L}orentz transmission
+  electron microscopy.
+\newblock \emph{APL Machine Learning}, 2024.
+\newblock \doi{10.1063/5.0197138}.
+
+\bibitem[Zhao et~al.(2026)Zhao, Fern{\'a}ndez-Pacheco, et~al.]{Zhao2026}
+Le~Zhao, Amalio Fern{\'a}ndez-Pacheco, et~al.
+\newblock Dataset for extended depth of field magneto-optical {K}err microscopy
+  for applications in {3D} nanomagnetism.
+\newblock \url{https://researchdata.tuwien.ac.at/records/0196e-9b515}, 2026.
+\newblock CC-BY 4.0.
+
+\bibitem[Guddeti(2020)]{KerrPy}
+Sreekar Guddeti.
+\newblock {KerrPy}: an {OpenCV}-based {P}ython project for processing {K}err
+  microscopy images, version 0.2.4.
+\newblock \url{https://github.com/Baalkikhaal/KerrPy}, 2020.
+
+\end{thebibliography}
