@@ -1,5 +1,17 @@
 # Physics-Based Geometric Image Analysis
 
+## Python package: `pbgia`
+
+The generator and readouts of the manuscript are collected in the installable package [`pbgia/`](pbgia/README.md):
+perimeter and surface area, normals and axes, the scale-resolved director and its half-integer defects, and the
+degree (Euler characteristic) of the generated domain.
+
+```bash
+pip install .
+python examples/pbgia_quickstart.py
+python -m pytest tests/test_pbgia_package.py -q   # reproduces the manuscript's 2D benchmark and constants
+```
+
 ## Latest: fixed-iteration study
 
 - [고정 반복횟수 연구 보고서 (한국어)](fixed_iteration/output/REPORT_KO.md) · [PDF](fixed_iteration/output/REPORT_KO.pdf)
@@ -8,7 +20,7 @@
 
 The new prototype-split study selects **N=30**: clean test geometry MARE **1.00% (2D)** and **1.40% (3D)**, approximately **1.31× faster than N=40** on the measured CPU. This uses separate data splits from the earlier convergence study below; their errors are not directly comparable. Large field caches are omitted.
 
-Reproducible experiments for the **dynamic scalar-gradient normalized PBGIA update**, following [CODEX_TASK_KO.md](CODEX_TASK_KO.md).
+Reproducible experiments for the **dynamic scalar-gradient normalized PBGIA update**, following [CODEX_TASK_KO.md](docs/ai_provenance/codex/CODEX_TASK_KO.md).
 
 ```text
 Hv = J * sum_neighbors(v_current) + D * grad(s_current)

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pbgia"
+dynamic = ["version"]
+description = "Physics-based geometric image analysis: boundary extent, normals, director defects and topology from the spin texture a binary image induces"
+readme = "pbgia/README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Changyeon Won", email = "cywon@khu.ac.kr" }]
+dependencies = ["numpy>=1.22", "scipy>=1.8"]
+keywords = ["image analysis", "perimeter", "surface area", "topological defects", "Euler characteristic", "spin texture"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Image Processing",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+
+[project.optional-dependencies]
+test = ["pytest", "pandas"]
+
+[project.urls]
+Repository = "https://github.com/cywon-commits/Physics-Based-Geometric-Image-Analysis"
+
+[tool.setuptools]
+packages = ["pbgia"]
+
+[tool.setuptools.dynamic]
+version = { attr = "pbgia.__version__" }
