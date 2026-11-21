@@ -1,6 +1,6 @@
 # Reproduction
 
-This directory contains the original handoff unchanged except for new research scripts, tests, requirements, this document, and results. The authority is `CODEX_TASK_KO.md`.
+This directory contains the original handoff unchanged except for new research scripts, tests, requirements, this document, and results. The authority is `CODEX_TASK_KO.md` (now in `docs/ai_provenance/codex/`).
 
 ```bash
 python3.12 -m venv .venv

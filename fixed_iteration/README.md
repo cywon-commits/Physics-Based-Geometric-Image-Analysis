@@ -1,6 +1,6 @@
 # PBGIA fixed-iteration/kernel study
 
-This is an executed fixed-iteration study following [CODEX_TASK_KO.md](CODEX_TASK_KO.md). Read [the Korean report](output/REPORT_KO.md) and [the frozen configuration](output/selected_configuration.json) for the selected N, kernels, accuracy, timing and limitations.
+This is an executed fixed-iteration study following [CODEX_TASK_KO.md](../docs/ai_provenance/codex/CODEX_TASK_fixed_iteration_KO.md). Read [the Korean report](output/REPORT_KO.md) and [the frozen configuration](output/selected_configuration.json) for the selected N, kernels, accuracy, timing and limitations.
 
 ## Reproduce in one command
 
